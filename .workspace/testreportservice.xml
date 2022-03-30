@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <TESTREPORTSERVICE-SETTINGS format-rev="1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<TESTREPORTSERVICE xsi:type="testReportService">
-		<REPORT-SETTINGS/>
+		<REPORT-SETTINGS>
+			<ELEMENT dkey="uploadAuthenticationKey">
+				<DVALUE xsi:type="string">um7tAxgoNKT5fsgNJcY33nSUgcGzUcmJi3Vb0MfXrpFyOY5AlCjv7RL0T2BbWw0zPLBlIICniaxsF3Im8JW9CMQwEQZRF5AAxQvXBqCzpqkCyWgwbS8wQ1oXYqaAaDnPPM5KiOw_Z8IaTy6Whqgs7tMtnLO0XthlZNtBEQuWCBFOI4VzqGHpDN7GmUyBDtELkmZ6pkoNnSOmwhO2BloDN9a3PewM7dWr35me6SIqeYDROW1XY4G3EINjuhBZunAp_RHxHbe9MWBKCWRa94k8nDdSnqNyDcfSCnRPQSGbLNmoRzkBZdlJbWzFLDnRXE5X30knDuofHEdYpvX5LV_hGheJG2lQUuOpeuknDJJp1Kp5qsObJqsNcob6pofEr8KPmlUzoGh8PPINc4pPCFmsug==</DVALUE>
+			</ELEMENT>
+		</REPORT-SETTINGS>
 	</TESTREPORTSERVICE>
 </TESTREPORTSERVICE-SETTINGS>
