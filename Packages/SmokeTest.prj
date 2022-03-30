@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PROJECT format-rev="10" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<NAME xsi:type="string">Projekt</NAME>
+	<ENABLED xsi:type="boolean">True</ENABLED>
+	<REPORTING xsi:type="boolean">True</REPORTING>
+	<ID xsi:type="string">9b759edc144711ebb91afc7774d1abf9</ID>
+	<COMPONENTS>
+		<COMPONENT format-rev="1" xsi:type="projectCall">
+			<NAME xsi:type="string">ACC_ComponentTests</NAME>
+			<ENABLED xsi:type="boolean">True</ENABLED>
+			<REPORTING xsi:type="boolean">True</REPORTING>
+			<ID xsi:type="string">d6a94148144811eba9cdfc7774d1abf9</ID>
+			<PROJECT-REF xsi:type="projectRef">
+				<PROJECT-PATH xsi:type="string">Projects/ACC_ComponentTests.prj</PROJECT-PATH>
+			</PROJECT-REF>
+		</COMPONENT>
+		<COMPONENT format-rev="1" xsi:type="projectCall">
+			<NAME xsi:type="string">BouncingBall_ParameterSets</NAME>
+			<ENABLED xsi:type="boolean">True</ENABLED>
+			<REPORTING xsi:type="boolean">True</REPORTING>
+			<ID xsi:type="string">d6a96848144811eba901fc7774d1abf9</ID>
+			<PROJECT-REF xsi:type="projectRef">
+				<PROJECT-PATH xsi:type="string">Projects/BouncingBall_ParameterSets.prj</PROJECT-PATH>
+			</PROJECT-REF>
+		</COMPONENT>
+		<COMPONENT format-rev="1" xsi:type="projectCall">
+			<NAME xsi:type="string">MultipleModelsParallel</NAME>
+			<ENABLED xsi:type="boolean">True</ENABLED>
+			<REPORTING xsi:type="boolean">True</REPORTING>
+			<ID xsi:type="string">d6a98f3a144811eb966cfc7774d1abf9</ID>
+			<PROJECT-REF xsi:type="projectRef">
+				<PROJECT-PATH xsi:type="string">Projects/MultipleModelsParallel.prj</PROJECT-PATH>
+			</PROJECT-REF>
+		</COMPONENT>
+		<COMPONENT format-rev="1" xsi:type="projectCall">
+			<NAME xsi:type="string">TimeBase_Comparison</NAME>
+			<ENABLED xsi:type="boolean">True</ENABLED>
+			<REPORTING xsi:type="boolean">True</REPORTING>
+			<ID xsi:type="string">d6a98f3b144811ebb7b4fc7774d1abf9</ID>
+			<PROJECT-REF xsi:type="projectRef">
+				<PROJECT-PATH xsi:type="string">Projects/TimeBase_Comparison.prj</PROJECT-PATH>
+			</PROJECT-REF>
+		</COMPONENT>
+	</COMPONENTS>
+</PROJECT>

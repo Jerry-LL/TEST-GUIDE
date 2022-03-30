@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PREDEF_KEYS-SETTINGS xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<PREDEFINED-KEYS xsi:type="predefinedKeys">
+		<PREDEFINED-BUS-KEYS>
+			<ELEMENT xsi:type="string">PT-CAN</ELEMENT>
+			<ELEMENT xsi:type="string">F-CAN</ELEMENT>
+			<ELEMENT xsi:type="string">K-CAN-System</ELEMENT>
+			<ELEMENT xsi:type="string">A-CAN</ELEMENT>
+			<ELEMENT xsi:type="string">FA-CAN</ELEMENT>
+			<ELEMENT xsi:type="string">Body-CAN</ELEMENT>
+			<ELEMENT xsi:type="string">A-FlexRay</ELEMENT>
+			<ELEMENT xsi:type="string">HL-CAN</ELEMENT>
+			<ELEMENT xsi:type="string">HS-CAN</ELEMENT>
+			<ELEMENT xsi:type="string">H-CAN</ELEMENT>
+			<ELEMENT xsi:type="string">LP-CAN</ELEMENT>
+			<ELEMENT xsi:type="string">LE-CAN</ELEMENT>
+			<ELEMENT xsi:type="string">S-CAN</ELEMENT>
+			<ELEMENT xsi:type="string">CSC-CAN</ELEMENT>
+			<ELEMENT xsi:type="string">ICM2-CAN</ELEMENT>
+			<ELEMENT xsi:type="string">IuK-CAN</ELEMENT>
+			<ELEMENT xsi:type="string">Body2-CAN</ELEMENT>
+			<ELEMENT xsi:type="string">K-LIN_1</ELEMENT>
+			<ELEMENT xsi:type="string">K-LIN_2</ELEMENT>
+			<ELEMENT xsi:type="string">K-LIN_8</ELEMENT>
+			<ELEMENT xsi:type="string">K-LIN_15</ELEMENT>
+			<ELEMENT xsi:type="string">D-CAN</ELEMENT>
+			<ELEMENT xsi:type="string">MR-CAN-2010</ELEMENT>
+			<ELEMENT xsi:type="string">bus-dummy</ELEMENT>
+			<ELEMENT xsi:type="string">ETHERNET</ELEMENT>
+		</PREDEFINED-BUS-KEYS>
+		<PREDEFINED-ECU-KEYS>
+			<ELEMENT xsi:type="string">DME1_DDE1</ELEMENT>
+			<ELEMENT xsi:type="string">DME2_DDE2</ELEMENT>
+			<ELEMENT xsi:type="string">EGS_SSG</ELEMENT>
+			<ELEMENT xsi:type="string">CAS</ELEMENT>
+			<ELEMENT xsi:type="string">--------------------</ELEMENT>
+			<ELEMENT xsi:type="string">aLBV_BF</ELEMENT>
+			<ELEMENT xsi:type="string">aLBV_FA</ELEMENT>
+			<ELEMENT xsi:type="string">ACC</ELEMENT>
+			<ELEMENT xsi:type="string">ACSM</ELEMENT>
+			<ELEMENT xsi:type="string">AFS</ELEMENT>
+			<ELEMENT xsi:type="string">AHM</ELEMENT>
+			<ELEMENT xsi:type="string">ALC</ELEMENT>
+			<ELEMENT xsi:type="string">AMPH</ELEMENT>
+			<ELEMENT xsi:type="string">ARS_Modul</ELEMENT>
+			<ELEMENT xsi:type="string">ASA</ELEMENT>
+			<ELEMENT xsi:type="string">BMSK</ELEMENT>
+			<ELEMENT xsi:type="string">BMS_MP</ELEMENT>
+			<ELEMENT xsi:type="string">BPCM</ELEMENT>
+			<ELEMENT xsi:type="string">CCC_MASK</ELEMENT>
+			<ELEMENT xsi:type="string">DSC_DXC</ELEMENT>
+			<ELEMENT xsi:type="string">DWA</ELEMENT>
+			<ELEMENT xsi:type="string">EHC1</ELEMENT>
+			<ELEMENT xsi:type="string">EKP</ELEMENT>
+			<ELEMENT xsi:type="string">EME</ELEMENT>
+			<ELEMENT xsi:type="string">EMF</ELEMENT>
+			<ELEMENT xsi:type="string">EMPI</ELEMENT>
+			<ELEMENT xsi:type="string">EPS</ELEMENT>
+			<ELEMENT xsi:type="string">FRMFA</ELEMENT>
+			<ELEMENT xsi:type="string">GWS</ELEMENT>
+			<ELEMENT xsi:type="string">HC2</ELEMENT>
+			<ELEMENT xsi:type="string">HCP</ELEMENT>
+			<ELEMENT xsi:type="string">HIM</ELEMENT>
+			<ELEMENT xsi:type="string">HSR</ELEMENT>
+			<ELEMENT xsi:type="string">ICM_QL</ELEMENT>
+			<ELEMENT xsi:type="string">ICM_V</ELEMENT>
+			<ELEMENT xsi:type="string">IHKA</ELEMENT>
+			<ELEMENT xsi:type="string">JBBF</ELEMENT>
+			<ELEMENT xsi:type="string">KBM</ELEMENT>
+			<ELEMENT xsi:type="string">KGM</ELEMENT>
+			<ELEMENT xsi:type="string">Kombi</ELEMENT>
+			<ELEMENT xsi:type="string">LM</ELEMENT>
+			<ELEMENT xsi:type="string">LRR</ELEMENT>
+			<ELEMENT xsi:type="string">MRS</ELEMENT>
+			<ELEMENT xsi:type="string">PCU</ELEMENT>
+			<ELEMENT xsi:type="string">PDC</ELEMENT>
+			<ELEMENT xsi:type="string">PMA</ELEMENT>
+			<ELEMENT xsi:type="string">QSG</ELEMENT>
+			<ELEMENT xsi:type="string">RDC</ELEMENT>
+			<ELEMENT xsi:type="string">RK_HL</ELEMENT>
+			<ELEMENT xsi:type="string">RK_HR</ELEMENT>
+			<ELEMENT xsi:type="string">RK_VL</ELEMENT>
+			<ELEMENT xsi:type="string">RK_VR</ELEMENT>
+			<ELEMENT xsi:type="string">RLS</ELEMENT>
+			<ELEMENT xsi:type="string">SAS</ELEMENT>
+			<ELEMENT xsi:type="string">SBA</ELEMENT>
+			<ELEMENT xsi:type="string">SHD</ELEMENT>
+			<ELEMENT xsi:type="string">SM_BF</ELEMENT>
+			<ELEMENT xsi:type="string">SM_FA</ELEMENT>
+			<ELEMENT xsi:type="string">SME</ELEMENT>
+			<ELEMENT xsi:type="string">SPEG</ELEMENT>
+			<ELEMENT xsi:type="string">SZL_LWS</ELEMENT>
+			<ELEMENT xsi:type="string">SZM</ELEMENT>
+			<ELEMENT xsi:type="string">VGSG</ELEMENT>
+			<ELEMENT xsi:type="string">ZGW</ELEMENT>
+			<ELEMENT xsi:type="string">--------------------</ELEMENT>
+			<ELEMENT xsi:type="string">FEM</ELEMENT>
+			<ELEMENT xsi:type="string">REM</ELEMENT>
+			<ELEMENT xsi:type="string">BDC</ELEMENT>
+			<ELEMENT xsi:type="string">NBT</ELEMENT>
+			<ELEMENT xsi:type="string">FZD</ELEMENT>
+			<ELEMENT xsi:type="string">--------------------</ELEMENT>
+			<ELEMENT xsi:type="string">DSM</ELEMENT>
+			<ELEMENT xsi:type="string">MCPA</ELEMENT>
+			<ELEMENT xsi:type="string">MCPB</ELEMENT>
+			<ELEMENT xsi:type="string">TCM</ELEMENT>
+			<ELEMENT xsi:type="string">TFE</ELEMENT>
+			<ELEMENT xsi:type="string">--------------------</ELEMENT>
+			<ELEMENT xsi:type="string">Codierung</ELEMENT>
+			<ELEMENT xsi:type="string">Funktional</ELEMENT>
+			<ELEMENT xsi:type="string">app-dummy</ELEMENT>
+			<ELEMENT xsi:type="string">--------------------</ELEMENT>
+			<ELEMENT xsi:type="string">Engine</ELEMENT>
+			<ELEMENT xsi:type="string">Dashboard</ELEMENT>
+		</PREDEFINED-ECU-KEYS>
+		<PREDEFINED-MODEL-KEYS>
+			<ELEMENT xsi:type="string">Plant model</ELEMENT>
+			<ELEMENT xsi:type="string">Implementation</ELEMENT>
+			<ELEMENT xsi:type="string">--------------------</ELEMENT>
+			<ELEMENT xsi:type="string">Umgebung</ELEMENT>
+			<ELEMENT xsi:type="string">Implementierung</ELEMENT>
+		</PREDEFINED-MODEL-KEYS>
+		<PREDEFINED-FAULTSIMULATION-KEYS>
+			<ELEMENT xsi:type="string">FIU-1</ELEMENT>
+			<ELEMENT xsi:type="string">FIU-2</ELEMENT>
+			<ELEMENT xsi:type="string">FIU-3</ELEMENT>
+			<ELEMENT xsi:type="string">FIU-4</ELEMENT>
+			<ELEMENT xsi:type="string">EES-1</ELEMENT>
+			<ELEMENT xsi:type="string">EES-2</ELEMENT>
+			<ELEMENT xsi:type="string">EES-3</ELEMENT>
+			<ELEMENT xsi:type="string">EES-4</ELEMENT>
+		</PREDEFINED-FAULTSIMULATION-KEYS>
+		<PREDEFINED-DEBUG-SUB-KEYS>
+			<ELEMENT xsi:type="string">APPLICATION</ELEMENT>
+			<ELEMENT xsi:type="string">BOOT</ELEMENT>
+			<ELEMENT xsi:type="string">PREBOOT</ELEMENT>
+			<ELEMENT xsi:type="string">ELF-1</ELEMENT>
+			<ELEMENT xsi:type="string">ELF-2</ELEMENT>
+			<ELEMENT xsi:type="string">ELF-3</ELEMENT>
+			<ELEMENT xsi:type="string">ELF-4</ELEMENT>
+			<ELEMENT xsi:type="string">ELF-5</ELEMENT>
+		</PREDEFINED-DEBUG-SUB-KEYS>
+		<PREDEFINED-ENVSIM-KEYS>
+			<ELEMENT xsi:type="string">EnvironmentSimulation</ELEMENT>
+		</PREDEFINED-ENVSIM-KEYS>
+	</PREDEFINED-KEYS>
+</PREDEF_KEYS-SETTINGS>

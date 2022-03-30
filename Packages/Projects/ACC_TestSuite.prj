@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PROJECT format-rev="10" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<NAME xsi:type="string">Projekt</NAME>
+	<ENABLED xsi:type="boolean">True</ENABLED>
+	<REPORTING xsi:type="boolean">True</REPORTING>
+	<ID xsi:type="string">6a44c2b071f911eb868afc7774d1abf9</ID>
+	<COMPONENTS>
+		<COMPONENT format-rev="10" xsi:type="subproject">
+			<NAME xsi:type="string">Setup</NAME>
+			<ENABLED xsi:type="boolean">True</ENABLED>
+			<REPORTING xsi:type="boolean">True</REPORTING>
+			<ID xsi:type="string">78dcaba471f911ebba8afc7774d1abf9</ID>
+			<COMPONENTS>
+				<COMPONENT format-rev="1" xsi:type="projectCall">
+					<NAME xsi:type="string">ChangeConfigurationACC</NAME>
+					<ENABLED xsi:type="boolean">True</ENABLED>
+					<REPORTING xsi:type="boolean">True</REPORTING>
+					<ID xsi:type="string">3c498942a1dc11ebbb03fc7774d1abf9</ID>
+					<PROJECT-REF xsi:type="projectRef">
+						<PROJECT-PATH xsi:type="string">ChangeConfiguration/ChangeConfigurationACC.prj</PROJECT-PATH>
+					</PROJECT-REF>
+				</COMPONENT>
+			</COMPONENTS>
+		</COMPONENT>
+		<COMPONENT format-rev="10" xsi:type="subproject">
+			<NAME xsi:type="string">Tests</NAME>
+			<ENABLED xsi:type="boolean">True</ENABLED>
+			<REPORTING xsi:type="boolean">True</REPORTING>
+			<ID xsi:type="string">794cd45c71f911eba4f3fc7774d1abf9</ID>
+			<COMPONENTS>
+				<COMPONENT format-rev="5" xsi:type="packageTest">
+					<NAME xsi:type="string">ACC_activate</NAME>
+					<ENABLED xsi:type="boolean">True</ENABLED>
+					<REPORTING xsi:type="boolean">True</REPORTING>
+					<ID xsi:type="string">8a0f06a671f911ebbf14fc7774d1abf9</ID>
+					<COMPONENTS/>
+					<PACKAGE-REF format-rev="1" xsi:type="packageRef">
+						<PACKAGE-PATH xsi:type="string">../ACC/ACC_activate.pkg</PACKAGE-PATH>
+					</PACKAGE-REF>
+				</COMPONENT>
+				<COMPONENT format-rev="5" xsi:type="packageTest">
+					<NAME xsi:type="string">ACC_activate_with_brake</NAME>
+					<ENABLED xsi:type="boolean">True</ENABLED>
+					<REPORTING xsi:type="boolean">True</REPORTING>
+					<ID xsi:type="string">8a0edfb471f911eb998dfc7774d1abf9</ID>
+					<COMPONENTS/>
+					<PACKAGE-REF format-rev="1" xsi:type="packageRef">
+						<PACKAGE-PATH xsi:type="string">../ACC/ACC_activate_with_brake.pkg</PACKAGE-PATH>
+					</PACKAGE-REF>
+				</COMPONENT>
+				<COMPONENT format-rev="5" xsi:type="packageTest">
+					<NAME xsi:type="string">ACC_approach</NAME>
+					<ENABLED xsi:type="boolean">True</ENABLED>
+					<REPORTING xsi:type="boolean">True</REPORTING>
+					<ID xsi:type="string">8a0f06a771f911eb8b01fc7774d1abf9</ID>
+					<COMPONENTS/>
+					<PACKAGE-REF format-rev="1" xsi:type="packageRef">
+						<PACKAGE-PATH xsi:type="string">../ACC/ACC_approach.pkg</PACKAGE-PATH>
+					</PACKAGE-REF>
+				</COMPONENT>
+			</COMPONENTS>
+		</COMPONENT>
+		<COMPONENT format-rev="10" xsi:type="subproject">
+			<NAME xsi:type="string">Teardown</NAME>
+			<ENABLED xsi:type="boolean">True</ENABLED>
+			<REPORTING xsi:type="boolean">True</REPORTING>
+			<ID xsi:type="string">791619c671f911ebb572fc7774d1abf9</ID>
+			<COMPONENTS/>
+		</COMPONENT>
+	</COMPONENTS>
+</PROJECT>

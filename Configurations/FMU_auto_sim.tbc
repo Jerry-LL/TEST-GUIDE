@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TOOLING format-rev="2" prog-version="2020.4.105605+9fffb455971e" xmlns="http://www.tracetronic.de/xml/ecu-test" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tracetronic.de/xml/ecu-test tooling.xsd">
+	<TOOL-HOSTS>
+		<TOOL-HOST xsi:type="toolHost">
+			<URL xsi:type="string">local</URL>
+			<BASE-PATH xsi:type="string">&lt;workspace&gt;</BASE-PATH>
+		</TOOL-HOST>
+	</TOOL-HOSTS>
+	<TOOLS>
+		<TOOL id="FMI01" xsi:type="tool">
+			<TOOL-HOST xsi:type="string">local</TOOL-HOST>
+			<TOOL-NAME xsi:type="string">FMI</TOOL-NAME>
+			<START-OPTION xsi:type="integer">0</START-OPTION>
+			<START-PRIORITY xsi:type="integer">0</START-PRIORITY>
+			<SETTINGS xsi:type="dynamicPropertySet">
+				<PROPERTY format-rev="1" name="AutoSimulation" propertyType="bool" readonly="false" xsi:type="_property">
+					<VALUE xsi:type="string">True</VALUE>
+				</PROPERTY>
+				<PROPERTY format-rev="1" name="fmuRootDir" propertyType="string" readonly="false" xsi:type="_property">
+					<VALUE xsi:type="string">FMUs</VALUE>
+				</PROPERTY>
+			</SETTINGS>
+		</TOOL>
+	</TOOLS>
+	<PORTS>
+		<PORT format-rev="2" id="MDL01" toolId="FMI01" xsi:type="port">
+			<PORT-TYPE-ID format-rev="2" xsi:type="toolcaps">
+				<NAME xsi:type="string">MODELACCESS</NAME>
+			</PORT-TYPE-ID>
+			<AUTOSTART xsi:type="integer">0</AUTOSTART>
+			<SETTINGS xsi:type="dynamicPropertySet">
+				<PROPERTY format-rev="1" name="ModelFile" propertyType="string" readonly="false" xsi:type="_property">
+					<VALUE xsi:type="string">ref:SUT</VALUE>
+				</PROPERTY>
+				<PROPERTY format-rev="1" name="pacedSimulation" propertyType="choiceGroup" readonly="false" xsi:type="_property">
+					<VALUE xsi:type="string">unthrottled</VALUE>
+				</PROPERTY>
+			</SETTINGS>
+		</PORT>
+	</PORTS>
+	<TOOL-DESCRIPTORS>
+		<TOOL-DESCRIPTOR dkey="FMI01">
+			<DVALUE format-rev="2" xsi:type="toolDescriptor">
+				<TOOL-NAME xsi:type="string">FMI</TOOL-NAME>
+				<PROVIDES>
+					<PORT-TYPE xsi:type="portImplInfo">
+						<PORT-TYPE-ID format-rev="2" xsi:type="toolcaps">
+							<NAME xsi:type="string">MODELACCESS</NAME>
+						</PORT-TYPE-ID>
+					</PORT-TYPE>
+				</PROVIDES>
+				<START-PRIORITY-HINT xsi:type="integer">0</START-PRIORITY-HINT>
+				<PROPERTIES xsi:type="propertyDescriptorSet">
+					<PROP xsi:type="propertyDescriptor">
+						<NAME xsi:type="string">fmuRootDir</NAME>
+						<DISPLAY-NAME xsi:type="string">FMU Root Directory</DISPLAY-NAME>
+						<DISPLAY-LEVEL xsi:type="integer">0</DISPLAY-LEVEL>
+						<DESCRIPTION xsi:type="string">Base directory for the FMU search. If it is a relative path specification, the base path of the tool host is used and extended by the directory specified here.</DESCRIPTION>
+						<TYPE xsi:type="string">string</TYPE>
+						<READONLY xsi:type="boolean">False</READONLY>
+					</PROP>
+					<PROP xsi:type="propertyDescriptor">
+						<NAME xsi:type="string">AutoSimulation</NAME>
+						<DISPLAY-NAME xsi:type="string">Automatically start/stop simulation</DISPLAY-NAME>
+						<DISPLAY-LEVEL xsi:type="integer">0</DISPLAY-LEVEL>
+						<DESCRIPTION xsi:type="string">If this option is activated, the simulation will be started before the test run and stopped afterwards</DESCRIPTION>
+						<TYPE xsi:type="string">bool</TYPE>
+						<DOMAIN>
+							<ELEMENT xsi:type="string">False</ELEMENT>
+							<ELEMENT xsi:type="string">True</ELEMENT>
+						</DOMAIN>
+						<DEFAULT xsi:type="string">True</DEFAULT>
+						<READONLY xsi:type="boolean">False</READONLY>
+					</PROP>
+				</PROPERTIES>
+				<JOBS xsi:type="jobDescriptorSet"/>
+			</DVALUE>
+		</TOOL-DESCRIPTOR>
+	</TOOL-DESCRIPTORS>
+	<PORT-DESCRIPTORS>
+		<PORT-DESCRIPTOR dkey="MDL01">
+			<DVALUE format-rev="1" xsi:type="portDescriptor">
+				<PORT-TYPE-ID format-rev="2" xsi:type="toolcaps">
+					<NAME xsi:type="string">MODELACCESS</NAME>
+				</PORT-TYPE-ID>
+				<PROPERTIES xsi:type="propertyDescriptorSet">
+					<PROP xsi:type="propertyDescriptor">
+						<NAME xsi:type="string">ModelFile</NAME>
+						<DISPLAY-NAME xsi:type="string">FMU file</DISPLAY-NAME>
+						<DISPLAY-LEVEL xsi:type="integer">0</DISPLAY-LEVEL>
+						<DESCRIPTION xsi:type="string">Relative path to the FMU file relative to the FMU root directory.</DESCRIPTION>
+						<TYPE xsi:type="string">string</TYPE>
+						<VALID-REFS>
+							<ELEMENT xsi:type="string">SUT</ELEMENT>
+						</VALID-REFS>
+						<READONLY xsi:type="boolean">False</READONLY>
+					</PROP>
+					<PROP xsi:type="propertyDescriptor">
+						<NAME xsi:type="string">validateModelDescription</NAME>
+						<DISPLAY-NAME xsi:type="string">Validate Model Description</DISPLAY-NAME>
+						<DISPLAY-LEVEL xsi:type="integer">0</DISPLAY-LEVEL>
+						<DESCRIPTION xsi:type="string">Validate the Model Description XML against the schema from the FMI standard upon loading?</DESCRIPTION>
+						<TYPE xsi:type="string">bool</TYPE>
+						<DOMAIN>
+							<ELEMENT xsi:type="string">False</ELEMENT>
+							<ELEMENT xsi:type="string">True</ELEMENT>
+						</DOMAIN>
+						<DEFAULT xsi:type="string">True</DEFAULT>
+						<READONLY xsi:type="boolean">False</READONLY>
+					</PROP>
+					<PROP xsi:type="propertyDescriptor">
+						<NAME xsi:type="string">SimulationProperties</NAME>
+						<DISPLAY-NAME xsi:type="string">Simulation behavior</DISPLAY-NAME>
+						<TYPE xsi:type="string">group</TYPE>
+						<READONLY xsi:type="boolean">False</READONLY>
+					</PROP>
+					<PROP xsi:type="propertyDescriptor">
+						<NAME xsi:type="string">pacedSimulation</NAME>
+						<DISPLAY-NAME xsi:type="string">Simulation speed</DISPLAY-NAME>
+						<DISPLAY-LEVEL xsi:type="integer">0</DISPLAY-LEVEL>
+						<DESCRIPTION xsi:type="string">For real-time simulations, the simulation speed can be reduced to a setpoint (multiple of real time).</DESCRIPTION>
+						<TYPE xsi:type="string">choiceGroup</TYPE>
+						<DOMAIN>
+							<ELEMENT xsi:type="string">unthrottled</ELEMENT>
+							<ELEMENT xsi:type="string">individual</ELEMENT>
+							<ELEMENT xsi:type="string">1x</ELEMENT>
+							<ELEMENT xsi:type="string">2x</ELEMENT>
+							<ELEMENT xsi:type="string">4x</ELEMENT>
+							<ELEMENT xsi:type="string">8x</ELEMENT>
+						</DOMAIN>
+						<DEFAULT xsi:type="string">unthrottled</DEFAULT>
+						<READONLY xsi:type="boolean">False</READONLY>
+						<GROUP xsi:type="string">SimulationProperties</GROUP>
+					</PROP>
+					<PROP xsi:type="propertyDescriptor">
+						<NAME xsi:type="string">customSimulationSpeed</NAME>
+						<DISPLAY-NAME xsi:type="string">individual simulation speed</DISPLAY-NAME>
+						<DISPLAY-LEVEL xsi:type="integer">1</DISPLAY-LEVEL>
+						<DESCRIPTION xsi:type="string">define individual simulation speed (multiple of real time)</DESCRIPTION>
+						<TYPE xsi:type="string">float</TYPE>
+						<DEFAULT xsi:type="string">1.0</DEFAULT>
+						<READONLY xsi:type="boolean">False</READONLY>
+						<GROUP xsi:type="string">pacedSimulation</GROUP>
+						<GROUP-VALUE xsi:type="string">individual</GROUP-VALUE>
+					</PROP>
+					<PROP xsi:type="propertyDescriptor">
+						<NAME xsi:type="string">stepSize</NAME>
+						<DISPLAY-NAME xsi:type="string">Communication step size</DISPLAY-NAME>
+						<DISPLAY-LEVEL xsi:type="integer">0</DISPLAY-LEVEL>
+						<DESCRIPTION xsi:type="string">Step size with which the stimulation and recording of signals is performed. Also used as &quot;stepSize&quot; for ModelExchange FMUs with fixed-step solvers. At &quot;automatic&quot;, the step size is determined from the default experiment. If this is not available or no default experiment is defined, 0.001 (1 ms) is used.</DESCRIPTION>
+						<TYPE xsi:type="string">choiceGroup</TYPE>
+						<DOMAIN>
+							<ELEMENT xsi:type="string">automatic</ELEMENT>
+							<ELEMENT xsi:type="string">determine from Default Experiment</ELEMENT>
+							<ELEMENT xsi:type="string">individual</ELEMENT>
+						</DOMAIN>
+						<DEFAULT xsi:type="string">automatic</DEFAULT>
+						<READONLY xsi:type="boolean">False</READONLY>
+						<GROUP xsi:type="string">SimulationProperties</GROUP>
+					</PROP>
+					<PROP xsi:type="propertyDescriptor">
+						<NAME xsi:type="string">customStepSize</NAME>
+						<DISPLAY-NAME xsi:type="string">individual communication step size</DISPLAY-NAME>
+						<DISPLAY-LEVEL xsi:type="integer">1</DISPLAY-LEVEL>
+						<DESCRIPTION xsi:type="string">define individual communication step size (specified in seconds)</DESCRIPTION>
+						<TYPE xsi:type="string">float</TYPE>
+						<DEFAULT xsi:type="string">0.001</DEFAULT>
+						<READONLY xsi:type="boolean">False</READONLY>
+						<GROUP xsi:type="string">stepSize</GROUP>
+						<GROUP-VALUE xsi:type="string">individual</GROUP-VALUE>
+					</PROP>
+				</PROPERTIES>
+				<JOBS xsi:type="jobDescriptorSet">
+					<JOB format-rev="2" xsi:type="jobDescriptor">
+						<NAME xsi:type="string">GetSimulationTime</NAME>
+						<PARAMETERS xsi:type="parameterDescriptorSet"/>
+						<DESCRIPTION xsi:type="string">Returns the current simulation time</DESCRIPTION>
+						<RETURN xsi:type="propertyDescriptor">
+							<NAME xsi:type="string">result</NAME>
+							<DESCRIPTION xsi:type="string">current simulation time</DESCRIPTION>
+							<TYPE xsi:type="string">float</TYPE>
+							<READONLY xsi:type="boolean">False</READONLY>
+						</RETURN>
+					</JOB>
+					<JOB format-rev="2" xsi:type="jobDescriptor">
+						<NAME xsi:type="string">StartSimulation</NAME>
+						<PARAMETERS xsi:type="parameterDescriptorSet"/>
+						<DESCRIPTION xsi:type="string">May be used to start the simulation within a package, e.g., if the simulation isn't started automatically upon package start (see test bench option)</DESCRIPTION>
+						<RETURN xsi:type="propertyDescriptor">
+							<NAME xsi:type="string">result</NAME>
+							<DESCRIPTION xsi:type="string">No return value</DESCRIPTION>
+							<TYPE xsi:type="string">/</TYPE>
+							<READONLY xsi:type="boolean">False</READONLY>
+						</RETURN>
+					</JOB>
+					<JOB format-rev="2" xsi:type="jobDescriptor">
+						<NAME xsi:type="string">StopSimulation</NAME>
+						<PARAMETERS xsi:type="parameterDescriptorSet"/>
+						<DESCRIPTION xsi:type="string">May be used to stop the simulation within a package</DESCRIPTION>
+						<RETURN xsi:type="propertyDescriptor">
+							<NAME xsi:type="string">result</NAME>
+							<DESCRIPTION xsi:type="string">current simulation time</DESCRIPTION>
+							<TYPE xsi:type="string">float</TYPE>
+							<READONLY xsi:type="boolean">False</READONLY>
+						</RETURN>
+					</JOB>
+				</JOBS>
+			</DVALUE>
+		</PORT-DESCRIPTOR>
+	</PORT-DESCRIPTORS>
+</TOOLING>

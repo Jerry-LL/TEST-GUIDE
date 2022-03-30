@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PACKAGE format-rev="7" prog-version="2020.4.104116+84027857f9cf-FeatureSet" xmlns="http://www.tracetronic.de/xml/ecu-test" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tracetronic.de/xml/ecu-test package.xsd">
+	<INFORMATION format-rev="2" xsi:type="packageInfo">
+		<DESCRIPTION xsi:type="string"/>
+		<VERSION xsi:type="string"/>
+		<ALTERNATE-CALL-REPRESENTATION-ACTION-FIELD-TEMPLATE xsi:type="string"/>
+		<ALTERNATE-CALL-REPRESENTATION-EXPECTATION-FIELD-TEMPLATE xsi:type="string"/>
+	</INFORMATION>
+	<MAPPING format-rev="1" xsi:type="localMappingSpace">
+		<MAPPING-ITEM format-rev="2" xsi:type="mappingItem">
+			<ID xsi:type="string">StopSimulation</ID>
+			<XACCESS xsi:type="xaJob">
+				<PORT-ID xsi:type="string">MDL01</PORT-ID>
+				<JOB-NAME xsi:type="string">StopSimulation</JOB-NAME>
+			</XACCESS>
+		</MAPPING-ITEM>
+	</MAPPING>
+	<TESTSTEPS xsi:type="testCase">
+		<TESTSTEP format-rev="4" id="d320350b-bf09-4b52-83e5-051b913151a7" xsi:type="tsJob">
+			<MAPPING-REF xsi:type="string">StopSimulation</MAPPING-REF>
+		</TESTSTEP>
+	</TESTSTEPS>
+</PACKAGE>

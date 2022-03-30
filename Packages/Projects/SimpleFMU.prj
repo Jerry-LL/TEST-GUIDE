@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PROJECT format-rev="10" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<NAME xsi:type="string">Project</NAME>
+	<ENABLED xsi:type="boolean">True</ENABLED>
+	<REPORTING xsi:type="boolean">True</REPORTING>
+	<ID xsi:type="string">a7ba7b2c019011eb8217a0510b3f5911</ID>
+	<COMPONENTS>
+		<COMPONENT format-rev="10" xsi:type="subproject">
+			<NAME xsi:type="string">You need to build the TestFMU.fmu from the python sources before running this project</NAME>
+			<ENABLED xsi:type="boolean">True</ENABLED>
+			<REPORTING xsi:type="boolean">True</REPORTING>
+			<ID xsi:type="string">2ced42fa8ca711ebb3defc7774d1abf9</ID>
+			<COMPONENTS/>
+		</COMPONENT>
+		<COMPONENT format-rev="6" xsi:type="configChange">
+			<NAME xsi:type="string">Change configuration</NAME>
+			<ENABLED xsi:type="boolean">True</ENABLED>
+			<REPORTING xsi:type="boolean">True</REPORTING>
+			<ID xsi:type="string">22eaecb18ca711eba026fc7774d1abf9</ID>
+			<LOAD-TEST-CONFIG xsi:type="string">FMUs/SimpleFMU.tcf</LOAD-TEST-CONFIG>
+			<LOAD-TEST-BENCH-CONFIG xsi:type="string">FMU_auto_sim.tbc</LOAD-TEST-BENCH-CONFIG>
+			<TOOL-TREATMENTS/>
+		</COMPONENT>
+		<COMPONENT format-rev="5" xsi:type="packageTest">
+			<NAME xsi:type="string">SimpleFMU_StimulationAndRecording</NAME>
+			<ENABLED xsi:type="boolean">True</ENABLED>
+			<REPORTING xsi:type="boolean">True</REPORTING>
+			<ID xsi:type="string">22eaecb38ca711eb8e9ffc7774d1abf9</ID>
+			<COMPONENTS/>
+			<PACKAGE-REF format-rev="1" xsi:type="packageRef">
+				<PACKAGE-PATH xsi:type="string">../SimpleFMU/SimpleFMU_StimulationAndRecording.pkg</PACKAGE-PATH>
+			</PACKAGE-REF>
+		</COMPONENT>
+	</COMPONENTS>
+</PROJECT>

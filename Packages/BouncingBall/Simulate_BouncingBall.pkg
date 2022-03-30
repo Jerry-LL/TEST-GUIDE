@@ -1,0 +1,765 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PACKAGE format-rev="7" prog-version="2021.1.109672+ff711e4fe842" xmlns="http://www.tracetronic.de/xml/ecu-test" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tracetronic.de/xml/ecu-test package.xsd">
+	<INFORMATION format-rev="2" xsi:type="packageInfo">
+		<DESCRIPTION xsi:type="string"/>
+		<VERSION xsi:type="string"/>
+		<ALTERNATE-CALL-REPRESENTATION-ACTION-FIELD-TEMPLATE xsi:type="string"/>
+		<ALTERNATE-CALL-REPRESENTATION-EXPECTATION-FIELD-TEMPLATE xsi:type="string"/>
+	</INFORMATION>
+	<VARIABLES xsi:type="variableContainer">
+		<VARIABLE format-rev="1" in="true" xsi:type="variable">
+			<NAME xsi:type="string">PAR_acceleration</NAME>
+			<DESCRIPTION xsi:type="string">Acceleration on ball</DESCRIPTION>
+			<DEFAULT-VALUE xsi:type="texttable">
+				<DATA xsi:type="string">Gravity Earth</DATA>
+				<TEXT-LIST>
+					<ELEMENT xsi:type="string">Gravity Earth</ELEMENT>
+					<ELEMENT xsi:type="string">Gravity Moon</ELEMENT>
+					<ELEMENT xsi:type="string">Ridiculously high gravity</ELEMENT>
+				</TEXT-LIST>
+			</DEFAULT-VALUE>
+		</VARIABLE>
+		<VARIABLE format-rev="1" xsi:type="variable">
+			<NAME xsi:type="string">VAR_acceleration</NAME>
+			<DESCRIPTION xsi:type="string">Value of the local acceleration due to gravity.</DESCRIPTION>
+			<DEFAULT-VALUE format-rev="1" xsi:type="value">
+				<DATA xsi:type="float">-9.81</DATA>
+				<TEXTDATA xsi:type="string">-9.81</TEXTDATA>
+			</DEFAULT-VALUE>
+		</VARIABLE>
+		<VARIABLE format-rev="1" xsi:type="variable">
+			<NAME xsi:type="string">VAR_tolerance</NAME>
+			<DESCRIPTION xsi:type="string">Tolerance of ball position limits</DESCRIPTION>
+			<DEFAULT-VALUE format-rev="1" xsi:type="value">
+				<DATA xsi:type="float">0.05</DATA>
+				<TEXTDATA xsi:type="string">0.05</TEXTDATA>
+			</DEFAULT-VALUE>
+		</VARIABLE>
+	</VARIABLES>
+	<MAPPING format-rev="1" xsi:type="localMappingSpace">
+		<MAPPING-ITEM format-rev="2" xsi:type="mappingItem">
+			<ID xsi:type="string">Plant model/e</ID>
+			<XACCESS format-rev="2" xsi:type="xaModelValueVariable">
+				<MAPPING-ENUM xsi:type="vtabInfoEmpty"/>
+				<MODEL-KEY xsi:type="string">Plant model</MODEL-KEY>
+				<VARIABLE-PATH xsi:type="string">e</VARIABLE-PATH>
+			</XACCESS>
+		</MAPPING-ITEM>
+		<MAPPING-ITEM format-rev="2" xsi:type="mappingItem">
+			<ID xsi:type="string">Plant model/g</ID>
+			<XACCESS format-rev="2" xsi:type="xaModelValueVariable">
+				<MAPPING-ENUM xsi:type="vtabInfoEmpty"/>
+				<MODEL-KEY xsi:type="string">Plant model</MODEL-KEY>
+				<VARIABLE-PATH xsi:type="string">g</VARIABLE-PATH>
+			</XACCESS>
+		</MAPPING-ITEM>
+		<MAPPING-ITEM format-rev="2" xsi:type="mappingItem">
+			<ID xsi:type="string">Plant model/h</ID>
+			<XACCESS format-rev="2" xsi:type="xaModelSignal">
+				<MAPPING-ENUM xsi:type="vtabInfoEmpty"/>
+				<MODEL-KEY xsi:type="string">Plant model</MODEL-KEY>
+				<VARIABLE-PATH xsi:type="string">h</VARIABLE-PATH>
+			</XACCESS>
+		</MAPPING-ITEM>
+		<MAPPING-ITEM format-rev="2" xsi:type="mappingItem">
+			<ID xsi:type="string">Plant model/v</ID>
+			<XACCESS format-rev="2" xsi:type="xaModelSignal">
+				<MAPPING-ENUM xsi:type="vtabInfoEmpty"/>
+				<MODEL-KEY xsi:type="string">Plant model</MODEL-KEY>
+				<VARIABLE-PATH xsi:type="string">v</VARIABLE-PATH>
+			</XACCESS>
+		</MAPPING-ITEM>
+		<MAPPING-ITEM format-rev="2" xsi:type="mappingItem">
+			<ID xsi:type="string">Plant model/v_min</ID>
+			<XACCESS format-rev="2" xsi:type="xaModelValueVariable">
+				<MAPPING-ENUM xsi:type="vtabInfoEmpty"/>
+				<MODEL-KEY xsi:type="string">Plant model</MODEL-KEY>
+				<VARIABLE-PATH xsi:type="string">v_min</VARIABLE-PATH>
+			</XACCESS>
+		</MAPPING-ITEM>
+	</MAPPING>
+	<TRACE-RECORDING format-rev="2" xsi:type="recordingManager">
+		<SIGNAL-GROUPS>
+			<ELEMENT format-rev="2" xsi:type="signalGroup">
+				<NAME xsi:type="string">Plant model</NAME>
+				<DESCRIPTION xsi:type="string"/>
+				<SIGNALS>
+					<ELEMENT xsi:type="signal">
+						<MAPPING-REF xsi:type="string">Plant model/v_min</MAPPING-REF>
+					</ELEMENT>
+					<ELEMENT xsi:type="signal">
+						<MAPPING-REF xsi:type="string">Plant model/g</MAPPING-REF>
+					</ELEMENT>
+					<ELEMENT xsi:type="signal">
+						<MAPPING-REF xsi:type="string">Plant model/e</MAPPING-REF>
+					</ELEMENT>
+					<ELEMENT xsi:type="signal">
+						<MAPPING-REF xsi:type="string">Plant model/v</MAPPING-REF>
+					</ELEMENT>
+					<ELEMENT xsi:type="signal">
+						<MAPPING-REF xsi:type="string">Plant model/h</MAPPING-REF>
+					</ELEMENT>
+				</SIGNALS>
+			</ELEMENT>
+		</SIGNAL-GROUPS>
+		<RECORDING-GROUP>
+			<ELEMENT format-rev="3" xsi:type="recordingGroup">
+				<NAME xsi:type="string">Recording group for Plant model</NAME>
+				<UUID xsi:type="string">1cde8878fe7b11eaa9eba0510b3f5911</UUID>
+				<RECORDING-MODE xsi:type="integer">2</RECORDING-MODE>
+				<SIGNAL-GROUP-REF>Plant model</SIGNAL-GROUP-REF>
+			</ELEMENT>
+		</RECORDING-GROUP>
+		<SYNCHRONISATION-CONFIG xsi:type="syncConfig"/>
+	</TRACE-RECORDING>
+	<TESTSTEPS xsi:type="testCase">
+		<TESTSTEP format-rev="2" id="250954fa-25fc-4f55-be34-ebbca378d030" name="TsPrecondBlock" xsi:type="utility-fd32d18b-c16d-45ca-9934-f8bffe11fcc3">
+			<ACTION xsi:type="I18NItem">
+				<MULTILANGDATA>
+					<ELEMENT dkey="de_DE">
+						<DVALUE xsi:type="string">Precondition</DVALUE>
+					</ELEMENT>
+					<ELEMENT dkey="en_US">
+						<DVALUE xsi:type="string">Precondition</DVALUE>
+					</ELEMENT>
+				</MULTILANGDATA>
+				<INITIAL-LANGUAGE xsi:type="string">de_DE</INITIAL-LANGUAGE>
+			</ACTION>
+			<TESTSTEP format-rev="3" id="5b32e870-3ea6-4d9a-bdf2-d8423a808e64" name="TsBlock" xsi:type="utility-2752ad1e-4fef-11dc-81d4-0013728784ee">
+				<ACTION xsi:type="I18NItem">
+					<MULTILANGDATA>
+						<ELEMENT dkey="en_US">
+							<DVALUE xsi:type="string">Select value for gravity</DVALUE>
+						</ELEMENT>
+					</MULTILANGDATA>
+					<INITIAL-LANGUAGE xsi:type="string">en_US</INITIAL-LANGUAGE>
+				</ACTION>
+				<TESTSTEP id="1ad8679f-59b8-4416-8340-12676d2f2096" name="TsSwitchCase" xsi:type="utility-83517ac0-9f53-11dd-9c62-001b24fa84be">
+					<TESTSTEP id="62cd97c5-7108-4359-b771-e7871553df41" xsi:type="caseNode">
+						<TESTSTEP format-rev="3" id="32ceaa97-95fa-4ee4-9d6a-5a02b8a0addf" name="TsCalculation" xsi:type="utility-4115fa00-5f3c-11df-8a53-001c233b3528">
+							<VARIABLE-REFS>
+								<VARIABLE-NAME dkey="default">
+									<DVALUE xsi:type="string">VAR_acceleration</DVALUE>
+								</VARIABLE-NAME>
+							</VARIABLE-REFS>
+							<FORMULA xsi:type="unaryOpBaseExpression">
+								<NAME xsi:type="string">UNARY_NEGATIVE</NAME>
+								<COMPONENT format-rev="1" xsi:type="valueBaseExpression">
+									<VALUE xsi:type="float">9.81</VALUE>
+								</COMPONENT>
+							</FORMULA>
+						</TESTSTEP>
+						<CASE-VALUE format-rev="1" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="string">Gravity Earth</VALUE>
+						</CASE-VALUE>
+						<IS-DEFAULT xsi:type="boolean">False</IS-DEFAULT>
+					</TESTSTEP>
+					<TESTSTEP id="e6b8e3eb-4481-4c98-9c66-ac6bfe8c0869" xsi:type="caseNode">
+						<TESTSTEP format-rev="3" id="f0029cb1-befe-4b62-a65a-8b79e2e0ce64" name="TsCalculation" xsi:type="utility-4115fa00-5f3c-11df-8a53-001c233b3528">
+							<VARIABLE-REFS>
+								<VARIABLE-NAME dkey="default">
+									<DVALUE xsi:type="string">VAR_acceleration</DVALUE>
+								</VARIABLE-NAME>
+							</VARIABLE-REFS>
+							<FORMULA xsi:type="unaryOpBaseExpression">
+								<NAME xsi:type="string">UNARY_NEGATIVE</NAME>
+								<COMPONENT format-rev="1" xsi:type="valueBaseExpression">
+									<VALUE xsi:type="float">1.62</VALUE>
+								</COMPONENT>
+							</FORMULA>
+						</TESTSTEP>
+						<CASE-VALUE format-rev="1" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="string">Gravity Moon</VALUE>
+						</CASE-VALUE>
+						<IS-DEFAULT xsi:type="boolean">False</IS-DEFAULT>
+					</TESTSTEP>
+					<TESTSTEP id="395c7d58-aaa2-422d-9639-6530742f79d7" xsi:type="caseNode">
+						<TESTSTEP format-rev="3" id="bbf6662a-d2d1-46e9-843e-948fa8ae63b8" name="TsCalculation" xsi:type="utility-4115fa00-5f3c-11df-8a53-001c233b3528">
+							<VARIABLE-REFS>
+								<VARIABLE-NAME dkey="default">
+									<DVALUE xsi:type="string">VAR_acceleration</DVALUE>
+								</VARIABLE-NAME>
+							</VARIABLE-REFS>
+							<FORMULA xsi:type="unaryOpBaseExpression">
+								<NAME xsi:type="string">UNARY_NEGATIVE</NAME>
+								<COMPONENT format-rev="1" xsi:type="valueBaseExpression">
+									<VALUE xsi:type="integer">100</VALUE>
+								</COMPONENT>
+							</FORMULA>
+						</TESTSTEP>
+						<CASE-VALUE format-rev="1" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="string">Ridiculously high gravity</VALUE>
+						</CASE-VALUE>
+						<IS-DEFAULT xsi:type="boolean">False</IS-DEFAULT>
+					</TESTSTEP>
+					<TESTSTEP id="b87c606b-08e2-42ac-91dc-21a09febd8e7" xsi:type="caseNode">
+						<CASE-VALUE format-rev="1" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="integer">0</VALUE>
+						</CASE-VALUE>
+						<IS-DEFAULT xsi:type="boolean">True</IS-DEFAULT>
+					</TESTSTEP>
+					<SWITCH-VALUE xsi:type="varBaseExpression">
+						<NAME xsi:type="string">PAR_acceleration</NAME>
+					</SWITCH-VALUE>
+				</TESTSTEP>
+			</TESTSTEP>
+			<TESTSTEP format-rev="3" id="17eff822-2807-44f2-afaf-67efb6662ae0" name="TsBlock" xsi:type="utility-2752ad1e-4fef-11dc-81d4-0013728784ee">
+				<ACTION xsi:type="I18NItem">
+					<MULTILANGDATA>
+						<ELEMENT dkey="en_US">
+							<DVALUE xsi:type="string">Write Parameters</DVALUE>
+						</ELEMENT>
+					</MULTILANGDATA>
+					<INITIAL-LANGUAGE xsi:type="string">en_US</INITIAL-LANGUAGE>
+				</ACTION>
+				<TESTSTEP id="2b0714fd-541b-469e-a218-648864c86ed1" xsi:type="tsWrite">
+					<MAPPING-REF xsi:type="string">Plant model/g</MAPPING-REF>
+					<VALUE xsi:type="expressionValue">
+						<DATA xsi:type="varBaseExpression">
+							<NAME xsi:type="string">VAR_acceleration</NAME>
+						</DATA>
+					</VALUE>
+					<METRIC format-rev="1" xsi:type="metricInfo">
+						<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+						<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+					</METRIC>
+				</TESTSTEP>
+				<TESTSTEP id="09aad159-5685-4968-b772-a506ca680758" xsi:type="tsWrite">
+					<MAPPING-REF xsi:type="string">Plant model/e</MAPPING-REF>
+					<VALUE xsi:type="expressionValue">
+						<DATA format-rev="1" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="float">0.7</VALUE>
+						</DATA>
+					</VALUE>
+					<METRIC format-rev="1" xsi:type="metricInfo">
+						<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+						<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+					</METRIC>
+				</TESTSTEP>
+			</TESTSTEP>
+		</TESTSTEP>
+		<TESTSTEP format-rev="3" id="e3632787-b7bf-4f4c-b9fa-9144bcbc45c5" name="TsBlock" xsi:type="utility-2752ad1e-4fef-11dc-81d4-0013728784ee">
+			<ACTION xsi:type="I18NItem">
+				<MULTILANGDATA>
+					<ELEMENT dkey="de_DE">
+						<DVALUE xsi:type="string">Action</DVALUE>
+					</ELEMENT>
+					<ELEMENT dkey="en_US">
+						<DVALUE xsi:type="string">Action</DVALUE>
+					</ELEMENT>
+				</MULTILANGDATA>
+				<INITIAL-LANGUAGE xsi:type="string">de_DE</INITIAL-LANGUAGE>
+			</ACTION>
+			<TESTSTEP format-rev="3" id="033e6381-44df-42ca-9df0-6195c1463710" name="TsBlock" xsi:type="utility-2752ad1e-4fef-11dc-81d4-0013728784ee">
+				<ACTION xsi:type="I18NItem">
+					<MULTILANGDATA>
+						<ELEMENT dkey="en_US">
+							<DVALUE xsi:type="string">Wait for simulation to finish</DVALUE>
+						</ELEMENT>
+					</MULTILANGDATA>
+					<INITIAL-LANGUAGE xsi:type="string">en_US</INITIAL-LANGUAGE>
+				</ACTION>
+				<TESTSTEP id="ef6452ce-0aae-4edf-9115-d8b3e7123a59" name="TsWait" xsi:type="utility-62d5a961-4fef-11dc-9944-0013728784ee">
+					<TIME format-rev="1" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="integer">5</VALUE>
+					</TIME>
+					<UNIT xsi:type="string">s</UNIT>
+				</TESTSTEP>
+			</TESTSTEP>
+		</TESTSTEP>
+		<TESTSTEP format-rev="2" id="1b7c37b7-33d8-4374-aaa2-a3e42b0acdba" name="TsPostcondBlock" xsi:type="utility-0d2ac4dc-1d8f-4182-81d1-a5d5ca74a44f">
+			<ACTION xsi:type="I18NItem">
+				<MULTILANGDATA>
+					<ELEMENT dkey="de_DE">
+						<DVALUE xsi:type="string">Postcondition</DVALUE>
+					</ELEMENT>
+					<ELEMENT dkey="en_US">
+						<DVALUE xsi:type="string">Postcondition</DVALUE>
+					</ELEMENT>
+				</MULTILANGDATA>
+				<INITIAL-LANGUAGE xsi:type="string">de_DE</INITIAL-LANGUAGE>
+			</ACTION>
+			<EFFECT-TEST-RESULT xsi:type="boolean">False</EFFECT-TEST-RESULT>
+		</TESTSTEP>
+	</TESTSTEPS>
+	<TRACE-ANALYSES format-rev="1" xsi:type="traceAnalyses">
+		<TRACE-ANALYSIS format-rev="3" uuid="1e9ec9f8fe7b11ea95e6a0510b3f5911" xsi:type="traceAnalysis">
+			<NAME xsi:type="string">Trace analysis 1</NAME>
+			<ANALYSISITEM format-rev="1" uuid="1e9ec9f9fe7b11eaa240a0510b3f5911" xsi:type="episode">
+				<NAME xsi:type="string">Plots</NAME>
+				<ANALYSISITEM uuid="ab181286451811ebace9b808cf5ca08e" xsi:type="analysisBlock">
+					<NAME xsi:type="string">Check ball position greater than 0.2</NAME>
+					<ANALYSISITEM format-rev="1" uuid="d8d83c5a144511eb9783fc7774d1abf9" xsi:type="calculation">
+						<ANALYSISITEM format-rev="4" uuid="3564dc2cfe7b11ea9ddaa0510b3f5911" xsi:type="plotItem">
+							<NAME xsi:type="string">Ball position and velocity</NAME>
+							<SUB-PLOTS>
+								<SUB-PLOT format-rev="1" xsi:type="plotSubPlot">
+									<TYPE xsi:type="string">common</TYPE>
+									<ENTITIES>
+										<ENTITY format-rev="1" isTraceStepSignal="False" xsi:type="plotSignalEntity">
+											<NAME xsi:type="string">Ball_position</NAME>
+											<AXIS xsi:type="integer">0</AXIS>
+										</ENTITY>
+									</ENTITIES>
+									<AXES>
+										<AXIS xsi:type="plotAxis"/>
+									</AXES>
+								</SUB-PLOT>
+								<SUB-PLOT format-rev="1" xsi:type="plotSubPlot">
+									<TYPE xsi:type="string">separate</TYPE>
+									<ENTITIES/>
+									<AXES>
+										<AXIS xsi:type="plotAxis"/>
+									</AXES>
+								</SUB-PLOT>
+								<SUB-PLOT format-rev="1" xsi:type="plotSubPlot">
+									<TYPE xsi:type="string">common</TYPE>
+									<ENTITIES>
+										<ENTITY format-rev="1" isTraceStepSignal="False" xsi:type="plotSignalEntity">
+											<NAME xsi:type="string">Ball_velocity</NAME>
+											<AXIS xsi:type="integer">0</AXIS>
+										</ENTITY>
+									</ENTITIES>
+									<AXES>
+										<AXIS xsi:type="plotAxis"/>
+									</AXES>
+								</SUB-PLOT>
+							</SUB-PLOTS>
+							<UNUSED-SIGNALS/>
+							<SUB-CONFIG-OVERVIEW xsi:type="plotSubConfig">
+								<CONDITION xsi:type="string">NONE</CONDITION>
+								<MAX-NUMBER format-rev="1" xsi:type="valueBaseExpression">
+									<VALUE xsi:type="integer">5</VALUE>
+								</MAX-NUMBER>
+								<EXPAND-XLIMITS-LEFT format-rev="1" xsi:type="valueBaseExpression">
+									<VALUE xsi:type="float">0.5</VALUE>
+								</EXPAND-XLIMITS-LEFT>
+								<EXPAND-XLIMITS-RIGHT format-rev="1" xsi:type="valueBaseExpression">
+									<VALUE xsi:type="float">0.5</VALUE>
+								</EXPAND-XLIMITS-RIGHT>
+							</SUB-CONFIG-OVERVIEW>
+							<SUB-CONFIG-PARENT-CONTEXT xsi:type="plotSubConfig">
+								<CONDITION xsi:type="string">NEVER</CONDITION>
+								<MAX-NUMBER format-rev="1" xsi:type="valueBaseExpression">
+									<VALUE xsi:type="integer">5</VALUE>
+								</MAX-NUMBER>
+								<EXPAND-XLIMITS-LEFT format-rev="1" xsi:type="valueBaseExpression">
+									<VALUE xsi:type="float">0.5</VALUE>
+								</EXPAND-XLIMITS-LEFT>
+								<EXPAND-XLIMITS-RIGHT format-rev="1" xsi:type="valueBaseExpression">
+									<VALUE xsi:type="float">0.5</VALUE>
+								</EXPAND-XLIMITS-RIGHT>
+							</SUB-CONFIG-PARENT-CONTEXT>
+							<SUB-CONFIG-DETAILS xsi:type="plotSubConfig">
+								<CONDITION xsi:type="string">NEVER</CONDITION>
+								<MAX-NUMBER format-rev="1" xsi:type="valueBaseExpression">
+									<VALUE xsi:type="integer">5</VALUE>
+								</MAX-NUMBER>
+								<EXPAND-XLIMITS-LEFT format-rev="1" xsi:type="valueBaseExpression">
+									<VALUE xsi:type="float">0.5</VALUE>
+								</EXPAND-XLIMITS-LEFT>
+								<EXPAND-XLIMITS-RIGHT format-rev="1" xsi:type="valueBaseExpression">
+									<VALUE xsi:type="float">0.5</VALUE>
+								</EXPAND-XLIMITS-RIGHT>
+							</SUB-CONFIG-DETAILS>
+							<SIGNAL-NAME-TYPE xsi:type="string">generic</SIGNAL-NAME-TYPE>
+							<LEGEND-LOCATION xsi:type="integer">11</LEGEND-LOCATION>
+						</ANALYSISITEM>
+						<FORMULA xsi:type="string">Ball_position &gt; 0.2</FORMULA>
+						<EXPECTATION xsi:type="manualExpression">
+							<BASE-EXPRESSION xsi:type="varBaseExpression">
+								<NAME xsi:type="string">value</NAME>
+							</BASE-EXPRESSION>
+						</EXPECTATION>
+						<EXPECTATION-MODE format-rev="1" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="string">once</VALUE>
+						</EXPECTATION-MODE>
+						<REPORT-CONFIG xsi:type="trcpReportConfig">
+							<MAX-SPOTS xsi:type="integer">100</MAX-SPOTS>
+							<MIN-DELTA xsi:type="float">0.0</MIN-DELTA>
+						</REPORT-CONFIG>
+					</ANALYSISITEM>
+				</ANALYSISITEM>
+				<ANALYSISITEM uuid="cba6e63a451811eb9d22b808cf5ca08e" xsi:type="analysisBlock">
+					<NAME xsi:type="string">Check decreasing ball height depending on the gravity</NAME>
+					<ANALYSISITEM uuid="f2f45036451811ebb0c3b808cf5ca08e" xsi:type="analysisBlock">
+						<NAME xsi:type="string">Calculate upper limit</NAME>
+						<ANALYSISITEM format-rev="1" uuid="156cee12405511eb9ebf0cdd2468919b" xsi:type="SwitchDefCase">
+							<ANALYSISITEM uuid="1cbdc298405511eb97de0cdd2468919b" xsi:type="taCaseDefNode">
+								<ANALYSISITEM format-rev="1" uuid="11a918ec405611ebb2150cdd2468919b" xsi:type="triggerBlock">
+									<NAME xsi:type="string">Only until motion ceases</NAME>
+									<ANALYSISITEM format-rev="1" uuid="7af56c34405211eb81640cdd2468919b" xsi:type="calculation">
+										<FORMULA xsi:type="string">1/2.67**2 * (Time(Ball_position) - 2.67)**2</FORMULA>
+										<SAVE-IN xsi:type="string">UpperLimit</SAVE-IN>
+										<REPORT-CONFIG xsi:type="trcpReportConfig">
+											<MAX-SPOTS xsi:type="integer">100</MAX-SPOTS>
+											<MIN-DELTA xsi:type="float">0.0</MIN-DELTA>
+										</REPORT-CONFIG>
+									</ANALYSISITEM>
+									<START-CONDITION xsi:type="string">Time(Ball_position) &lt; 2.67</START-CONDITION>
+									<STOP-CONDITION xsi:type="string"/>
+									<REPORT-LIMIT-TO-MAX-NUMBER xsi:type="boolean">True</REPORT-LIMIT-TO-MAX-NUMBER>
+									<REPORT-MAX-NUMBER format-rev="1" xsi:type="valueBaseExpression">
+										<VALUE xsi:type="integer">10</VALUE>
+									</REPORT-MAX-NUMBER>
+								</ANALYSISITEM>
+								<CASE-VALUE format-rev="1" xsi:type="valueBaseExpression">
+									<VALUE xsi:type="string">EARTH</VALUE>
+								</CASE-VALUE>
+							</ANALYSISITEM>
+							<ANALYSISITEM uuid="7960a986405511ebbf7c0cdd2468919b" xsi:type="taCaseDefNode">
+								<ANALYSISITEM format-rev="1" uuid="7aeee8d4405511eb912e0cdd2468919b" xsi:type="calculation">
+									<FORMULA xsi:type="string">1/6.44**2 * (Time(Ball_position) - 6.44)**2</FORMULA>
+									<SAVE-IN xsi:type="string">UpperLimit</SAVE-IN>
+									<REPORT-CONFIG xsi:type="trcpReportConfig">
+										<MAX-SPOTS xsi:type="integer">100</MAX-SPOTS>
+										<MIN-DELTA xsi:type="float">0.0</MIN-DELTA>
+									</REPORT-CONFIG>
+								</ANALYSISITEM>
+								<CASE-VALUE format-rev="1" xsi:type="valueBaseExpression">
+									<VALUE xsi:type="string">MOON</VALUE>
+								</CASE-VALUE>
+							</ANALYSISITEM>
+							<ANALYSISITEM uuid="8b432bc6405511eba1dc0cdd2468919b" xsi:type="taCaseDefNode">
+								<ANALYSISITEM format-rev="1" uuid="2de772ee405611ebb0b20cdd2468919b" xsi:type="triggerBlock">
+									<NAME xsi:type="string">Only until motion ceases</NAME>
+									<ANALYSISITEM format-rev="1" uuid="8d1b265e405511eba2da0cdd2468919b" xsi:type="calculation">
+										<FORMULA xsi:type="string">1/0.87**2 * (Time(Ball_position) - 0.87)**2</FORMULA>
+										<SAVE-IN xsi:type="string">UpperLimit</SAVE-IN>
+										<REPORT-CONFIG xsi:type="trcpReportConfig">
+											<MAX-SPOTS xsi:type="integer">100</MAX-SPOTS>
+											<MIN-DELTA xsi:type="float">0.0</MIN-DELTA>
+										</REPORT-CONFIG>
+									</ANALYSISITEM>
+									<START-CONDITION xsi:type="string">Time(Ball_position) &lt; 0.87</START-CONDITION>
+									<STOP-CONDITION xsi:type="string"/>
+									<REPORT-LIMIT-TO-MAX-NUMBER xsi:type="boolean">True</REPORT-LIMIT-TO-MAX-NUMBER>
+									<REPORT-MAX-NUMBER format-rev="1" xsi:type="valueBaseExpression">
+										<VALUE xsi:type="integer">10</VALUE>
+									</REPORT-MAX-NUMBER>
+								</ANALYSISITEM>
+								<CASE-VALUE format-rev="1" xsi:type="valueBaseExpression">
+									<VALUE xsi:type="string">RIDICULOUS</VALUE>
+								</CASE-VALUE>
+							</ANALYSISITEM>
+							<ANALYSISITEM uuid="156cee13405511eba2c50cdd2468919b" xsi:type="taCaseDefNode">
+								<CASE-VALUE format-rev="1" xsi:type="valueBaseExpression">
+									<VALUE xsi:type="integer">0</VALUE>
+								</CASE-VALUE>
+								<IS-DEFAULT xsi:type="boolean">True</IS-DEFAULT>
+							</ANALYSISITEM>
+							<SWITCH-VALUE xsi:type="varBaseExpression">
+								<NAME xsi:type="string">ACCELERATION</NAME>
+							</SWITCH-VALUE>
+						</ANALYSISITEM>
+						<ANALYSISITEM format-rev="1" uuid="9c1a2fc0451a11eba677b808cf5ca08e" xsi:type="calculation">
+							<FORMULA xsi:type="string">UpperLimit + VAR_tolerance</FORMULA>
+							<SAVE-IN xsi:type="string">UpperLimitWithTolerance</SAVE-IN>
+							<REPORT-CONFIG xsi:type="trcpReportConfig">
+								<MAX-SPOTS xsi:type="integer">100</MAX-SPOTS>
+								<MIN-DELTA xsi:type="float">0.0</MIN-DELTA>
+							</REPORT-CONFIG>
+						</ANALYSISITEM>
+					</ANALYSISITEM>
+					<ANALYSISITEM uuid="fa5b85ec451811eb97efb808cf5ca08e" xsi:type="analysisBlock">
+						<NAME xsi:type="string">Set lower limit to zero</NAME>
+						<ANALYSISITEM format-rev="1" uuid="5fa4548c405511ebb8f30cdd2468919b" xsi:type="calculation">
+							<FORMULA xsi:type="string">0 * Ball_position</FORMULA>
+							<SAVE-IN xsi:type="string">LowerLimit</SAVE-IN>
+							<REPORT-CONFIG xsi:type="trcpReportConfig">
+								<MAX-SPOTS xsi:type="integer">100</MAX-SPOTS>
+								<MIN-DELTA xsi:type="float">0.0</MIN-DELTA>
+							</REPORT-CONFIG>
+						</ANALYSISITEM>
+						<ANALYSISITEM format-rev="1" uuid="b676f176451a11ebbf51b808cf5ca08e" xsi:type="calculation">
+							<FORMULA xsi:type="string">LowerLimit - VAR_tolerance</FORMULA>
+							<SAVE-IN xsi:type="string">LowerLimitWithTolerance</SAVE-IN>
+							<REPORT-CONFIG xsi:type="trcpReportConfig">
+								<MAX-SPOTS xsi:type="integer">100</MAX-SPOTS>
+								<MIN-DELTA xsi:type="float">0.0</MIN-DELTA>
+							</REPORT-CONFIG>
+						</ANALYSISITEM>
+					</ANALYSISITEM>
+					<ANALYSISITEM uuid="09ae26b8451911eb9cb0b808cf5ca08e" xsi:type="analysisBlock">
+						<NAME xsi:type="string">Check ball position in limits</NAME>
+						<ANALYSISITEM format-rev="2" poolRev="7" uuid="787a3a6a3fbb11eb8c640cdd2468919b" xsi:type="referencingTraceStep">
+							<NAME xsi:type="string">CheckSignalInEnvelope</NAME>
+							<ANALYSISITEM format-rev="4" uuid="6cefe1d23fbd11ebb8df0cdd2468919b" xsi:type="plotItem">
+								<NAME xsi:type="string">Plot</NAME>
+								<SUB-PLOTS>
+									<SUB-PLOT format-rev="1" xsi:type="plotSubPlot">
+										<TYPE xsi:type="string">common</TYPE>
+										<ENTITIES>
+											<ENTITY format-rev="1" isTraceStepSignal="False" xsi:type="plotSignalEntity">
+												<NAME xsi:type="string">UpperLimitWithTolerance</NAME>
+												<AXIS xsi:type="integer">0</AXIS>
+												<COLOR xsi:type="string">#FF0000</COLOR>
+											</ENTITY>
+											<ENTITY format-rev="1" isTraceStepSignal="False" xsi:type="plotSignalEntity">
+												<NAME xsi:type="string">Ball_position</NAME>
+												<AXIS xsi:type="integer">0</AXIS>
+												<COLOR xsi:type="string">#0000FF</COLOR>
+											</ENTITY>
+											<ENTITY format-rev="1" isTraceStepSignal="False" xsi:type="plotSignalEntity">
+												<NAME xsi:type="string">LowerLimitWithTolerance</NAME>
+												<AXIS xsi:type="integer">0</AXIS>
+												<COLOR xsi:type="string">#FF0000</COLOR>
+											</ENTITY>
+										</ENTITIES>
+										<AXES>
+											<AXIS xsi:type="plotAxis"/>
+										</AXES>
+									</SUB-PLOT>
+									<SUB-PLOT format-rev="1" xsi:type="plotSubPlot">
+										<TYPE xsi:type="string">separate</TYPE>
+										<ENTITIES>
+											<ENTITY format-rev="1" isTraceStepSignal="True" xsi:type="plotSignalEntity">
+												<NAME xsi:type="string">deviation</NAME>
+												<COLOR xsi:type="string">#FF8000</COLOR>
+											</ENTITY>
+										</ENTITIES>
+										<AXES>
+											<AXIS xsi:type="plotAxis"/>
+										</AXES>
+									</SUB-PLOT>
+									<SUB-PLOT format-rev="1" xsi:type="plotSubPlot">
+										<TYPE xsi:type="string">common</TYPE>
+										<ENTITIES/>
+										<AXES/>
+									</SUB-PLOT>
+								</SUB-PLOTS>
+								<UNUSED-SIGNALS>
+									<UNUSED-SIGNAL format-rev="1" isTraceStepSignal="False" xsi:type="plotSignalEntity">
+										<NAME xsi:type="string">envelope</NAME>
+										<AXIS xsi:type="integer">0</AXIS>
+									</UNUSED-SIGNAL>
+								</UNUSED-SIGNALS>
+								<SUB-CONFIG-OVERVIEW xsi:type="plotSubConfig">
+									<CONDITION xsi:type="string">NONE</CONDITION>
+									<MAX-NUMBER format-rev="1" xsi:type="valueBaseExpression">
+										<VALUE xsi:type="integer">5</VALUE>
+									</MAX-NUMBER>
+									<EXPAND-XLIMITS-LEFT format-rev="1" xsi:type="valueBaseExpression">
+										<VALUE xsi:type="float">0.5</VALUE>
+									</EXPAND-XLIMITS-LEFT>
+									<EXPAND-XLIMITS-RIGHT format-rev="1" xsi:type="valueBaseExpression">
+										<VALUE xsi:type="float">0.5</VALUE>
+									</EXPAND-XLIMITS-RIGHT>
+								</SUB-CONFIG-OVERVIEW>
+								<SUB-CONFIG-PARENT-CONTEXT xsi:type="plotSubConfig">
+									<CONDITION xsi:type="string">NEVER</CONDITION>
+									<MAX-NUMBER format-rev="1" xsi:type="valueBaseExpression">
+										<VALUE xsi:type="integer">5</VALUE>
+									</MAX-NUMBER>
+									<EXPAND-XLIMITS-LEFT format-rev="1" xsi:type="valueBaseExpression">
+										<VALUE xsi:type="float">0.5</VALUE>
+									</EXPAND-XLIMITS-LEFT>
+									<EXPAND-XLIMITS-RIGHT format-rev="1" xsi:type="valueBaseExpression">
+										<VALUE xsi:type="float">0.5</VALUE>
+									</EXPAND-XLIMITS-RIGHT>
+								</SUB-CONFIG-PARENT-CONTEXT>
+								<SUB-CONFIG-DETAILS xsi:type="plotSubConfig">
+									<CONDITION xsi:type="string">NEVER</CONDITION>
+									<MAX-NUMBER format-rev="1" xsi:type="valueBaseExpression">
+										<VALUE xsi:type="integer">5</VALUE>
+									</MAX-NUMBER>
+									<EXPAND-XLIMITS-LEFT format-rev="1" xsi:type="valueBaseExpression">
+										<VALUE xsi:type="float">0.5</VALUE>
+									</EXPAND-XLIMITS-LEFT>
+									<EXPAND-XLIMITS-RIGHT format-rev="1" xsi:type="valueBaseExpression">
+										<VALUE xsi:type="float">0.5</VALUE>
+									</EXPAND-XLIMITS-RIGHT>
+								</SUB-CONFIG-DETAILS>
+								<SIGNAL-NAME-TYPE xsi:type="string">generic</SIGNAL-NAME-TYPE>
+								<LEGEND-LOCATION xsi:type="integer">11</LEGEND-LOCATION>
+							</ANALYSISITEM>
+							<SIGNAL-BINDING xsi:type="signalBinding">
+								<PARAMETER dkey="deviation">
+									<DVALUE format-rev="1" xsi:type="signalParameter">
+										<REF-SIGNAL-NAME xsi:type="string">deviation</REF-SIGNAL-NAME>
+									</DVALUE>
+								</PARAMETER>
+								<PARAMETER dkey="max">
+									<DVALUE format-rev="1" xsi:type="signalParameter">
+										<REF-SIGNAL-NAME xsi:type="string">UpperLimit</REF-SIGNAL-NAME>
+									</DVALUE>
+								</PARAMETER>
+								<PARAMETER dkey="min">
+									<DVALUE format-rev="1" xsi:type="signalParameter">
+										<REF-SIGNAL-NAME xsi:type="string">LowerLimit</REF-SIGNAL-NAME>
+									</DVALUE>
+								</PARAMETER>
+								<PARAMETER dkey="signalToCheck">
+									<DVALUE format-rev="1" xsi:type="signalParameter">
+										<REF-SIGNAL-NAME xsi:type="string">Ball_position</REF-SIGNAL-NAME>
+									</DVALUE>
+								</PARAMETER>
+							</SIGNAL-BINDING>
+							<PARAM-ASSIGNMENTS xsi:type="trcpParameterAssignments">
+								<PARAM-ASSIGNMENTS>
+									<ASSIGNMENT dkey="startTime">
+										<DVALUE format-rev="1" xsi:type="valueBaseExpression">
+											<VALUE xsi:type="integer">0</VALUE>
+										</DVALUE>
+									</ASSIGNMENT>
+									<ASSIGNMENT dkey="tolerance">
+										<DVALUE xsi:type="varBaseExpression">
+											<NAME xsi:type="string">VAR_tolerance</NAME>
+										</DVALUE>
+									</ASSIGNMENT>
+								</PARAM-ASSIGNMENTS>
+							</PARAM-ASSIGNMENTS>
+							<REPORT-CONFIG xsi:type="trcpReportConfig">
+								<MAX-SPOTS xsi:type="integer">100</MAX-SPOTS>
+								<MIN-DELTA xsi:type="float">0.0</MIN-DELTA>
+							</REPORT-CONFIG>
+							<PROTOTYPE-ID xsi:type="string">Check/CheckSignalInEnvelope</PROTOTYPE-ID>
+						</ANALYSISITEM>
+						<ANALYSISITEM format-rev="1" uuid="b38e25cc451911ebad50b808cf5ca08e" xsi:type="calculation">
+							<ANALYSISITEM format-rev="4" uuid="1bc354e2451b11ebb760b808cf5ca08e" xsi:type="plotItem">
+								<NAME xsi:type="string">Plot</NAME>
+								<SUB-PLOTS>
+									<SUB-PLOT format-rev="1" xsi:type="plotSubPlot">
+										<TYPE xsi:type="string">common</TYPE>
+										<ENTITIES>
+											<ENTITY format-rev="1" isTraceStepSignal="False" xsi:type="plotSignalEntity">
+												<NAME xsi:type="string">UpperLimitWithTolerance</NAME>
+												<AXIS xsi:type="integer">0</AXIS>
+												<COLOR xsi:type="string">#FF0000</COLOR>
+											</ENTITY>
+											<ENTITY format-rev="1" isTraceStepSignal="False" xsi:type="plotSignalEntity">
+												<NAME xsi:type="string">Ball_position</NAME>
+												<AXIS xsi:type="integer">0</AXIS>
+												<COLOR xsi:type="string">#0000FF</COLOR>
+											</ENTITY>
+											<ENTITY format-rev="1" isTraceStepSignal="False" xsi:type="plotSignalEntity">
+												<NAME xsi:type="string">LowerLimitWithTolerance</NAME>
+												<AXIS xsi:type="integer">0</AXIS>
+												<COLOR xsi:type="string">#FF0000</COLOR>
+											</ENTITY>
+										</ENTITIES>
+										<AXES>
+											<AXIS xsi:type="plotAxis"/>
+										</AXES>
+									</SUB-PLOT>
+									<SUB-PLOT format-rev="1" xsi:type="plotSubPlot">
+										<TYPE xsi:type="string">separate</TYPE>
+										<ENTITIES/>
+										<AXES>
+											<AXIS xsi:type="plotAxis"/>
+										</AXES>
+									</SUB-PLOT>
+									<SUB-PLOT format-rev="1" xsi:type="plotSubPlot">
+										<TYPE xsi:type="string">common</TYPE>
+										<ENTITIES/>
+										<AXES/>
+									</SUB-PLOT>
+								</SUB-PLOTS>
+								<UNUSED-SIGNALS>
+									<UNUSED-SIGNAL format-rev="1" isTraceStepSignal="True" xsi:type="plotSignalEntity">
+										<NAME xsi:type="string">deviation</NAME>
+										<COLOR xsi:type="string">#FF8000</COLOR>
+									</UNUSED-SIGNAL>
+									<UNUSED-SIGNAL format-rev="1" isTraceStepSignal="False" xsi:type="plotSignalEntity">
+										<NAME xsi:type="string">envelope</NAME>
+										<AXIS xsi:type="integer">0</AXIS>
+									</UNUSED-SIGNAL>
+								</UNUSED-SIGNALS>
+								<SUB-CONFIG-OVERVIEW xsi:type="plotSubConfig">
+									<CONDITION xsi:type="string">NONE</CONDITION>
+									<MAX-NUMBER format-rev="1" xsi:type="valueBaseExpression">
+										<VALUE xsi:type="integer">5</VALUE>
+									</MAX-NUMBER>
+									<EXPAND-XLIMITS-LEFT format-rev="1" xsi:type="valueBaseExpression">
+										<VALUE xsi:type="float">0.5</VALUE>
+									</EXPAND-XLIMITS-LEFT>
+									<EXPAND-XLIMITS-RIGHT format-rev="1" xsi:type="valueBaseExpression">
+										<VALUE xsi:type="float">0.5</VALUE>
+									</EXPAND-XLIMITS-RIGHT>
+								</SUB-CONFIG-OVERVIEW>
+								<SUB-CONFIG-PARENT-CONTEXT xsi:type="plotSubConfig">
+									<CONDITION xsi:type="string">NEVER</CONDITION>
+									<MAX-NUMBER format-rev="1" xsi:type="valueBaseExpression">
+										<VALUE xsi:type="integer">5</VALUE>
+									</MAX-NUMBER>
+									<EXPAND-XLIMITS-LEFT format-rev="1" xsi:type="valueBaseExpression">
+										<VALUE xsi:type="float">0.5</VALUE>
+									</EXPAND-XLIMITS-LEFT>
+									<EXPAND-XLIMITS-RIGHT format-rev="1" xsi:type="valueBaseExpression">
+										<VALUE xsi:type="float">0.5</VALUE>
+									</EXPAND-XLIMITS-RIGHT>
+								</SUB-CONFIG-PARENT-CONTEXT>
+								<SUB-CONFIG-DETAILS xsi:type="plotSubConfig">
+									<CONDITION xsi:type="string">NEVER</CONDITION>
+									<MAX-NUMBER format-rev="1" xsi:type="valueBaseExpression">
+										<VALUE xsi:type="integer">5</VALUE>
+									</MAX-NUMBER>
+									<EXPAND-XLIMITS-LEFT format-rev="1" xsi:type="valueBaseExpression">
+										<VALUE xsi:type="float">0.5</VALUE>
+									</EXPAND-XLIMITS-LEFT>
+									<EXPAND-XLIMITS-RIGHT format-rev="1" xsi:type="valueBaseExpression">
+										<VALUE xsi:type="float">0.5</VALUE>
+									</EXPAND-XLIMITS-RIGHT>
+								</SUB-CONFIG-DETAILS>
+								<SIGNAL-NAME-TYPE xsi:type="string">generic</SIGNAL-NAME-TYPE>
+								<LEGEND-LOCATION xsi:type="integer">11</LEGEND-LOCATION>
+							</ANALYSISITEM>
+							<FORMULA xsi:type="string">LowerLimitWithTolerance &lt;= Ball_position &lt;= UpperLimitWithTolerance</FORMULA>
+							<EXPECTATION xsi:type="manualExpression">
+								<BASE-EXPRESSION xsi:type="varBaseExpression">
+									<NAME xsi:type="string">value</NAME>
+								</BASE-EXPRESSION>
+							</EXPECTATION>
+							<REPORT-CONFIG xsi:type="trcpReportConfig">
+								<MAX-SPOTS xsi:type="integer">100</MAX-SPOTS>
+								<MIN-DELTA xsi:type="float">0.0</MIN-DELTA>
+							</REPORT-CONFIG>
+						</ANALYSISITEM>
+					</ANALYSISITEM>
+				</ANALYSISITEM>
+			</ANALYSISITEM>
+			<VIRTUAL-SIGNALS-MANAGER xsi:type="virtualSignalsManager">
+				<VIRTUAL-SIGNALS>
+					<VIRTUAL-SIGNAL uuid="2140d282fe7b11ea8501a0510b3f5911" xsi:type="virtualSessionSignal">
+						<NAME xsi:type="string">Ball_velocity</NAME>
+						<SIGNAL-FOR-ANALYSIS xsi:type="recordingSignalForAnalysis">
+							<KEY xsi:type="string">Plant model/v</KEY>
+							<SOURCE-TYPE xsi:type="string">RECORDING-GROUP</SOURCE-TYPE>
+							<SOURCE-REF xsi:type="string">1cde8878fe7b11eaa9eba0510b3f5911</SOURCE-REF>
+						</SIGNAL-FOR-ANALYSIS>
+						<EVENT-TYPE xsi:type="string">PHY</EVENT-TYPE>
+					</VIRTUAL-SIGNAL>
+					<VIRTUAL-SIGNAL uuid="303521c0fe7b11ea8bdca0510b3f5911" xsi:type="virtualSessionSignal">
+						<NAME xsi:type="string">Ball_position</NAME>
+						<SIGNAL-FOR-ANALYSIS xsi:type="recordingSignalForAnalysis">
+							<KEY xsi:type="string">Plant model/h</KEY>
+							<SOURCE-TYPE xsi:type="string">RECORDING-GROUP</SOURCE-TYPE>
+							<SOURCE-REF xsi:type="string">1cde8878fe7b11eaa9eba0510b3f5911</SOURCE-REF>
+						</SIGNAL-FOR-ANALYSIS>
+						<EVENT-TYPE xsi:type="string">PHY</EVENT-TYPE>
+					</VIRTUAL-SIGNAL>
+					<VIRTUAL-SIGNAL uuid="d6d2e3ee3fbb11eba5fc0cdd2468919b" xsi:type="virtualSessionSignal">
+						<NAME xsi:type="string">UpperLimit</NAME>
+						<EVENT-TYPE xsi:type="string">PHY</EVENT-TYPE>
+					</VIRTUAL-SIGNAL>
+					<VIRTUAL-SIGNAL uuid="dd0a22103fbb11eb80c20cdd2468919b" xsi:type="virtualSessionSignal">
+						<NAME xsi:type="string">LowerLimit</NAME>
+						<EVENT-TYPE xsi:type="string">PHY</EVENT-TYPE>
+					</VIRTUAL-SIGNAL>
+					<VIRTUAL-SIGNAL uuid="f2b2604c3fbb11eba10d0cdd2468919b" xsi:type="virtualSessionSignal">
+						<NAME xsi:type="string">deviation</NAME>
+						<EVENT-TYPE xsi:type="string">PHY</EVENT-TYPE>
+					</VIRTUAL-SIGNAL>
+					<VIRTUAL-SIGNAL uuid="a8be60d0451a11ebb79ab808cf5ca08e" xsi:type="virtualSessionSignal">
+						<NAME xsi:type="string">UpperLimitWithTolerance</NAME>
+						<EVENT-TYPE xsi:type="string">PHY</EVENT-TYPE>
+					</VIRTUAL-SIGNAL>
+					<VIRTUAL-SIGNAL uuid="c0075cf6451a11ebb282b808cf5ca08e" xsi:type="virtualSessionSignal">
+						<NAME xsi:type="string">LowerLimitWithTolerance</NAME>
+						<EVENT-TYPE xsi:type="string">PHY</EVENT-TYPE>
+					</VIRTUAL-SIGNAL>
+				</VIRTUAL-SIGNALS>
+			</VIRTUAL-SIGNALS-MANAGER>
+		</TRACE-ANALYSIS>
+	</TRACE-ANALYSES>
+</PACKAGE>

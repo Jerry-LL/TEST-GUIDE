@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PROJECT format-rev="10" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<NAME xsi:type="string">Project</NAME>
+	<ENABLED xsi:type="boolean">True</ENABLED>
+	<REPORTING xsi:type="boolean">True</REPORTING>
+	<ID xsi:type="string">8ed2548afe7c11eabda3a0510b3f5911</ID>
+	<COMPONENTS>
+		<COMPONENT format-rev="6" xsi:type="configChange">
+			<NAME xsi:type="string">Change configuration</NAME>
+			<ENABLED xsi:type="boolean">True</ENABLED>
+			<REPORTING xsi:type="boolean">True</REPORTING>
+			<ID xsi:type="string">46dc9a0013a411ebaf00a0510b3f5911</ID>
+			<LOAD-TEST-CONFIG xsi:type="string">FMUs/BouncingBall.tcf</LOAD-TEST-CONFIG>
+			<LOAD-TEST-BENCH-CONFIG xsi:type="string">FMU_auto_sim.tbc</LOAD-TEST-BENCH-CONFIG>
+			<FORCE-RESTART xsi:type="boolean">True</FORCE-RESTART>
+			<TOOL-TREATMENTS/>
+		</COMPONENT>
+		<COMPONENT format-rev="5" xsi:type="packageTest">
+			<NAME xsi:type="string">Simulate_BouncingBall</NAME>
+			<ENABLED xsi:type="boolean">True</ENABLED>
+			<REPORTING xsi:type="boolean">True</REPORTING>
+			<ID xsi:type="string">90a5e8a4fe7c11eab45ea0510b3f5911</ID>
+			<COMPONENTS>
+				<COMPONENT format-rev="3" xsi:type="paramRecord">
+					<NAME xsi:type="string">Gravity Earth</NAME>
+					<ENABLED xsi:type="boolean">True</ENABLED>
+					<REPORTING xsi:type="boolean">True</REPORTING>
+					<ID xsi:type="string">9b65754cfe7c11ea94b2a0510b3f5911</ID>
+					<PARAMETER-DATA xsi:type="packageParameterData">
+						<PARAMETER xsi:type="parameterEntry">
+							<NAME xsi:type="string">PAR_acceleration</NAME>
+							<VALUE format-rev="1" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="string">Gravity Earth</VALUE>
+							</VALUE>
+						</PARAMETER>
+					</PARAMETER-DATA>
+					<GLOBAL-CONSTANTS xsi:type="globalConstData">
+						<GLOBAL-CONSTANT format-rev="1" xsi:type="globalConstEntry">
+							<NAME xsi:type="string">ACCELERATION</NAME>
+							<VALUE format-rev="1" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="string">EARTH</VALUE>
+							</VALUE>
+						</GLOBAL-CONSTANT>
+					</GLOBAL-CONSTANTS>
+					<TM-INFO format-rev="1" xsi:type="testManagementInfo"/>
+				</COMPONENT>
+				<COMPONENT format-rev="3" xsi:type="paramRecord">
+					<NAME xsi:type="string">Gravity Moon</NAME>
+					<ENABLED xsi:type="boolean">True</ENABLED>
+					<REPORTING xsi:type="boolean">True</REPORTING>
+					<ID xsi:type="string">a6465a9ffe7c11eab222a0510b3f5911</ID>
+					<PARAMETER-DATA xsi:type="packageParameterData">
+						<PARAMETER xsi:type="parameterEntry">
+							<NAME xsi:type="string">PAR_acceleration</NAME>
+							<VALUE format-rev="1" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="string">Gravity Moon</VALUE>
+							</VALUE>
+						</PARAMETER>
+					</PARAMETER-DATA>
+					<GLOBAL-CONSTANTS xsi:type="globalConstData">
+						<GLOBAL-CONSTANT format-rev="1" xsi:type="globalConstEntry">
+							<NAME xsi:type="string">ACCELERATION</NAME>
+							<VALUE format-rev="1" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="string">MOON</VALUE>
+							</VALUE>
+						</GLOBAL-CONSTANT>
+					</GLOBAL-CONSTANTS>
+					<TM-INFO format-rev="1" xsi:type="testManagementInfo"/>
+				</COMPONENT>
+				<COMPONENT format-rev="3" xsi:type="paramRecord">
+					<NAME xsi:type="string">Ridiculously high gravity</NAME>
+					<ENABLED xsi:type="boolean">True</ENABLED>
+					<REPORTING xsi:type="boolean">True</REPORTING>
+					<ID xsi:type="string">a665c65ffe7c11eaaf29a0510b3f5911</ID>
+					<PARAMETER-DATA xsi:type="packageParameterData">
+						<PARAMETER xsi:type="parameterEntry">
+							<NAME xsi:type="string">PAR_acceleration</NAME>
+							<VALUE format-rev="1" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="string">Ridiculously high gravity</VALUE>
+							</VALUE>
+						</PARAMETER>
+					</PARAMETER-DATA>
+					<GLOBAL-CONSTANTS xsi:type="globalConstData">
+						<GLOBAL-CONSTANT format-rev="1" xsi:type="globalConstEntry">
+							<NAME xsi:type="string">ACCELERATION</NAME>
+							<VALUE format-rev="1" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="string">RIDICULOUS</VALUE>
+							</VALUE>
+						</GLOBAL-CONSTANT>
+					</GLOBAL-CONSTANTS>
+					<TM-INFO format-rev="1" xsi:type="testManagementInfo"/>
+				</COMPONENT>
+			</COMPONENTS>
+			<PACKAGE-REF format-rev="1" xsi:type="packageRef">
+				<PACKAGE-PATH xsi:type="string">../BouncingBall/Simulate_BouncingBall.pkg</PACKAGE-PATH>
+			</PACKAGE-REF>
+		</COMPONENT>
+	</COMPONENTS>
+</PROJECT>

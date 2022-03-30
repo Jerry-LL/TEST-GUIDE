@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HISTORY-SETTINGS xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<RECENT-TCFFILES>
+		<ELEMENT xsi:type="string">Configurations\FMUs\ACC_FMU.tcf</ELEMENT>
+	</RECENT-TCFFILES>
+	<LAST-TCF-SAVED xsi:type="boolean">True</LAST-TCF-SAVED>
+	<RECENT-TBC-FILES>
+		<ELEMENT xsi:type="string">Configurations\FMU_auto_sim.tbc</ELEMENT>
+	</RECENT-TBC-FILES>
+	<LAST-TBC-SAVED xsi:type="boolean">True</LAST-TBC-SAVED>
+	<RECENT-PROJECTS-PACKAGES>
+		<ELEMENT xsi:type="string">Configurations\FMUs\ACC_FMU.tcf</ELEMENT>
+		<ELEMENT xsi:type="string">Packages\Package 0.pkg</ELEMENT>
+		<ELEMENT xsi:type="string">Packages\Analysepackage 0.ta</ELEMENT>
+		<ELEMENT xsi:type="string">Packages\ACC\ACC_aktivieren_mit Bremse.pkg</ELEMENT>
+		<ELEMENT xsi:type="string">Configurations\FMU_auto_sim.tbc</ELEMENT>
+	</RECENT-PROJECTS-PACKAGES>
+	<RECENT-SEARCH-REQUESTS/>
+</HISTORY-SETTINGS>

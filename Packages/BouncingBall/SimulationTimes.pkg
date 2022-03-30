@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PACKAGE format-rev="7" prog-version="2020.4.105605+9fffb455971e" xmlns="http://www.tracetronic.de/xml/ecu-test" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tracetronic.de/xml/ecu-test package.xsd">
+	<INFORMATION format-rev="2" xsi:type="packageInfo">
+		<DESCRIPTION xsi:type="string"/>
+		<VERSION xsi:type="string"/>
+		<ALTERNATE-CALL-REPRESENTATION-ACTION-FIELD-TEMPLATE xsi:type="string"/>
+		<ALTERNATE-CALL-REPRESENTATION-EXPECTATION-FIELD-TEMPLATE xsi:type="string"/>
+	</INFORMATION>
+	<VARIABLES xsi:type="variableContainer">
+		<VARIABLE format-rev="1" xsi:type="variable">
+			<NAME xsi:type="string">t0</NAME>
+			<DEFAULT-VALUE xsi:type="undefined"/>
+		</VARIABLE>
+		<VARIABLE format-rev="1" xsi:type="variable">
+			<NAME xsi:type="string">t2</NAME>
+			<DEFAULT-VALUE xsi:type="undefined"/>
+		</VARIABLE>
+		<VARIABLE format-rev="1" xsi:type="variable">
+			<NAME xsi:type="string">t3</NAME>
+			<DEFAULT-VALUE xsi:type="undefined"/>
+		</VARIABLE>
+	</VARIABLES>
+	<MAPPING format-rev="1" xsi:type="localMappingSpace">
+		<MAPPING-ITEM format-rev="2" xsi:type="mappingItem">
+			<ID xsi:type="string">GetSimulationTime</ID>
+			<XACCESS xsi:type="xaJob">
+				<PORT-ID xsi:type="string">MDL01</PORT-ID>
+				<JOB-NAME xsi:type="string">GetSimulationTime</JOB-NAME>
+			</XACCESS>
+		</MAPPING-ITEM>
+		<MAPPING-ITEM format-rev="2" xsi:type="mappingItem">
+			<ID xsi:type="string">Plant model/e</ID>
+			<XACCESS format-rev="2" xsi:type="xaModelValueVariable">
+				<MAPPING-ENUM xsi:type="vtabInfoEmpty"/>
+				<MODEL-KEY xsi:type="string">Plant model</MODEL-KEY>
+				<VARIABLE-PATH xsi:type="string">e</VARIABLE-PATH>
+			</XACCESS>
+		</MAPPING-ITEM>
+		<MAPPING-ITEM format-rev="2" xsi:type="mappingItem">
+			<ID xsi:type="string">Plant model/h</ID>
+			<XACCESS format-rev="2" xsi:type="xaModelSignal">
+				<MAPPING-ENUM xsi:type="vtabInfoEmpty"/>
+				<MODEL-KEY xsi:type="string">Plant model</MODEL-KEY>
+				<VARIABLE-PATH xsi:type="string">h</VARIABLE-PATH>
+			</XACCESS>
+		</MAPPING-ITEM>
+		<MAPPING-ITEM format-rev="2" xsi:type="mappingItem">
+			<ID xsi:type="string">Plant model/v</ID>
+			<XACCESS format-rev="2" xsi:type="xaModelSignal">
+				<MAPPING-ENUM xsi:type="vtabInfoEmpty"/>
+				<MODEL-KEY xsi:type="string">Plant model</MODEL-KEY>
+				<VARIABLE-PATH xsi:type="string">v</VARIABLE-PATH>
+			</XACCESS>
+		</MAPPING-ITEM>
+		<MAPPING-ITEM format-rev="2" xsi:type="mappingItem">
+			<ID xsi:type="string">Plant model/v_min</ID>
+			<XACCESS format-rev="2" xsi:type="xaModelValueVariable">
+				<MAPPING-ENUM xsi:type="vtabInfoEmpty"/>
+				<MODEL-KEY xsi:type="string">Plant model</MODEL-KEY>
+				<VARIABLE-PATH xsi:type="string">v_min</VARIABLE-PATH>
+			</XACCESS>
+		</MAPPING-ITEM>
+	</MAPPING>
+	<TESTSTEPS xsi:type="testCase">
+		<TESTSTEP format-rev="4" id="c05d0605-7009-40aa-bfdd-7cc874e9997e" xsi:type="tsJob">
+			<MAPPING-REF xsi:type="string">GetSimulationTime</MAPPING-REF>
+			<VARIABLE-REFS>
+				<VARIABLE-NAME dkey="default">
+					<DVALUE xsi:type="string">t0</DVALUE>
+				</VARIABLE-NAME>
+			</VARIABLE-REFS>
+		</TESTSTEP>
+		<TESTSTEP format-rev="3" id="9dd4f722-9354-4777-8eb9-5ed857d74e9c" name="TsBlock" xsi:type="utility-2752ad1e-4fef-11dc-81d4-0013728784ee">
+			<ACTION xsi:type="I18NItem">
+				<MULTILANGDATA>
+					<ELEMENT dkey="en_US">
+						<DVALUE xsi:type="string">Read values</DVALUE>
+					</ELEMENT>
+				</MULTILANGDATA>
+				<INITIAL-LANGUAGE xsi:type="string">en_US</INITIAL-LANGUAGE>
+			</ACTION>
+			<TESTSTEP id="4c61fa55-22f7-4ffc-8b2b-2e0f677dc97f" xsi:type="tsRead">
+				<MAPPING-REF xsi:type="string">Plant model/e</MAPPING-REF>
+				<METRIC format-rev="1" xsi:type="metricInfo">
+					<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+					<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+				</METRIC>
+			</TESTSTEP>
+			<TESTSTEP id="ff9472ae-f473-46ae-8bce-b08039e982d4" xsi:type="tsRead">
+				<MAPPING-REF xsi:type="string">Plant model/h</MAPPING-REF>
+				<METRIC format-rev="1" xsi:type="metricInfo">
+					<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+					<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+				</METRIC>
+			</TESTSTEP>
+			<TESTSTEP id="c7f56303-f29c-42c4-83b4-132ad957784f" xsi:type="tsRead">
+				<MAPPING-REF xsi:type="string">Plant model/v</MAPPING-REF>
+				<METRIC format-rev="1" xsi:type="metricInfo">
+					<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+					<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+				</METRIC>
+			</TESTSTEP>
+			<TESTSTEP id="3e0cc39c-29ff-4cd0-a75b-e81287805bf3" xsi:type="tsRead">
+				<MAPPING-REF xsi:type="string">Plant model/v_min</MAPPING-REF>
+				<METRIC format-rev="1" xsi:type="metricInfo">
+					<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+					<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+				</METRIC>
+			</TESTSTEP>
+		</TESTSTEP>
+		<TESTSTEP id="3928002e-796c-4d8d-a4ef-9527ef6a4fdd" name="TsWait" xsi:type="utility-62d5a961-4fef-11dc-9944-0013728784ee">
+			<TIME format-rev="1" xsi:type="valueBaseExpression">
+				<VALUE xsi:type="integer">5000</VALUE>
+			</TIME>
+		</TESTSTEP>
+		<TESTSTEP format-rev="4" id="4859106a-2bde-4da7-b026-d83ffc68f395" xsi:type="tsJob">
+			<MAPPING-REF xsi:type="string">GetSimulationTime</MAPPING-REF>
+			<VARIABLE-REFS>
+				<VARIABLE-NAME dkey="default">
+					<DVALUE xsi:type="string">t2</DVALUE>
+				</VARIABLE-NAME>
+			</VARIABLE-REFS>
+		</TESTSTEP>
+		<TESTSTEP format-rev="3" id="5b6e99b2-6a6b-4a41-86f4-0e371168035c" name="TsBlock" xsi:type="utility-2752ad1e-4fef-11dc-81d4-0013728784ee">
+			<ACTION xsi:type="I18NItem">
+				<MULTILANGDATA>
+					<ELEMENT dkey="en_US">
+						<DVALUE xsi:type="string">Read values</DVALUE>
+					</ELEMENT>
+				</MULTILANGDATA>
+				<INITIAL-LANGUAGE xsi:type="string">en_US</INITIAL-LANGUAGE>
+			</ACTION>
+			<TESTSTEP id="97457b71-f35e-4e1b-8141-051ff8d14880" xsi:type="tsRead">
+				<MAPPING-REF xsi:type="string">Plant model/e</MAPPING-REF>
+				<METRIC format-rev="1" xsi:type="metricInfo">
+					<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+					<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+				</METRIC>
+			</TESTSTEP>
+			<TESTSTEP id="a08a7a91-d27c-4d6c-a218-3e69ef12a477" xsi:type="tsRead">
+				<MAPPING-REF xsi:type="string">Plant model/h</MAPPING-REF>
+				<METRIC format-rev="1" xsi:type="metricInfo">
+					<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+					<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+				</METRIC>
+			</TESTSTEP>
+			<TESTSTEP id="cc2d2e25-93ce-433c-a4ab-cc11643a046d" xsi:type="tsRead">
+				<MAPPING-REF xsi:type="string">Plant model/v</MAPPING-REF>
+				<METRIC format-rev="1" xsi:type="metricInfo">
+					<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+					<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+				</METRIC>
+			</TESTSTEP>
+			<TESTSTEP id="4f2a96a5-8b29-4d96-a1d7-0fd933ec5d35" xsi:type="tsRead">
+				<MAPPING-REF xsi:type="string">Plant model/v_min</MAPPING-REF>
+				<METRIC format-rev="1" xsi:type="metricInfo">
+					<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+					<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+				</METRIC>
+			</TESTSTEP>
+		</TESTSTEP>
+		<TESTSTEP id="4673888f-9f67-4fb4-bb54-88f5acf52ffe" name="TsWait" xsi:type="utility-62d5a961-4fef-11dc-9944-0013728784ee">
+			<TIME format-rev="1" xsi:type="valueBaseExpression">
+				<VALUE xsi:type="integer">5000</VALUE>
+			</TIME>
+		</TESTSTEP>
+		<TESTSTEP format-rev="4" id="a5f8254f-eff6-4048-98e6-f49d3b5d3dfb" xsi:type="tsJob">
+			<MAPPING-REF xsi:type="string">GetSimulationTime</MAPPING-REF>
+			<VARIABLE-REFS>
+				<VARIABLE-NAME dkey="default">
+					<DVALUE xsi:type="string">t3</DVALUE>
+				</VARIABLE-NAME>
+			</VARIABLE-REFS>
+		</TESTSTEP>
+	</TESTSTEPS>
+</PACKAGE>

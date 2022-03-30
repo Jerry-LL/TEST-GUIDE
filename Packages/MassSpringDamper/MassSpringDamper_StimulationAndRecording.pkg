@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PACKAGE format-rev="7" prog-version="2021.1.109672+ff711e4fe842" xmlns="http://www.tracetronic.de/xml/ecu-test" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tracetronic.de/xml/ecu-test package.xsd">
+	<INFORMATION format-rev="2" xsi:type="packageInfo">
+		<DESCRIPTION xsi:type="string"/>
+		<VERSION xsi:type="string"/>
+		<ALTERNATE-CALL-REPRESENTATION-ACTION-FIELD-TEMPLATE xsi:type="string"/>
+		<ALTERNATE-CALL-REPRESENTATION-EXPECTATION-FIELD-TEMPLATE xsi:type="string"/>
+	</INFORMATION>
+	<MAPPING format-rev="1" xsi:type="localMappingSpace">
+		<MAPPING-ITEM format-rev="2" xsi:type="mappingItem">
+			<ID xsi:type="string">Plant model/f1</ID>
+			<XACCESS format-rev="2" xsi:type="xaModelSignal">
+				<MAPPING-ENUM xsi:type="vtabInfoEmpty"/>
+				<MODEL-KEY xsi:type="string">Plant model</MODEL-KEY>
+				<VARIABLE-PATH xsi:type="string">f1</VARIABLE-PATH>
+			</XACCESS>
+		</MAPPING-ITEM>
+		<MAPPING-ITEM format-rev="2" xsi:type="mappingItem">
+			<ID xsi:type="string">Plant model/position</ID>
+			<XACCESS format-rev="2" xsi:type="xaModelSignal">
+				<MAPPING-ENUM xsi:type="vtabInfoEmpty"/>
+				<MODEL-KEY xsi:type="string">Plant model</MODEL-KEY>
+				<VARIABLE-PATH xsi:type="string">x1</VARIABLE-PATH>
+			</XACCESS>
+		</MAPPING-ITEM>
+		<MAPPING-ITEM format-rev="2" xsi:type="mappingItem">
+			<ID xsi:type="string">Plant model/velocity</ID>
+			<XACCESS format-rev="2" xsi:type="xaModelSignal">
+				<MAPPING-ENUM xsi:type="vtabInfoEmpty"/>
+				<MODEL-KEY xsi:type="string">Plant model</MODEL-KEY>
+				<VARIABLE-PATH xsi:type="string">v1</VARIABLE-PATH>
+			</XACCESS>
+		</MAPPING-ITEM>
+		<MAPPING-ITEM format-rev="2" xsi:type="mappingItem">
+			<ID xsi:type="string">Plant model/x0</ID>
+			<XACCESS format-rev="2" xsi:type="xaModelSignal">
+				<MAPPING-ENUM xsi:type="vtabInfoEmpty"/>
+				<MODEL-KEY xsi:type="string">Plant model</MODEL-KEY>
+				<VARIABLE-PATH xsi:type="string">x0</VARIABLE-PATH>
+			</XACCESS>
+		</MAPPING-ITEM>
+	</MAPPING>
+	<TRACE-RECORDING format-rev="2" xsi:type="recordingManager">
+		<SIGNAL-GROUPS>
+			<ELEMENT format-rev="2" xsi:type="signalGroup">
+				<NAME xsi:type="string">Plant model</NAME>
+				<DESCRIPTION xsi:type="string"/>
+				<SIGNALS>
+					<ELEMENT xsi:type="signal">
+						<MAPPING-REF xsi:type="string">Plant model/velocity</MAPPING-REF>
+					</ELEMENT>
+					<ELEMENT xsi:type="signal">
+						<MAPPING-REF xsi:type="string">Plant model/position</MAPPING-REF>
+					</ELEMENT>
+				</SIGNALS>
+			</ELEMENT>
+		</SIGNAL-GROUPS>
+		<RECORDING-GROUP>
+			<ELEMENT format-rev="3" xsi:type="recordingGroup">
+				<NAME xsi:type="string">Recording group for Plant model</NAME>
+				<UUID xsi:type="string">ea1498288cc311eba6cdfc7774d1abf9</UUID>
+				<RECORDING-MODE xsi:type="integer">2</RECORDING-MODE>
+				<SIGNAL-GROUP-REF>Plant model</SIGNAL-GROUP-REF>
+			</ELEMENT>
+		</RECORDING-GROUP>
+		<SYNCHRONISATION-CONFIG xsi:type="syncConfig"/>
+	</TRACE-RECORDING>
+	<TESTSTEPS xsi:type="testCase">
+		<TESTSTEP id="e7963703-8339-48df-8745-b6bd247b5fc7" xsi:type="tsStimulate">
+			<MAPPING-REF xsi:type="string">Plant model/x0</MAPPING-REF>
+			<SEGMENTS>
+				<ELEMENT format-rev="1" xsi:type="tsStimulateSegment">
+					<EXPRESSION xsi:type="functionBaseExpression">
+						<COMPONENT xsi:type="varBaseExpression">
+							<NAME xsi:type="string">PulseSegment</NAME>
+						</COMPONENT>
+						<KEYWORD-ARGUMENTS>
+							<KEYWORD-ARGUMENT xsi:type="kwargBaseExpression">
+								<KEY format-rev="1" xsi:type="valueBaseExpression">
+									<VALUE xsi:type="string">duration</VALUE>
+								</KEY>
+								<ARGUMENT format-rev="1" xsi:type="valueBaseExpression">
+									<VALUE xsi:type="float">20.0</VALUE>
+								</ARGUMENT>
+							</KEYWORD-ARGUMENT>
+							<KEYWORD-ARGUMENT xsi:type="kwargBaseExpression">
+								<KEY format-rev="1" xsi:type="valueBaseExpression">
+									<VALUE xsi:type="string">offset</VALUE>
+								</KEY>
+								<ARGUMENT xsi:type="unaryOpBaseExpression">
+									<NAME xsi:type="string">UNARY_NEGATIVE</NAME>
+									<COMPONENT format-rev="1" xsi:type="valueBaseExpression">
+										<VALUE xsi:type="float">0.01</VALUE>
+									</COMPONENT>
+								</ARGUMENT>
+							</KEYWORD-ARGUMENT>
+							<KEYWORD-ARGUMENT xsi:type="kwargBaseExpression">
+								<KEY format-rev="1" xsi:type="valueBaseExpression">
+									<VALUE xsi:type="string">amplitude</VALUE>
+								</KEY>
+								<ARGUMENT format-rev="1" xsi:type="valueBaseExpression">
+									<VALUE xsi:type="float">0.01</VALUE>
+								</ARGUMENT>
+							</KEYWORD-ARGUMENT>
+							<KEYWORD-ARGUMENT xsi:type="kwargBaseExpression">
+								<KEY format-rev="1" xsi:type="valueBaseExpression">
+									<VALUE xsi:type="string">period</VALUE>
+								</KEY>
+								<ARGUMENT format-rev="1" xsi:type="valueBaseExpression">
+									<VALUE xsi:type="float">10.0</VALUE>
+								</ARGUMENT>
+							</KEYWORD-ARGUMENT>
+							<KEYWORD-ARGUMENT xsi:type="kwargBaseExpression">
+								<KEY format-rev="1" xsi:type="valueBaseExpression">
+									<VALUE xsi:type="string">dutyCycle</VALUE>
+								</KEY>
+								<ARGUMENT format-rev="1" xsi:type="valueBaseExpression">
+									<VALUE xsi:type="float">0.9</VALUE>
+								</ARGUMENT>
+							</KEYWORD-ARGUMENT>
+							<KEYWORD-ARGUMENT xsi:type="kwargBaseExpression">
+								<KEY format-rev="1" xsi:type="valueBaseExpression">
+									<VALUE xsi:type="string">phase</VALUE>
+								</KEY>
+								<ARGUMENT format-rev="1" xsi:type="valueBaseExpression">
+									<VALUE xsi:type="float">0.0</VALUE>
+								</ARGUMENT>
+							</KEYWORD-ARGUMENT>
+						</KEYWORD-ARGUMENTS>
+					</EXPRESSION>
+				</ELEMENT>
+			</SEGMENTS>
+		</TESTSTEP>
+		<TESTSTEP id="2f399adc-9736-492c-8351-3b99f8239bdf" name="TsWait" xsi:type="utility-62d5a961-4fef-11dc-9944-0013728784ee">
+			<TIME format-rev="1" xsi:type="valueBaseExpression">
+				<VALUE xsi:type="integer">10</VALUE>
+			</TIME>
+			<UNIT xsi:type="string">s</UNIT>
+		</TESTSTEP>
+		<TESTSTEP id="204fa816-1555-4661-8ba9-68f43db02a50" xsi:type="tsWrite">
+			<ENABLED xsi:type="boolean">False</ENABLED>
+			<MAPPING-REF xsi:type="string">Plant model/f1</MAPPING-REF>
+			<VALUE xsi:type="expressionValue">
+				<DATA format-rev="1" xsi:type="valueBaseExpression">
+					<VALUE xsi:type="integer">2</VALUE>
+				</DATA>
+			</VALUE>
+			<METRIC format-rev="1" xsi:type="metricInfo">
+				<VALUE-TYPE xsi:type="string">PHYS</VALUE-TYPE>
+				<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+			</METRIC>
+		</TESTSTEP>
+		<TESTSTEP id="7dbebc28-7749-4fec-9139-ee7a084e68de" name="TsWait" xsi:type="utility-62d5a961-4fef-11dc-9944-0013728784ee">
+			<TIME format-rev="1" xsi:type="valueBaseExpression">
+				<VALUE xsi:type="integer">10</VALUE>
+			</TIME>
+			<UNIT xsi:type="string">s</UNIT>
+		</TESTSTEP>
+	</TESTSTEPS>
+	<TRACE-ANALYSES format-rev="1" xsi:type="traceAnalyses">
+		<TRACE-ANALYSIS format-rev="3" uuid="e7683a508cc311eb8f45fc7774d1abf9" xsi:type="traceAnalysis">
+			<NAME xsi:type="string">Trace analysis 1</NAME>
+			<ANALYSISITEM format-rev="1" uuid="e7683a518cc311eba210fc7774d1abf9" xsi:type="episode">
+				<NAME xsi:type="string">New episode</NAME>
+				<ANALYSISITEM format-rev="4" uuid="3b1badcc8cc611eb9833fc7774d1abf9" xsi:type="plotItem">
+					<NAME xsi:type="string">Plot</NAME>
+					<SUB-PLOTS>
+						<SUB-PLOT format-rev="1" xsi:type="plotSubPlot">
+							<TYPE xsi:type="string">common</TYPE>
+							<ENTITIES>
+								<ENTITY format-rev="1" isTraceStepSignal="False" xsi:type="plotSignalEntity">
+									<NAME xsi:type="string">Plant_model_position</NAME>
+									<AXIS xsi:type="integer">0</AXIS>
+								</ENTITY>
+							</ENTITIES>
+							<AXES>
+								<AXIS xsi:type="plotAxis"/>
+							</AXES>
+						</SUB-PLOT>
+						<SUB-PLOT format-rev="1" xsi:type="plotSubPlot">
+							<TYPE xsi:type="string">separate</TYPE>
+							<ENTITIES>
+								<ENTITY format-rev="1" isTraceStepSignal="False" xsi:type="plotSignalEntity">
+									<NAME xsi:type="string">Plant_model_velocity</NAME>
+								</ENTITY>
+							</ENTITIES>
+							<AXES>
+								<AXIS xsi:type="plotAxis"/>
+							</AXES>
+						</SUB-PLOT>
+						<SUB-PLOT format-rev="1" xsi:type="plotSubPlot">
+							<TYPE xsi:type="string">common</TYPE>
+							<ENTITIES/>
+							<AXES/>
+						</SUB-PLOT>
+					</SUB-PLOTS>
+					<UNUSED-SIGNALS/>
+					<SUB-CONFIG-OVERVIEW xsi:type="plotSubConfig">
+						<CONDITION xsi:type="string">NONE</CONDITION>
+						<MAX-NUMBER format-rev="1" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="integer">5</VALUE>
+						</MAX-NUMBER>
+						<EXPAND-XLIMITS-LEFT format-rev="1" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="float">0.5</VALUE>
+						</EXPAND-XLIMITS-LEFT>
+						<EXPAND-XLIMITS-RIGHT format-rev="1" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="float">0.5</VALUE>
+						</EXPAND-XLIMITS-RIGHT>
+					</SUB-CONFIG-OVERVIEW>
+					<SUB-CONFIG-PARENT-CONTEXT xsi:type="plotSubConfig">
+						<CONDITION xsi:type="string">NEVER</CONDITION>
+						<MAX-NUMBER format-rev="1" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="integer">5</VALUE>
+						</MAX-NUMBER>
+						<EXPAND-XLIMITS-LEFT format-rev="1" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="float">0.5</VALUE>
+						</EXPAND-XLIMITS-LEFT>
+						<EXPAND-XLIMITS-RIGHT format-rev="1" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="float">0.5</VALUE>
+						</EXPAND-XLIMITS-RIGHT>
+					</SUB-CONFIG-PARENT-CONTEXT>
+					<SUB-CONFIG-DETAILS xsi:type="plotSubConfig">
+						<CONDITION xsi:type="string">NEVER</CONDITION>
+						<MAX-NUMBER format-rev="1" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="integer">5</VALUE>
+						</MAX-NUMBER>
+						<EXPAND-XLIMITS-LEFT format-rev="1" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="float">0.5</VALUE>
+						</EXPAND-XLIMITS-LEFT>
+						<EXPAND-XLIMITS-RIGHT format-rev="1" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="float">0.5</VALUE>
+						</EXPAND-XLIMITS-RIGHT>
+					</SUB-CONFIG-DETAILS>
+					<SIGNAL-NAME-TYPE xsi:type="string">generic</SIGNAL-NAME-TYPE>
+					<LEGEND-LOCATION xsi:type="integer">11</LEGEND-LOCATION>
+				</ANALYSISITEM>
+			</ANALYSISITEM>
+			<VIRTUAL-SIGNALS-MANAGER xsi:type="virtualSignalsManager">
+				<VIRTUAL-SIGNALS>
+					<VIRTUAL-SIGNAL uuid="9bea57788cc511eba2f0fc7774d1abf9" xsi:type="virtualSessionSignal">
+						<NAME xsi:type="string">Plant_model_velocity</NAME>
+						<SIGNAL-FOR-ANALYSIS xsi:type="recordingSignalForAnalysis">
+							<KEY xsi:type="string">Plant model/velocity</KEY>
+							<SOURCE-TYPE xsi:type="string">RECORDING-GROUP</SOURCE-TYPE>
+							<SOURCE-REF xsi:type="string">ea1498288cc311eba6cdfc7774d1abf9</SOURCE-REF>
+						</SIGNAL-FOR-ANALYSIS>
+						<EVENT-TYPE xsi:type="string">PHY</EVENT-TYPE>
+					</VIRTUAL-SIGNAL>
+					<VIRTUAL-SIGNAL uuid="9bf2bc988cc511ebbd4bfc7774d1abf9" xsi:type="virtualSessionSignal">
+						<NAME xsi:type="string">Plant_model_position</NAME>
+						<SIGNAL-FOR-ANALYSIS xsi:type="recordingSignalForAnalysis">
+							<KEY xsi:type="string">Plant model/position</KEY>
+							<SOURCE-TYPE xsi:type="string">RECORDING-GROUP</SOURCE-TYPE>
+							<SOURCE-REF xsi:type="string">ea1498288cc311eba6cdfc7774d1abf9</SOURCE-REF>
+						</SIGNAL-FOR-ANALYSIS>
+						<EVENT-TYPE xsi:type="string">PHY</EVENT-TYPE>
+					</VIRTUAL-SIGNAL>
+				</VIRTUAL-SIGNALS>
+			</VIRTUAL-SIGNALS-MANAGER>
+		</TRACE-ANALYSIS>
+	</TRACE-ANALYSES>
+</PACKAGE>

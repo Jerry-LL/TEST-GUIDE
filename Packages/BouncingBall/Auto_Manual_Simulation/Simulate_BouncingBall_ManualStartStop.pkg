@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PACKAGE format-rev="7" prog-version="2020.4.104116+84027857f9cf-FeatureSet" xmlns="http://www.tracetronic.de/xml/ecu-test" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tracetronic.de/xml/ecu-test package.xsd">
+	<INFORMATION format-rev="2" xsi:type="packageInfo">
+		<DESCRIPTION xsi:type="string"/>
+		<VERSION xsi:type="string"/>
+		<ALTERNATE-CALL-REPRESENTATION-ACTION-FIELD-TEMPLATE xsi:type="string"/>
+		<ALTERNATE-CALL-REPRESENTATION-EXPECTATION-FIELD-TEMPLATE xsi:type="string"/>
+	</INFORMATION>
+	<MAPPING format-rev="1" xsi:type="localMappingSpace">
+		<MAPPING-ITEM format-rev="2" xsi:type="mappingItem">
+			<ID xsi:type="string">StartSimulation</ID>
+			<XACCESS xsi:type="xaJob">
+				<PORT-ID xsi:type="string">MDL01</PORT-ID>
+				<JOB-NAME xsi:type="string">StartSimulation</JOB-NAME>
+			</XACCESS>
+		</MAPPING-ITEM>
+		<MAPPING-ITEM format-rev="2" xsi:type="mappingItem">
+			<ID xsi:type="string">StopSimulation</ID>
+			<XACCESS xsi:type="xaJob">
+				<PORT-ID xsi:type="string">MDL01</PORT-ID>
+				<JOB-NAME xsi:type="string">StopSimulation</JOB-NAME>
+			</XACCESS>
+		</MAPPING-ITEM>
+	</MAPPING>
+	<TESTSTEPS xsi:type="testCase">
+		<TESTSTEP format-rev="4" id="935facb2-8edb-47df-8a32-6061028cfad4" xsi:type="tsJob">
+			<MAPPING-REF xsi:type="string">StartSimulation</MAPPING-REF>
+		</TESTSTEP>
+		<TESTSTEP format-rev="2" id="35ff4429-26f9-4065-956e-247377b3c010" xsi:type="tsPackage">
+			<PACKAGE-REFERENCE format-rev="1" xsi:type="valueBaseExpression">
+				<VALUE xsi:type="string">..\\Simulate_BouncingBall.pkg</VALUE>
+			</PACKAGE-REFERENCE>
+			<PARAM-ASSIGNMENTS/>
+			<ALTERNATIVE-MAPPING-SPACE format-rev="1" xsi:type="mappingSpace"/>
+		</TESTSTEP>
+		<TESTSTEP format-rev="4" id="6f725804-4d05-487d-8cc2-40494f5b3660" xsi:type="tsJob">
+			<MAPPING-REF xsi:type="string">StopSimulation</MAPPING-REF>
+		</TESTSTEP>
+	</TESTSTEPS>
+</PACKAGE>

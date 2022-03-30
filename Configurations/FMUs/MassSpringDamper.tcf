@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CONFIGURATION format-rev="8" prog-version="2021.1.109672+ff711e4fe842" xmlns="http://www.tracetronic.de/xml/ecu-test" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tracetronic.de/xml/ecu-test application.configuration.xsd">
+	<COMMON xsi:type="commonData">
+		<HOST xsi:type="string">TT-ddm830</HOST>
+		<QUERY-TESTER xsi:type="integer">2</QUERY-TESTER>
+	</COMMON>
+	<REPORT format-rev="4" xsi:type="reportData">
+		<REPORT-FORMATES/>
+		<INCLUDE-APPLICATION-LOGS xsi:type="boolean">True</INCLUDE-APPLICATION-LOGS>
+	</REPORT>
+	<EXECUTION-DATA format-rev="1" xsi:type="executionData">
+		<TIME-SOURCE xsi:type="string">MDL01</TIME-SOURCE>
+		<SIMULATION-MODE xsi:type="string">STEPWISE</SIMULATION-MODE>
+	</EXECUTION-DATA>
+	<MODEL-ACCESS format-rev="1" xsi:type="modelAccessData">
+		<DATA dkey="Plant model">
+			<DVALUE format-rev="1" xsi:type="modelData">
+				<MODEL-DATA-SOURCE xsi:type="integer">0</MODEL-DATA-SOURCE>
+				<MODEL-ACCESS-PORT xsi:type="string">MDL01</MODEL-ACCESS-PORT>
+				<MODEL-FILE xsi:type="string">MassSpringDamper.fmu</MODEL-FILE>
+				<MODEL-POSITION xsi:type="integer">1</MODEL-POSITION>
+			</DVALUE>
+		</DATA>
+	</MODEL-ACCESS>
+</CONFIGURATION>
