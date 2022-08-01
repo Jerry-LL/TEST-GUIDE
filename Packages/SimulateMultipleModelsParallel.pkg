@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<PACKAGE format-rev="7" prog-version="2020.3.101705+729f1b14079e" xmlns="http://www.tracetronic.de/xml/ecu-test" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tracetronic.de/xml/ecu-test package.xsd">
+<PACKAGE format-rev="7" prog-version="2022.2.125314+1e79c4002501" xmlns="http://www.tracetronic.de/xml/ecu-test" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tracetronic.de/xml/ecu-test package.xsd">
 	<INFORMATION format-rev="2" xsi:type="packageInfo">
 		<DESCRIPTION xsi:type="string"/>
 		<VERSION xsi:type="string"/>
@@ -7,8 +7,56 @@
 		<ALTERNATE-CALL-REPRESENTATION-EXPECTATION-FIELD-TEMPLATE xsi:type="string"/>
 	</INFORMATION>
 	<VARIABLES xsi:type="variableContainer">
-		<VARIABLE format-rev="1" xsi:type="variable">
+		<VARIABLE format-rev="1" in="true" xsi:type="variable">
 			<NAME xsi:type="string">VAR_BouncingBall_mps</NAME>
+			<DESCRIPTION xsi:type="string">Geschwindigkeit des Balls in Metern pro Sekunde</DESCRIPTION>
+			<DEFAULT-VALUE format-rev="1" xsi:type="value">
+				<DATA xsi:type="integer">0</DATA>
+				<TEXTDATA xsi:type="string">0</TEXTDATA>
+			</DEFAULT-VALUE>
+		</VARIABLE>
+		<VARIABLE format-rev="1" in="true" xsi:type="variable">
+			<NAME xsi:type="string">VAR_BouncingBall_mps_1</NAME>
+			<DESCRIPTION xsi:type="string">Geschwindigkeit des Balls in Metern pro Sekunde</DESCRIPTION>
+			<DEFAULT-VALUE format-rev="1" xsi:type="value">
+				<DATA xsi:type="integer">0</DATA>
+				<TEXTDATA xsi:type="string">0</TEXTDATA>
+			</DEFAULT-VALUE>
+		</VARIABLE>
+		<VARIABLE format-rev="1" in="true" xsi:type="variable">
+			<NAME xsi:type="string">VAR_BouncingBall_mps_2</NAME>
+			<DESCRIPTION xsi:type="string">Geschwindigkeit des Balls in Metern pro Sekunde</DESCRIPTION>
+			<DEFAULT-VALUE format-rev="1" xsi:type="value">
+				<DATA xsi:type="integer">0</DATA>
+				<TEXTDATA xsi:type="string">0</TEXTDATA>
+			</DEFAULT-VALUE>
+		</VARIABLE>
+		<VARIABLE format-rev="1" in="true" xsi:type="variable">
+			<NAME xsi:type="string">VAR_BouncingBall_mps_3</NAME>
+			<DESCRIPTION xsi:type="string">Geschwindigkeit des Balls in Metern pro Sekunde</DESCRIPTION>
+			<DEFAULT-VALUE format-rev="1" xsi:type="value">
+				<DATA xsi:type="integer">0</DATA>
+				<TEXTDATA xsi:type="string">0</TEXTDATA>
+			</DEFAULT-VALUE>
+		</VARIABLE>
+		<VARIABLE format-rev="1" in="true" xsi:type="variable">
+			<NAME xsi:type="string">VAR_BouncingBall_mps_4</NAME>
+			<DESCRIPTION xsi:type="string">Geschwindigkeit des Balls in Metern pro Sekunde</DESCRIPTION>
+			<DEFAULT-VALUE format-rev="1" xsi:type="value">
+				<DATA xsi:type="integer">0</DATA>
+				<TEXTDATA xsi:type="string">0</TEXTDATA>
+			</DEFAULT-VALUE>
+		</VARIABLE>
+		<VARIABLE format-rev="1" in="true" xsi:type="variable">
+			<NAME xsi:type="string">VAR_BouncingBall_mps_5</NAME>
+			<DESCRIPTION xsi:type="string">Geschwindigkeit des Balls in Metern pro Sekunde</DESCRIPTION>
+			<DEFAULT-VALUE format-rev="1" xsi:type="value">
+				<DATA xsi:type="integer">0</DATA>
+				<TEXTDATA xsi:type="string">0</TEXTDATA>
+			</DEFAULT-VALUE>
+		</VARIABLE>
+		<VARIABLE format-rev="1" in="true" xsi:type="variable">
+			<NAME xsi:type="string">VAR_BouncingBall_mps_6</NAME>
 			<DESCRIPTION xsi:type="string">Geschwindigkeit des Balls in Metern pro Sekunde</DESCRIPTION>
 			<DEFAULT-VALUE format-rev="1" xsi:type="value">
 				<DATA xsi:type="integer">0</DATA>
@@ -146,7 +194,7 @@
 			</XACCESS>
 		</MAPPING-ITEM>
 	</MAPPING>
-	<TRACE-RECORDING format-rev="2" xsi:type="recordingManager">
+	<TRACE-RECORDING format-rev="4" xsi:type="recordingManager">
 		<SIGNAL-GROUPS>
 			<ELEMENT format-rev="2" xsi:type="signalGroup">
 				<NAME xsi:type="string">Plant model</NAME>
@@ -206,13 +254,19 @@
 			</ELEMENT>
 		</RECORDING-GROUP>
 		<SYNCHRONISATION-CONFIG xsi:type="syncConfig"/>
+		<TRACE-MERGE-CONFIG xsi:type="traceMergeConfig">
+			<MODE xsi:type="integer">0</MODE>
+			<PATH format-rev="1" xsi:type="valueBaseExpression">
+				<VALUE xsi:type="string">merged</VALUE>
+			</PATH>
+		</TRACE-MERGE-CONFIG>
 	</TRACE-RECORDING>
 	<TESTSTEPS xsi:type="testCase">
 		<TESTSTEP id="8245f9f9-ef37-486a-8984-8b7480dc17af" xsi:type="tsWrite">
 			<MAPPING-REF xsi:type="string">Plant model-1/car1DisCar2</MAPPING-REF>
 			<VALUE xsi:type="expressionValue">
-				<DATA format-rev="1" xsi:type="valueBaseExpression">
-					<VALUE xsi:type="integer">100</VALUE>
+				<DATA xsi:type="varBaseExpression">
+					<NAME xsi:type="string">VAR_BouncingBall_mps</NAME>
 				</DATA>
 			</VALUE>
 			<METRIC format-rev="1" xsi:type="metricInfo">
@@ -358,14 +412,17 @@
 						<SUB-PLOT format-rev="1" xsi:type="plotSubPlot">
 							<TYPE xsi:type="string">separate</TYPE>
 							<ENTITIES>
-								<ENTITY format-rev="1" isTraceStepSignal="False" xsi:type="plotSignalEntity">
+								<ENTITY format-rev="2" isTraceStepSignal="False" xsi:type="plotSignalEntity">
 									<NAME xsi:type="string">Plant_model_v</NAME>
+									<AXIS xsi:type="integer">0</AXIS>
 								</ENTITY>
-								<ENTITY format-rev="1" isTraceStepSignal="False" xsi:type="plotSignalEntity">
+								<ENTITY format-rev="2" isTraceStepSignal="False" xsi:type="plotSignalEntity">
 									<NAME xsi:type="string">Plant_model_h</NAME>
+									<AXIS xsi:type="integer">0</AXIS>
 								</ENTITY>
-								<ENTITY format-rev="1" isTraceStepSignal="False" xsi:type="plotSignalEntity">
+								<ENTITY format-rev="2" isTraceStepSignal="False" xsi:type="plotSignalEntity">
 									<NAME xsi:type="string">Plant_model_1_DistCtr_Status_debug</NAME>
+									<AXIS xsi:type="integer">0</AXIS>
 								</ENTITY>
 							</ENTITIES>
 							<AXES>
@@ -424,7 +481,7 @@
 						<SUB-PLOT format-rev="1" xsi:type="plotSubPlot">
 							<TYPE xsi:type="string">common</TYPE>
 							<ENTITIES>
-								<ENTITY format-rev="1" isTraceStepSignal="False" xsi:type="plotSignalEntity">
+								<ENTITY format-rev="2" isTraceStepSignal="False" xsi:type="plotSignalEntity">
 									<NAME xsi:type="string">Plant_model_1_DistCtr_Status_debug</NAME>
 									<AXIS xsi:type="integer">0</AXIS>
 								</ENTITY>

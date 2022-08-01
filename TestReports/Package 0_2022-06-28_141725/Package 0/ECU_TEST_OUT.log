@@ -1,0 +1,47 @@
+
+
+= 28.06.2022 14:17:25 (UTC +8:00) === ECU-TEST 2022.2.125314+1e79c4002501 125314+1e79c4002501 (2022/06/14 12:33:44) (64bit) ===
+Python 3.9.7 (tags/v3.9.7:1016ef3, Aug 30 2021, 20:19:38) [MSC v.1929 64 bit (AMD64)]
+
+License: ECU-TEST
+         - License options:
+             + Diagnostics add-on
+             + Trace Analysis
+         - valid up to version: 2022.4
+         - valid until: 31-dec-2022
+         - licensed for: TURING
+         - Server: Jerry
+
+
+2022-06-28 14:17:25.519 3888 ManagedWorker-2*PE.Run() INFO:
+                        Start package '' with test case execution with sequential analysis job execution
+2022-06-28 14:17:25.527 3888 ManagedWorker-2*PE.Run() INFO:
+                        Test case "Package 0" started
+2022-06-28 14:17:25.543 3888 ManagedWorker-2*PE.Run() DEBUG:
+                        TestEngine: Start ports...
+2022-06-28 14:17:25.560 3888 ToolLibs DEBUG:
+                        FmiLib: Simulation: ToolLib time: 14:17:25.559 FMU is initialized
+2022-06-28 14:17:25.565 3888 ToolLibs DEBUG:
+                        FmiLib: Simulation: ToolLib time: 14:17:25.564 Simulation is started
+2022-06-28 14:17:25.569 3888 ToolLibs DEBUG:
+                        FmiLib: FmuData.StartSimulation: ToolLib time: 14:17:25.568 Initializing stepwise simulation
+2022-06-28 14:17:25.572 3888 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.Start: ToolLib time: 14:17:25.569 Starting simulation
+2022-06-28 14:17:25.574 3888 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.Start: ToolLib time: 14:17:25.571 Simulation in state ready
+2022-06-28 14:17:25.577 3888 ManagedWorker-2*PE.Run() INFO:
+                        init SteppedSimulationClock
+2022-06-28 14:17:25.580 3888 ManagedWorker-2*PE.Run() INFO:
+                        Model time mode with stepwise simulation activated, port used as time source: MDL01
+2022-06-28 14:17:25.587 3888 ManagedWorker-2*PE.Run() DEBUG:
+                        TestEngine: Stop ports...
+2022-06-28 14:17:25.590 3888 ToolLibs DEBUG:
+                        FmiLib: Simulation: ToolLib time: 14:17:25.589 Simulation is stopped
+2022-06-28 14:17:25.593 3888 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl._EnsureRunning: ToolLib time: 14:17:25.590 Transition to RUNNING
+2022-06-28 14:17:25.596 3888 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl._EnsureRunning: ToolLib time: 14:17:25.590 Simulation in state ready
+2022-06-28 14:17:25.598 3888 ToolLibs DEBUG:
+                        FmiLib: FMU SteppedSimulation._Interrupt: ToolLib time: 14:17:25.590 Entering simulation loop for the first time
+2022-06-28 14:17:26.580 3888 ManagedWorker-2*PE.Run() INFO:
+                        Test case "Package 0" completed

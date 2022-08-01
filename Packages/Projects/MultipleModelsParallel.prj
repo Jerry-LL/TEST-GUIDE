@@ -5,25 +5,42 @@
 	<REPORTING xsi:type="boolean">True</REPORTING>
 	<ID xsi:type="string">7833c300019011eba47aa0510b3f5911</ID>
 	<COMPONENTS>
-		<COMPONENT format-rev="6" xsi:type="configChange">
-			<NAME xsi:type="string">Change configuration</NAME>
+		<COMPONENT format-rev="10" xsi:type="subproject">
+			<NAME xsi:type="string">Setup</NAME>
 			<ENABLED xsi:type="boolean">True</ENABLED>
 			<REPORTING xsi:type="boolean">True</REPORTING>
-			<ID xsi:type="string">79ddcbda019011eb90a0a0510b3f5911</ID>
-			<LOAD-TEST-CONFIG xsi:type="string">FMUs\ACC+BouncingBall.tcf</LOAD-TEST-CONFIG>
-			<LOAD-TEST-BENCH-CONFIG xsi:type="string">FMU_multiplePorts.tbc</LOAD-TEST-BENCH-CONFIG>
-			<FORCE-RESTART xsi:type="boolean">True</FORCE-RESTART>
-			<TOOL-TREATMENTS/>
+			<ID xsi:type="string">47c810a7b18411ec81e434cff6f2e990</ID>
+			<COMPONENTS>
+				<COMPONENT format-rev="6" xsi:type="configChange">
+					<NAME xsi:type="string">Change configuration</NAME>
+					<ENABLED xsi:type="boolean">True</ENABLED>
+					<REPORTING xsi:type="boolean">True</REPORTING>
+					<ID xsi:type="string">4c5582eab18411ec8fdd34cff6f2e990</ID>
+					<LOAD-TEST-CONFIG xsi:type="string">FMUs/ACC+BouncingBall.tcf</LOAD-TEST-CONFIG>
+					<LOAD-TEST-BENCH-CONFIG xsi:type="string">FMU_multiplePorts.tbc</LOAD-TEST-BENCH-CONFIG>
+					<TOOL-TREATMENTS/>
+				</COMPONENT>
+			</COMPONENTS>
 		</COMPONENT>
-		<COMPONENT format-rev="5" xsi:type="packageTest">
-			<NAME xsi:type="string">SimulateMultipleModelsParallel</NAME>
+		<COMPONENT format-rev="10" xsi:type="subproject">
+			<NAME xsi:type="string">Tests</NAME>
 			<ENABLED xsi:type="boolean">True</ENABLED>
 			<REPORTING xsi:type="boolean">True</REPORTING>
-			<ID xsi:type="string">dbaa714c144711ebac26fc7774d1abf9</ID>
-			<COMPONENTS/>
-			<PACKAGE-REF format-rev="1" xsi:type="packageRef">
-				<PACKAGE-PATH xsi:type="string">../SimulateMultipleModelsParallel.pkg</PACKAGE-PATH>
-			</PACKAGE-REF>
+			<ID xsi:type="string">2f20d9bbb18411ec98b934cff6f2e990</ID>
+			<COMPONENTS>
+				<COMPONENT format-rev="6" xsi:type="packageTest">
+					<NAME xsi:type="string">SimulateMultipleModelsParallel</NAME>
+					<ENABLED xsi:type="boolean">True</ENABLED>
+					<REPORTING xsi:type="boolean">True</REPORTING>
+					<ID xsi:type="string">dbaa714c144711ebac26fc7774d1abf9</ID>
+					<COMPONENTS/>
+					<PACKAGE-REF xsi:type="expressionref">
+						<PATH-EXPRESSION format-rev="1" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="string">../SimulateMultipleModelsParallel.pkg</VALUE>
+						</PATH-EXPRESSION>
+					</PACKAGE-REF>
+				</COMPONENT>
+			</COMPONENTS>
 		</COMPONENT>
 	</COMPONENTS>
 </PROJECT>

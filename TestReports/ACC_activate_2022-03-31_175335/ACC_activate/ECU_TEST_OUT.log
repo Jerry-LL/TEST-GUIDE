@@ -1,0 +1,79 @@
+
+
+= 31.03.2022 17:53:35 (UTC +8:00) === ECU-TEST 2021.4.119000+a29e29641862 119000+a29e29641862 (2021/11/30 11:38:05) (64bit) ===
+Python 3.9.7 (tags/v3.9.7:1016ef3, Aug 30 2021, 20:19:38) [MSC v.1929 64 bit (AMD64)]
+
+License: ECU-TEST
+         - License options:
+             + Diagnostics add-on
+             + Trace Analysis
+         - valid up to version: 2022.4
+         - valid until: 31-dec-2022
+         - licensed for: TURING
+         - Server: Jerry
+
+
+2022-03-31 17:53:35.728 31180 ManagedWorker-2*PE.Run() INFO:
+                        Start package 'ACC_activate.pkg' with test case execution with sequential analysis job execution
+2022-03-31 17:53:35.735 31180 ManagedWorker-2*PE.Run() INFO:
+                        Test case "ACC_activate" started
+2022-03-31 17:53:35.830 31180 ManagedWorker-2*PE.Run() DEBUG:
+                        TestEngine: Start ports...
+2022-03-31 17:53:35.862 31180 ToolLibs DEBUG:
+                        FmiLib: Simulation: ToolLib time: 17:53:35.861 FMU is initialized
+2022-03-31 17:53:35.869 31180 ToolLibs DEBUG:
+                        FmiLib: Simulation: ToolLib time: 17:53:35.864 Simulation is started
+2022-03-31 17:53:35.870 31180 ToolLibs DEBUG:
+                        FmiLib: FmuData.StartSimulation: ToolLib time: 17:53:35.866 Initializing stepwise simulation
+2022-03-31 17:53:35.876 31180 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.Start: ToolLib time: 17:53:35.866 Starting simulation
+2022-03-31 17:53:35.882 31180 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.Start: ToolLib time: 17:53:35.867 Simulation in state ready
+2022-03-31 17:53:35.890 31180 ManagedWorker-2*PE.Run() INFO:
+                        init SteppedSimulationClock
+2022-03-31 17:53:35.894 31180 ManagedWorker-2*PE.Run() INFO:
+                        Model time mode with stepwise simulation activated, port used as time source: MDL01
+2022-03-31 17:53:35.930 31180 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 17:53:35.924 Waiting until the current task has finished (1 s)
+2022-03-31 17:53:35.932 31180 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl._EnsureRunning: ToolLib time: 17:53:35.925 Transition to RUNNING
+2022-03-31 17:53:35.937 31180 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl._EnsureRunning: ToolLib time: 17:53:35.925 Simulation in state ready
+2022-03-31 17:53:35.943 31180 ToolLibs DEBUG:
+                        FmiLib: FMU SteppedSimulation._Interrupt: ToolLib time: 17:53:35.925 Entering simulation loop for the first time
+2022-03-31 17:53:35.949 31180 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 17:53:35.929 Current task (1 s) finished successfully
+2022-03-31 17:53:35.957 31180 ManagedWorker-2*PE.Run() DEBUG:
+                        Recording: Starting recording at: 1.0
+                        Package "C:\TuringInfo\1_TraceTronic\0_Workspace\8_ET_Workspace 2021.4\22_fmu_fmi-master\TEST-GUIDE\Packages\ACC\ACC_activate.pkg"#14
+2022-03-31 17:53:35.968 31180 ToolLibs DEBUG:
+                        FmiLib: Recording is saved in 'C:\Users\Jerry\AppData\Local\Temp\ECU-TEST 2021.1\ToolLibTemp\FMI\Recordings\FMI_2022-03-31-175335_2.mf4: ToolLib time: 17:53:35.963
+2022-03-31 17:53:35.969 31180 ManagedWorker-2*PE.Run() INFO:
+                        1. Recording for Recording group for Plant model started
+                        Package "C:\TuringInfo\1_TraceTronic\0_Workspace\8_ET_Workspace 2021.4\22_fmu_fmi-master\TEST-GUIDE\Packages\ACC\ACC_activate.pkg"#14
+2022-03-31 17:53:36.038 31180 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 17:53:35.980 Waiting until the current task has finished (2 s)
+2022-03-31 17:53:36.047 31180 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 17:53:36.046 Current task (2 s) finished successfully
+2022-03-31 17:53:36.052 31180 ManagedWorker-2*PE.Run() DEBUG:
+                        Recording: Finishing recording at: 3.0
+                        Package "C:\TuringInfo\1_TraceTronic\0_Workspace\8_ET_Workspace 2021.4\22_fmu_fmi-master\TEST-GUIDE\Packages\ACC\ACC_activate.pkg"#22
+2022-03-31 17:53:36.055 31180 ManagedWorker-2*PE.Run() INFO:
+                        1. Recording for Recording group for Plant model stopped
+                        Package "C:\TuringInfo\1_TraceTronic\0_Workspace\8_ET_Workspace 2021.4\22_fmu_fmi-master\TEST-GUIDE\Packages\ACC\ACC_activate.pkg"#22
+2022-03-31 17:53:36.067 31180 ManagedWorker-2*PE.Run() DEBUG:
+                        TestEngine: Stop ports...
+2022-03-31 17:53:36.071 31180 ToolLibs DEBUG:
+                        FmiLib: Simulation: ToolLib time: 17:53:36.069 Simulation is stopped
+2022-03-31 17:53:36.905 31180 ManagedWorker-2*PE.Run() INFO:
+                        Test case "ACC_activate" completed
+2022-03-31 17:53:36.969 31180 ManagedWorker-2*PE.Run() INFO:
+                        Start analysis job "Job_1" ("C:\TuringInfo\1_TraceTronic\0_Workspace\8_ET_Workspace 2021.4\22_fmu_fmi-master\TEST-GUIDE\Packages\ACC\ACC_activate.pkg" -> "Trace analysis 1")
+2022-03-31 17:53:36.988 31180 ManagedWorker-2*PE.Run() DEBUG:
+                        Performing episode ...
+2022-03-31 17:53:36.990 31180 ManagedWorker-2*PE.Run() DEBUG:
+                        
+2022-03-31 17:53:36.998 31180 ManagedWorker-2*PE.Run() DEBUG:
+                        Episode completed
+2022-03-31 17:53:37.001 31180 ManagedWorker-2*PE.Run() DEBUG:
+                        

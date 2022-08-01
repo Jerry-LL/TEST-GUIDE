@@ -1,0 +1,27 @@
+
+
+= 12.05.2022 16:33:37 (UTC +8:00) === ECU-TEST 2022.1.122292+3eb90b936db3 122292+3eb90b936db3 (2022/03/21 16:47:11) (64bit) ===
+Python 3.9.7 (tags/v3.9.7:1016ef3, Aug 30 2021, 20:19:38) [MSC v.1929 64 bit (AMD64)]
+
+License: ECU-TEST
+         - License options:
+             + Diagnostics add-on
+             + Trace Analysis
+         - valid up to version: 2022.4
+         - valid until: 31-dec-2022
+         - licensed for: TURING
+         - Server: Jerry
+
+
+2022-05-12 16:33:37.191 15120 ManagedWorker-7*PE.Run() INFO:
+                        Start package '' with test case execution with sequential analysis job execution
+2022-05-12 16:33:37.201 15120 ManagedWorker-7*PE.Run() INFO:
+                        Test case "Package 1" started
+2022-05-12 16:33:37.215 15120 ManagedWorker-7*PE.Run() DEBUG:
+                        TestEngine: Start ports...
+2022-05-12 16:33:37.219 15120 ManagedWorker-7*PE.Run() INFO:
+                        System time mode activated
+2022-05-12 16:33:37.225 15120 ManagedWorker-7*PE.Run() DEBUG:
+                        TestEngine: Stop ports...
+2022-05-12 16:33:37.227 15120 ManagedWorker-7*PE.Run() INFO:
+                        Test case "Package 1" completed

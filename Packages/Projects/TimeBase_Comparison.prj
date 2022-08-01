@@ -21,14 +21,16 @@
 					<FORCE-RESTART xsi:type="boolean">True</FORCE-RESTART>
 					<TOOL-TREATMENTS/>
 				</COMPONENT>
-				<COMPONENT format-rev="5" xsi:type="packageTest">
+				<COMPONENT format-rev="6" xsi:type="packageTest">
 					<NAME xsi:type="string">SimulationTimes RealTime</NAME>
 					<ENABLED xsi:type="boolean">True</ENABLED>
 					<REPORTING xsi:type="boolean">True</REPORTING>
 					<ID xsi:type="string">1889fcf0144811ebb387fc7774d1abf9</ID>
 					<COMPONENTS/>
-					<PACKAGE-REF format-rev="1" xsi:type="packageRef">
-						<PACKAGE-PATH xsi:type="string">../BouncingBall/SimulationTimes.pkg</PACKAGE-PATH>
+					<PACKAGE-REF xsi:type="expressionref">
+						<PATH-EXPRESSION format-rev="1" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="string">../BouncingBall/SimulationTimes.pkg</VALUE>
+						</PATH-EXPRESSION>
 					</PACKAGE-REF>
 				</COMPONENT>
 			</COMPONENTS>
@@ -49,14 +51,16 @@
 					<FORCE-RESTART xsi:type="boolean">True</FORCE-RESTART>
 					<TOOL-TREATMENTS/>
 				</COMPONENT>
-				<COMPONENT format-rev="5" xsi:type="packageTest">
+				<COMPONENT format-rev="6" xsi:type="packageTest">
 					<NAME xsi:type="string">SimulationTimes ModelTime</NAME>
 					<ENABLED xsi:type="boolean">True</ENABLED>
 					<REPORTING xsi:type="boolean">True</REPORTING>
 					<ID xsi:type="string">adc943682d5c11eb94fb8c04ba2e2de9</ID>
 					<COMPONENTS/>
-					<PACKAGE-REF format-rev="1" xsi:type="packageRef">
-						<PACKAGE-PATH xsi:type="string">../BouncingBall/SimulationTimes.pkg</PACKAGE-PATH>
+					<PACKAGE-REF xsi:type="expressionref">
+						<PATH-EXPRESSION format-rev="1" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="string">../BouncingBall/SimulationTimes.pkg</VALUE>
+						</PATH-EXPRESSION>
 					</PACKAGE-REF>
 				</COMPONENT>
 			</COMPONENTS>
@@ -77,14 +81,16 @@
 					<FORCE-RESTART xsi:type="boolean">True</FORCE-RESTART>
 					<TOOL-TREATMENTS/>
 				</COMPONENT>
-				<COMPONENT format-rev="5" xsi:type="packageTest">
+				<COMPONENT format-rev="6" xsi:type="packageTest">
 					<NAME xsi:type="string">SimulationTimes ModelTime</NAME>
 					<ENABLED xsi:type="boolean">True</ENABLED>
 					<REPORTING xsi:type="boolean">True</REPORTING>
 					<ID xsi:type="string">16e7a212144811ebb155fc7774d1abf9</ID>
 					<COMPONENTS/>
-					<PACKAGE-REF format-rev="1" xsi:type="packageRef">
-						<PACKAGE-PATH xsi:type="string">../BouncingBall/SimulationTimes.pkg</PACKAGE-PATH>
+					<PACKAGE-REF xsi:type="expressionref">
+						<PATH-EXPRESSION format-rev="1" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="string">../BouncingBall/SimulationTimes.pkg</VALUE>
+						</PATH-EXPRESSION>
 					</PACKAGE-REF>
 				</COMPONENT>
 			</COMPONENTS>
