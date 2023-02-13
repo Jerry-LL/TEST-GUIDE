@@ -1,0 +1,51 @@
+
+
+= 13.02.2023 22:25:52 (UTC +8:00) === ECU-TEST 2023.1.0.131192+68f455d94176-FeatureSet 131192+68f455d94176 (2022/12/13 15:00:54) (64bit) ===
+Python 3.9.13 (tags/v3.9.13:6de2ca5, May 17 2022, 16:36:42) [MSC v.1929 64 bit (AMD64)]
+
+License: ECU-TEST
+         - License options:
+             + Diagnostics add-on
+             + Trace Analysis
+         - valid up to version: 2023.4
+         - valid until: 31-dec-2023
+         - licensed for: TURING
+         - Server: Jerry
+
+
+2023-02-13 22:25:52.846 23724 ManagedWorker-3*PE.Run() INFO:
+                        Start package '' with test case execution with sequential analysis job execution
+2023-02-13 22:25:52.851 23724 ManagedWorker-3*PE.Run() INFO:
+                        Test case "Package 0" started
+2023-02-13 22:25:52.853 23724 ManagedWorker-3*PE.Run() DEBUG:
+                        TestEngine: Start ports...
+2023-02-13 22:25:52.905 23724 ToolLibs DEBUG:
+                        FmiLib: Simulation: ToolLib time: 22:25:52.904 FMU is initialized
+2023-02-13 22:25:52.908 23724 ToolLibs DEBUG:
+                        FmiLib: Simulation: ToolLib time: 22:25:52.907 Simulation is started
+2023-02-13 22:25:52.912 23724 ToolLibs DEBUG:
+                        FmiLib: FmuData.StartSimulation: ToolLib time: 22:25:52.911 Initializing stepwise simulation
+2023-02-13 22:25:52.913 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.Start: ToolLib time: 22:25:52.911 Starting simulation
+2023-02-13 22:25:52.915 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.Start: ToolLib time: 22:25:52.913 Simulation in state ready
+2023-02-13 22:25:52.918 23724 ManagedWorker-3*PE.Run() INFO:
+                        init SteppedSimulationClock
+2023-02-13 22:25:52.920 23724 ManagedWorker-3*PE.Run() INFO:
+                        Model time mode with stepwise simulation activated, port used as time source: MDL01
+2023-02-13 22:25:52.925 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:25:52.923 Waiting until the current task has finished (100.0 s)
+2023-02-13 22:25:52.927 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl._EnsureRunning: ToolLib time: 22:25:52.924 Transition to RUNNING
+2023-02-13 22:25:52.929 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl._EnsureRunning: ToolLib time: 22:25:52.924 Simulation in state ready
+2023-02-13 22:25:52.930 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SteppedSimulation._Interrupt: ToolLib time: 22:25:52.924 Entering simulation loop for the first time
+2023-02-13 22:25:53.536 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:25:53.535 Current task (100.0 s) finished successfully
+2023-02-13 22:25:53.539 23724 ManagedWorker-3*PE.Run() DEBUG:
+                        TestEngine: Stop ports...
+2023-02-13 22:25:53.563 23724 ToolLibs DEBUG:
+                        FmiLib: Simulation: ToolLib time: 22:25:53.542 Simulation is stopped
+2023-02-13 22:25:53.921 23724 ManagedWorker-3*PE.Run() INFO:
+                        Test case "Package 0" completed

@@ -1,0 +1,1422 @@
+
+
+= 13.02.2023 22:17:57 (UTC +8:00) === ECU-TEST 2023.1.0.131192+68f455d94176-FeatureSet 131192+68f455d94176 (2022/12/13 15:00:54) (64bit) ===
+Python 3.9.13 (tags/v3.9.13:6de2ca5, May 17 2022, 16:36:42) [MSC v.1929 64 bit (AMD64)]
+
+License: 
+         - License options:
+             + Editor Only
+         - valid up to version: 
+         - valid until: 
+         - licensed for: 
+         - Server: 
+
+
+2023-02-13 22:17:57.244 23724 ManagedWorker-6 INFO:
+                        Start project 'ACC_TestSuite.prj' with test case execution with sequential analysis job execution
+2023-02-13 22:17:57.340 23724 ManagedWorker-6 DEBUG:
+                        ConfigManager: Load TCF: C:\TuringInfo\1_TraceTronic\0_Workspace\10_ET_Workspace 2022.2\22_fmu_fmi-master\TEST-GUIDE\Configurations\FMUs\ACC_FMU.tcf
+2023-02-13 22:17:57.354 23724 ManagedWorker-6 DEBUG:
+                        ConfigManager: Start TCF
+2023-02-13 22:17:57.519 23724 ManagedWorker-6*PE.Run() INFO:
+                        Test case "ACC_activate" started
+2023-02-13 22:17:57.584 23724 ManagedWorker-6*PE.Run() DEBUG:
+                        TestEngine: Start ports...
+2023-02-13 22:17:57.586 23724 ToolLibs DEBUG:
+                        FmiLib: Simulation: ToolLib time: 22:17:57.586 FMU is initialized
+2023-02-13 22:17:57.588 23724 ToolLibs DEBUG:
+                        FmiLib: Simulation: ToolLib time: 22:17:57.588 Simulation is started
+2023-02-13 22:17:57.591 23724 ToolLibs DEBUG:
+                        FmiLib: FmuData.StartSimulation: ToolLib time: 22:17:57.591 Initializing stepwise simulation
+2023-02-13 22:17:57.592 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.Start: ToolLib time: 22:17:57.591 Starting simulation
+2023-02-13 22:17:57.593 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.Start: ToolLib time: 22:17:57.592 Simulation in state ready
+2023-02-13 22:17:57.595 23724 ManagedWorker-6*PE.Run() INFO:
+                        init SteppedSimulationClock
+2023-02-13 22:17:57.597 23724 ManagedWorker-6*PE.Run() INFO:
+                        Model time mode with stepwise simulation activated, port used as time source: MDL01
+2023-02-13 22:17:57.613 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:57.612 Waiting until the current task has finished (1 s)
+2023-02-13 22:17:57.614 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl._EnsureRunning: ToolLib time: 22:17:57.612 Transition to RUNNING
+2023-02-13 22:17:57.614 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl._EnsureRunning: ToolLib time: 22:17:57.612 Simulation in state ready
+2023-02-13 22:17:57.615 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SteppedSimulation._Interrupt: ToolLib time: 22:17:57.612 Entering simulation loop for the first time
+2023-02-13 22:17:57.618 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:57.617 Current task (1 s) finished successfully
+2023-02-13 22:17:57.621 23724 ManagedWorker-6*PE.Run() DEBUG:
+                        Recording: Starting recording at: 1.0
+                        Package "C:\TuringInfo\1_TraceTronic\0_Workspace\10_ET_Workspace 2022.2\22_fmu_fmi-master\TEST-GUIDE\Packages\ACC\ACC_activate.pkg"#14
+2023-02-13 22:17:57.625 23724 ToolLibs DEBUG:
+                        FmiLib: Recording is saved in 'C:\Users\Jerry\AppData\Local\Temp\ECU-TEST 2022.2\ToolLibTemp\FMI\Recordings\FMI_2023-02-13-221757_18.mf4: ToolLib time: 22:17:57.624
+2023-02-13 22:17:57.629 23724 ManagedWorker-6*PE.Run() INFO:
+                        1. Recording for Recording group for Plant model started
+                        Package "C:\TuringInfo\1_TraceTronic\0_Workspace\10_ET_Workspace 2022.2\22_fmu_fmi-master\TEST-GUIDE\Packages\ACC\ACC_activate.pkg"#14
+2023-02-13 22:17:57.634 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:57.633 Waiting until the current task has finished (2 s)
+2023-02-13 22:17:57.693 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:57.692 Current task (2 s) finished successfully
+2023-02-13 22:17:57.697 23724 ManagedWorker-6*PE.Run() DEBUG:
+                        Recording: Finishing recording at: 3.0
+                        Package "C:\TuringInfo\1_TraceTronic\0_Workspace\10_ET_Workspace 2022.2\22_fmu_fmi-master\TEST-GUIDE\Packages\ACC\ACC_activate.pkg"#22
+2023-02-13 22:17:57.700 23724 ManagedWorker-6*PE.Run() INFO:
+                        1. Recording for Recording group for Plant model stopped
+                        Package "C:\TuringInfo\1_TraceTronic\0_Workspace\10_ET_Workspace 2022.2\22_fmu_fmi-master\TEST-GUIDE\Packages\ACC\ACC_activate.pkg"#22
+2023-02-13 22:17:57.706 23724 ManagedWorker-6*PE.Run() DEBUG:
+                        TestEngine: Stop ports...
+2023-02-13 22:17:57.709 23724 ToolLibs DEBUG:
+                        FmiLib: Simulation: ToolLib time: 22:17:57.708 Simulation is stopped
+2023-02-13 22:17:58.604 23724 ManagedWorker-6*PE.Run() INFO:
+                        Test case "ACC_activate" completed
+2023-02-13 22:17:58.661 23724 ManagedWorker-6*PE.Run() INFO:
+                        Start analysis job "Job_1" ("C:\TuringInfo\1_TraceTronic\0_Workspace\10_ET_Workspace 2022.2\22_fmu_fmi-master\TEST-GUIDE\Packages\ACC\ACC_activate.pkg" -> "Trace analysis 1")
+2023-02-13 22:17:58.676 23724 ManagedWorker-6*PE.Run() DEBUG:
+                        Performing episode ...
+2023-02-13 22:17:58.677 23724 ManagedWorker-6*PE.Run() DEBUG:
+                        
+2023-02-13 22:17:58.682 23724 ManagedWorker-6*PE.Run() DEBUG:
+                        Episode completed
+2023-02-13 22:17:58.683 23724 ManagedWorker-6*PE.Run() DEBUG:
+                        
+2023-02-13 22:17:59.017 23724 ManagedWorker-6*PE.Run() INFO:
+                        Test case "ACC_activate_with_brake" started
+2023-02-13 22:17:59.112 23724 ManagedWorker-6*PE.Run() DEBUG:
+                        TestEngine: Start ports...
+2023-02-13 22:17:59.116 23724 ToolLibs DEBUG:
+                        FmiLib: Simulation: ToolLib time: 22:17:59.115 FMU is initialized
+2023-02-13 22:17:59.119 23724 ToolLibs DEBUG:
+                        FmiLib: Simulation: ToolLib time: 22:17:59.118 Simulation is started
+2023-02-13 22:17:59.123 23724 ToolLibs DEBUG:
+                        FmiLib: FmuData.StartSimulation: ToolLib time: 22:17:59.122 Initializing stepwise simulation
+2023-02-13 22:17:59.125 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.Start: ToolLib time: 22:17:59.122 Starting simulation
+2023-02-13 22:17:59.126 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.Start: ToolLib time: 22:17:59.124 Simulation in state ready
+2023-02-13 22:17:59.130 23724 ManagedWorker-6*PE.Run() INFO:
+                        init SteppedSimulationClock
+2023-02-13 22:17:59.132 23724 ManagedWorker-6*PE.Run() INFO:
+                        Model time mode with stepwise simulation activated, port used as time source: MDL01
+2023-02-13 22:17:59.160 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.160 Waiting until the current task has finished (1 s)
+2023-02-13 22:17:59.162 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl._EnsureRunning: ToolLib time: 22:17:59.160 Transition to RUNNING
+2023-02-13 22:17:59.164 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl._EnsureRunning: ToolLib time: 22:17:59.160 Simulation in state ready
+2023-02-13 22:17:59.165 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SteppedSimulation._Interrupt: ToolLib time: 22:17:59.160 Entering simulation loop for the first time
+2023-02-13 22:17:59.167 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.165 Current task (1 s) finished successfully
+2023-02-13 22:17:59.172 23724 ManagedWorker-6*PE.Run() DEBUG:
+                        Recording: Starting recording at: 1.0
+                        Package "C:\TuringInfo\1_TraceTronic\0_Workspace\10_ET_Workspace 2022.2\22_fmu_fmi-master\TEST-GUIDE\Packages\ACC\ACC_activate_with_brake.pkg"#14
+2023-02-13 22:17:59.176 23724 ToolLibs DEBUG:
+                        FmiLib: Recording is saved in 'C:\Users\Jerry\AppData\Local\Temp\ECU-TEST 2022.2\ToolLibTemp\FMI\Recordings\FMI_2023-02-13-221759_19.mf4: ToolLib time: 22:17:59.175
+2023-02-13 22:17:59.181 23724 ManagedWorker-6*PE.Run() INFO:
+                        1. Recording for Recording group for Plant model started
+                        Package "C:\TuringInfo\1_TraceTronic\0_Workspace\10_ET_Workspace 2022.2\22_fmu_fmi-master\TEST-GUIDE\Packages\ACC\ACC_activate_with_brake.pkg"#14
+2023-02-13 22:17:59.188 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.187 Waiting until the current task has finished (1 s)
+2023-02-13 22:17:59.219 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.218 Current task (1 s) finished successfully
+2023-02-13 22:17:59.229 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.229 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:17:59.232 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.229 Current task (0.01 s) finished successfully
+2023-02-13 22:17:59.240 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.239 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:17:59.242 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.240 Current task (0.01 s) finished successfully
+2023-02-13 22:17:59.247 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.245 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:17:59.250 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.246 Current task (0.01 s) finished successfully
+2023-02-13 22:17:59.256 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.255 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:17:59.258 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.255 Current task (0.01 s) finished successfully
+2023-02-13 22:17:59.264 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.263 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:17:59.266 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.263 Current task (0.01 s) finished successfully
+2023-02-13 22:17:59.273 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.272 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:17:59.277 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.273 Current task (0.01 s) finished successfully
+2023-02-13 22:17:59.286 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.285 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:17:59.289 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.285 Current task (0.01 s) finished successfully
+2023-02-13 22:17:59.295 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.294 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:17:59.297 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.294 Current task (0.01 s) finished successfully
+2023-02-13 22:17:59.304 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.302 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:17:59.305 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.303 Current task (0.01 s) finished successfully
+2023-02-13 22:17:59.311 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.310 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:17:59.314 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.310 Current task (0.01 s) finished successfully
+2023-02-13 22:17:59.322 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.321 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:17:59.324 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.322 Current task (0.01 s) finished successfully
+2023-02-13 22:17:59.331 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.329 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:17:59.333 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.330 Current task (0.01 s) finished successfully
+2023-02-13 22:17:59.339 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.338 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:17:59.341 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.339 Current task (0.01 s) finished successfully
+2023-02-13 22:17:59.347 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.346 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:17:59.350 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.347 Current task (0.01 s) finished successfully
+2023-02-13 22:17:59.355 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.354 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:17:59.357 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.356 Current task (0.01 s) finished successfully
+2023-02-13 22:17:59.362 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.361 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:17:59.364 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.362 Current task (0.01 s) finished successfully
+2023-02-13 22:17:59.368 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.368 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:17:59.370 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.369 Current task (0.01 s) finished successfully
+2023-02-13 22:17:59.376 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.375 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:17:59.379 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.376 Current task (0.01 s) finished successfully
+2023-02-13 22:17:59.385 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.383 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:17:59.387 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.384 Current task (0.01 s) finished successfully
+2023-02-13 22:17:59.394 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.393 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:17:59.395 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.393 Current task (0.01 s) finished successfully
+2023-02-13 22:17:59.403 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.401 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:17:59.404 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.402 Current task (0.01 s) finished successfully
+2023-02-13 22:17:59.411 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.409 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:17:59.419 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.410 Current task (0.01 s) finished successfully
+2023-02-13 22:17:59.426 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.424 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:17:59.428 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.425 Current task (0.01 s) finished successfully
+2023-02-13 22:17:59.433 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.432 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:17:59.435 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.432 Current task (0.01 s) finished successfully
+2023-02-13 22:17:59.440 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.439 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:17:59.442 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.439 Current task (0.01 s) finished successfully
+2023-02-13 22:17:59.449 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.448 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:17:59.451 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.448 Current task (0.01 s) finished successfully
+2023-02-13 22:17:59.457 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.456 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:17:59.458 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.457 Current task (0.01 s) finished successfully
+2023-02-13 22:17:59.466 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.466 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:17:59.469 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.466 Current task (0.01 s) finished successfully
+2023-02-13 22:17:59.474 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.474 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:17:59.477 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.474 Current task (0.01 s) finished successfully
+2023-02-13 22:17:59.484 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.482 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:17:59.486 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.483 Current task (0.01 s) finished successfully
+2023-02-13 22:17:59.491 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.490 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:17:59.493 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.491 Current task (0.01 s) finished successfully
+2023-02-13 22:17:59.501 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.500 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:17:59.503 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.500 Current task (0.01 s) finished successfully
+2023-02-13 22:17:59.508 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.507 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:17:59.511 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.507 Current task (0.01 s) finished successfully
+2023-02-13 22:17:59.519 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.518 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:17:59.521 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.519 Current task (0.01 s) finished successfully
+2023-02-13 22:17:59.529 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.527 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:17:59.531 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.528 Current task (0.01 s) finished successfully
+2023-02-13 22:17:59.537 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.536 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:17:59.540 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.536 Current task (0.01 s) finished successfully
+2023-02-13 22:17:59.546 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.545 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:17:59.548 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.545 Current task (0.01 s) finished successfully
+2023-02-13 22:17:59.555 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.554 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:17:59.557 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.554 Current task (0.01 s) finished successfully
+2023-02-13 22:17:59.564 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.562 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:17:59.566 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.563 Current task (0.01 s) finished successfully
+2023-02-13 22:17:59.572 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.571 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:17:59.574 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.572 Current task (0.01 s) finished successfully
+2023-02-13 22:17:59.581 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.579 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:17:59.582 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.580 Current task (0.01 s) finished successfully
+2023-02-13 22:17:59.588 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.587 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:17:59.590 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.588 Current task (0.01 s) finished successfully
+2023-02-13 22:17:59.596 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.595 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:17:59.598 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.595 Current task (0.01 s) finished successfully
+2023-02-13 22:17:59.602 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.601 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:17:59.604 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.602 Current task (0.01 s) finished successfully
+2023-02-13 22:17:59.610 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.609 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:17:59.612 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.609 Current task (0.01 s) finished successfully
+2023-02-13 22:17:59.618 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.616 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:17:59.620 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.617 Current task (0.01 s) finished successfully
+2023-02-13 22:17:59.626 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.625 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:17:59.628 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.626 Current task (0.01 s) finished successfully
+2023-02-13 22:17:59.633 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.632 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:17:59.635 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.633 Current task (0.01 s) finished successfully
+2023-02-13 22:17:59.640 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.639 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:17:59.642 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.639 Current task (0.01 s) finished successfully
+2023-02-13 22:17:59.648 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.647 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:17:59.651 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.647 Current task (0.01 s) finished successfully
+2023-02-13 22:17:59.656 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.655 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:17:59.659 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.656 Current task (0.01 s) finished successfully
+2023-02-13 22:17:59.664 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.663 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:17:59.667 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.664 Current task (0.01 s) finished successfully
+2023-02-13 22:17:59.673 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.671 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:17:59.675 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.672 Current task (0.01 s) finished successfully
+2023-02-13 22:17:59.680 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.679 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:17:59.682 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.680 Current task (0.01 s) finished successfully
+2023-02-13 22:17:59.688 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.687 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:17:59.690 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.688 Current task (0.01 s) finished successfully
+2023-02-13 22:17:59.694 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.693 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:17:59.696 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.695 Current task (0.01 s) finished successfully
+2023-02-13 22:17:59.701 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.700 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:17:59.704 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.701 Current task (0.01 s) finished successfully
+2023-02-13 22:17:59.710 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.709 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:17:59.713 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.709 Current task (0.01 s) finished successfully
+2023-02-13 22:17:59.718 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.717 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:17:59.720 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.717 Current task (0.01 s) finished successfully
+2023-02-13 22:17:59.726 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.724 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:17:59.727 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.725 Current task (0.01 s) finished successfully
+2023-02-13 22:17:59.733 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.733 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:17:59.736 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.733 Current task (0.01 s) finished successfully
+2023-02-13 22:17:59.743 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.742 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:17:59.745 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.743 Current task (0.01 s) finished successfully
+2023-02-13 22:17:59.750 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.750 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:17:59.752 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.751 Current task (0.01 s) finished successfully
+2023-02-13 22:17:59.756 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.755 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:17:59.757 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.756 Current task (0.01 s) finished successfully
+2023-02-13 22:17:59.762 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.762 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:17:59.764 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.762 Current task (0.01 s) finished successfully
+2023-02-13 22:17:59.770 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.768 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:17:59.771 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.769 Current task (0.01 s) finished successfully
+2023-02-13 22:17:59.777 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.775 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:17:59.779 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.776 Current task (0.01 s) finished successfully
+2023-02-13 22:17:59.786 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.783 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:17:59.788 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.784 Current task (0.01 s) finished successfully
+2023-02-13 22:17:59.793 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.792 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:17:59.796 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.793 Current task (0.01 s) finished successfully
+2023-02-13 22:17:59.802 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.801 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:17:59.804 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.801 Current task (0.01 s) finished successfully
+2023-02-13 22:17:59.810 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.809 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:17:59.812 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.810 Current task (0.01 s) finished successfully
+2023-02-13 22:17:59.817 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.817 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:17:59.819 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.818 Current task (0.01 s) finished successfully
+2023-02-13 22:17:59.824 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.823 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:17:59.826 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.823 Current task (0.01 s) finished successfully
+2023-02-13 22:17:59.831 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.830 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:17:59.833 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.831 Current task (0.01 s) finished successfully
+2023-02-13 22:17:59.839 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.838 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:17:59.841 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.839 Current task (0.01 s) finished successfully
+2023-02-13 22:17:59.848 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.846 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:17:59.850 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.847 Current task (0.01 s) finished successfully
+2023-02-13 22:17:59.855 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.854 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:17:59.857 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.855 Current task (0.01 s) finished successfully
+2023-02-13 22:17:59.862 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.862 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:17:59.865 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.862 Current task (0.01 s) finished successfully
+2023-02-13 22:17:59.871 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.869 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:17:59.872 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.870 Current task (0.01 s) finished successfully
+2023-02-13 22:17:59.878 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.877 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:17:59.881 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.878 Current task (0.01 s) finished successfully
+2023-02-13 22:17:59.887 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.885 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:17:59.889 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.885 Current task (0.01 s) finished successfully
+2023-02-13 22:17:59.895 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.894 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:17:59.897 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.895 Current task (0.01 s) finished successfully
+2023-02-13 22:17:59.904 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.903 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:17:59.905 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.904 Current task (0.01 s) finished successfully
+2023-02-13 22:17:59.911 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.910 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:17:59.913 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.910 Current task (0.01 s) finished successfully
+2023-02-13 22:17:59.921 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.920 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:17:59.923 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.921 Current task (0.01 s) finished successfully
+2023-02-13 22:17:59.928 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.927 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:17:59.930 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.927 Current task (0.01 s) finished successfully
+2023-02-13 22:17:59.937 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.935 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:17:59.939 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.937 Current task (0.01 s) finished successfully
+2023-02-13 22:17:59.948 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.948 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:17:59.951 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.948 Current task (0.01 s) finished successfully
+2023-02-13 22:17:59.956 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.956 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:17:59.959 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.956 Current task (0.01 s) finished successfully
+2023-02-13 22:17:59.964 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.964 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:17:59.966 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.964 Current task (0.01 s) finished successfully
+2023-02-13 22:17:59.972 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.971 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:17:59.974 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.972 Current task (0.01 s) finished successfully
+2023-02-13 22:17:59.984 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.983 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:17:59.989 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.983 Current task (0.01 s) finished successfully
+2023-02-13 22:17:59.994 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.993 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:17:59.996 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:17:59.994 Current task (0.01 s) finished successfully
+2023-02-13 22:18:00.002 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.001 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:00.004 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.001 Current task (0.01 s) finished successfully
+2023-02-13 22:18:00.009 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.008 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:00.011 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.009 Current task (0.01 s) finished successfully
+2023-02-13 22:18:00.024 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.023 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:00.027 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.023 Current task (0.01 s) finished successfully
+2023-02-13 22:18:00.035 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.035 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:00.037 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.036 Current task (0.01 s) finished successfully
+2023-02-13 22:18:00.048 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.046 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:00.050 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.046 Current task (0.01 s) finished successfully
+2023-02-13 22:18:00.057 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.056 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:00.058 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.057 Current task (0.01 s) finished successfully
+2023-02-13 22:18:00.063 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.063 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:00.065 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.063 Current task (0.01 s) finished successfully
+2023-02-13 22:18:00.072 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.071 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:00.074 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.072 Current task (0.01 s) finished successfully
+2023-02-13 22:18:00.088 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.086 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:00.089 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.087 Current task (0.01 s) finished successfully
+2023-02-13 22:18:00.094 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.093 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:00.096 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.094 Current task (0.01 s) finished successfully
+2023-02-13 22:18:00.102 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.102 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:00.104 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.103 Current task (0.01 s) finished successfully
+2023-02-13 22:18:00.109 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.109 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:00.111 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.110 Current task (0.01 s) finished successfully
+2023-02-13 22:18:00.117 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.116 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:00.119 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.117 Current task (0.01 s) finished successfully
+2023-02-13 22:18:00.124 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.124 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:00.126 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.125 Current task (0.01 s) finished successfully
+2023-02-13 22:18:00.130 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.130 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:00.132 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.130 Current task (0.01 s) finished successfully
+2023-02-13 22:18:00.137 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.136 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:00.139 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.137 Current task (0.01 s) finished successfully
+2023-02-13 22:18:00.145 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.144 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:00.146 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.144 Current task (0.01 s) finished successfully
+2023-02-13 22:18:00.152 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.151 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:00.154 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.152 Current task (0.01 s) finished successfully
+2023-02-13 22:18:00.161 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.160 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:00.162 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.160 Current task (0.01 s) finished successfully
+2023-02-13 22:18:00.168 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.167 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:00.171 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.168 Current task (0.01 s) finished successfully
+2023-02-13 22:18:00.177 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.176 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:00.178 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.177 Current task (0.01 s) finished successfully
+2023-02-13 22:18:00.184 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.183 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:00.186 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.183 Current task (0.01 s) finished successfully
+2023-02-13 22:18:00.192 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.191 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:00.194 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.192 Current task (0.01 s) finished successfully
+2023-02-13 22:18:00.200 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.199 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:00.202 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.199 Current task (0.01 s) finished successfully
+2023-02-13 22:18:00.207 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.206 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:00.209 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.207 Current task (0.01 s) finished successfully
+2023-02-13 22:18:00.215 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.213 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:00.216 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.214 Current task (0.01 s) finished successfully
+2023-02-13 22:18:00.222 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.221 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:00.225 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.222 Current task (0.01 s) finished successfully
+2023-02-13 22:18:00.231 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.230 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:00.233 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.231 Current task (0.01 s) finished successfully
+2023-02-13 22:18:00.240 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.238 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:00.241 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.239 Current task (0.01 s) finished successfully
+2023-02-13 22:18:00.246 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.246 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:00.249 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.246 Current task (0.01 s) finished successfully
+2023-02-13 22:18:00.255 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.254 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:00.256 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.255 Current task (0.01 s) finished successfully
+2023-02-13 22:18:00.263 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.261 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:00.266 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.262 Current task (0.01 s) finished successfully
+2023-02-13 22:18:00.274 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.273 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:00.277 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.273 Current task (0.01 s) finished successfully
+2023-02-13 22:18:00.283 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.282 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:00.284 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.283 Current task (0.01 s) finished successfully
+2023-02-13 22:18:00.289 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.287 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:00.291 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.288 Current task (0.01 s) finished successfully
+2023-02-13 22:18:00.296 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.295 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:00.298 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.295 Current task (0.01 s) finished successfully
+2023-02-13 22:18:00.305 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.303 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:00.308 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.304 Current task (0.01 s) finished successfully
+2023-02-13 22:18:00.313 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.312 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:00.315 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.313 Current task (0.01 s) finished successfully
+2023-02-13 22:18:00.320 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.319 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:00.323 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.320 Current task (0.01 s) finished successfully
+2023-02-13 22:18:00.329 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.327 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:00.330 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.328 Current task (0.01 s) finished successfully
+2023-02-13 22:18:00.335 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.334 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:00.338 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.335 Current task (0.01 s) finished successfully
+2023-02-13 22:18:00.344 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.343 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:00.346 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.343 Current task (0.01 s) finished successfully
+2023-02-13 22:18:00.353 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.351 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:00.355 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.352 Current task (0.01 s) finished successfully
+2023-02-13 22:18:00.360 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.359 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:00.362 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.360 Current task (0.01 s) finished successfully
+2023-02-13 22:18:00.368 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.367 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:00.370 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.367 Current task (0.01 s) finished successfully
+2023-02-13 22:18:00.376 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.375 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:00.378 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.375 Current task (0.01 s) finished successfully
+2023-02-13 22:18:00.382 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.381 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:00.385 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.382 Current task (0.01 s) finished successfully
+2023-02-13 22:18:00.389 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.389 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:00.392 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.390 Current task (0.01 s) finished successfully
+2023-02-13 22:18:00.398 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.397 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:00.400 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.398 Current task (0.01 s) finished successfully
+2023-02-13 22:18:00.406 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.404 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:00.408 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.405 Current task (0.01 s) finished successfully
+2023-02-13 22:18:00.414 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.414 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:00.417 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.414 Current task (0.01 s) finished successfully
+2023-02-13 22:18:00.424 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.422 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:00.426 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.423 Current task (0.01 s) finished successfully
+2023-02-13 22:18:00.433 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.432 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:00.436 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.432 Current task (0.01 s) finished successfully
+2023-02-13 22:18:00.441 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.440 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:00.442 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.440 Current task (0.01 s) finished successfully
+2023-02-13 22:18:00.447 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.447 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:00.449 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.447 Current task (0.01 s) finished successfully
+2023-02-13 22:18:00.455 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.455 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:00.457 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.456 Current task (0.01 s) finished successfully
+2023-02-13 22:18:00.463 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.462 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:00.465 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.463 Current task (0.01 s) finished successfully
+2023-02-13 22:18:00.471 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.470 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:00.473 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.470 Current task (0.01 s) finished successfully
+2023-02-13 22:18:00.477 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.476 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:00.478 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.477 Current task (0.01 s) finished successfully
+2023-02-13 22:18:00.483 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.482 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:00.484 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.483 Current task (0.01 s) finished successfully
+2023-02-13 22:18:00.490 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.489 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:00.492 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.490 Current task (0.01 s) finished successfully
+2023-02-13 22:18:00.498 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.496 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:00.500 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.497 Current task (0.01 s) finished successfully
+2023-02-13 22:18:00.506 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.505 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:00.508 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.506 Current task (0.01 s) finished successfully
+2023-02-13 22:18:00.513 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.512 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:00.515 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.513 Current task (0.01 s) finished successfully
+2023-02-13 22:18:00.521 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.520 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:00.523 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.521 Current task (0.01 s) finished successfully
+2023-02-13 22:18:00.529 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.529 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:00.532 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.529 Current task (0.01 s) finished successfully
+2023-02-13 22:18:00.537 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.536 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:00.540 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.537 Current task (0.01 s) finished successfully
+2023-02-13 22:18:00.545 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.544 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:00.547 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.544 Current task (0.01 s) finished successfully
+2023-02-13 22:18:00.553 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.552 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:00.556 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.553 Current task (0.01 s) finished successfully
+2023-02-13 22:18:00.562 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.561 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:00.563 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.561 Current task (0.01 s) finished successfully
+2023-02-13 22:18:00.567 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.567 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:00.571 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.567 Current task (0.01 s) finished successfully
+2023-02-13 22:18:00.576 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.575 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:00.578 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.576 Current task (0.01 s) finished successfully
+2023-02-13 22:18:00.585 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.583 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:00.587 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.584 Current task (0.01 s) finished successfully
+2023-02-13 22:18:00.593 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.592 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:00.595 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.592 Current task (0.01 s) finished successfully
+2023-02-13 22:18:00.602 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.600 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:00.603 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.601 Current task (0.01 s) finished successfully
+2023-02-13 22:18:00.610 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.609 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:00.612 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.610 Current task (0.01 s) finished successfully
+2023-02-13 22:18:00.617 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.617 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:00.620 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.618 Current task (0.01 s) finished successfully
+2023-02-13 22:18:00.623 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.623 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:00.624 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.624 Current task (0.01 s) finished successfully
+2023-02-13 22:18:00.630 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.629 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:00.632 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.630 Current task (0.01 s) finished successfully
+2023-02-13 22:18:00.638 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.637 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:00.640 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.637 Current task (0.01 s) finished successfully
+2023-02-13 22:18:00.645 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.644 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:00.647 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.645 Current task (0.01 s) finished successfully
+2023-02-13 22:18:00.654 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.653 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:00.656 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.654 Current task (0.01 s) finished successfully
+2023-02-13 22:18:00.662 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.661 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:00.664 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.662 Current task (0.01 s) finished successfully
+2023-02-13 22:18:00.671 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.670 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:00.672 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.670 Current task (0.01 s) finished successfully
+2023-02-13 22:18:00.677 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.676 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:00.680 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.677 Current task (0.01 s) finished successfully
+2023-02-13 22:18:00.686 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.685 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:00.687 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.686 Current task (0.01 s) finished successfully
+2023-02-13 22:18:00.693 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.692 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:00.695 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.692 Current task (0.01 s) finished successfully
+2023-02-13 22:18:00.701 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.700 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:00.703 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.700 Current task (0.01 s) finished successfully
+2023-02-13 22:18:00.709 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.709 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:00.711 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.710 Current task (0.01 s) finished successfully
+2023-02-13 22:18:00.718 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.717 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:00.720 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.718 Current task (0.01 s) finished successfully
+2023-02-13 22:18:00.725 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.724 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:00.727 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.725 Current task (0.01 s) finished successfully
+2023-02-13 22:18:00.733 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.732 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:00.735 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.733 Current task (0.01 s) finished successfully
+2023-02-13 22:18:00.740 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.739 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:00.743 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.740 Current task (0.01 s) finished successfully
+2023-02-13 22:18:00.749 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.748 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:00.751 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.748 Current task (0.01 s) finished successfully
+2023-02-13 22:18:00.755 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.755 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:00.758 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.755 Current task (0.01 s) finished successfully
+2023-02-13 22:18:00.765 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.764 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:00.766 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.764 Current task (0.01 s) finished successfully
+2023-02-13 22:18:00.773 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.772 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:00.776 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.773 Current task (0.01 s) finished successfully
+2023-02-13 22:18:00.782 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.781 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:00.783 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.781 Current task (0.01 s) finished successfully
+2023-02-13 22:18:00.790 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.789 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:00.792 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.789 Current task (0.01 s) finished successfully
+2023-02-13 22:18:00.798 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.796 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:00.800 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.797 Current task (0.01 s) finished successfully
+2023-02-13 22:18:00.808 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.806 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:00.810 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.807 Current task (0.01 s) finished successfully
+2023-02-13 22:18:00.816 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.815 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:00.818 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.816 Current task (0.01 s) finished successfully
+2023-02-13 22:18:00.824 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.823 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:00.826 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.823 Current task (0.01 s) finished successfully
+2023-02-13 22:18:00.832 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.831 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:00.835 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.831 Current task (0.01 s) finished successfully
+2023-02-13 22:18:00.841 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.840 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:00.843 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.840 Current task (0.01 s) finished successfully
+2023-02-13 22:18:00.849 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.848 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:00.852 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.850 Current task (0.01 s) finished successfully
+2023-02-13 22:18:00.858 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.857 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:00.861 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.858 Current task (0.01 s) finished successfully
+2023-02-13 22:18:00.867 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.867 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:00.870 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.868 Current task (0.01 s) finished successfully
+2023-02-13 22:18:00.876 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.874 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:00.878 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.875 Current task (0.01 s) finished successfully
+2023-02-13 22:18:00.891 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.890 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:00.894 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.891 Current task (0.01 s) finished successfully
+2023-02-13 22:18:00.901 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.900 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:00.904 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.901 Current task (0.01 s) finished successfully
+2023-02-13 22:18:00.910 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.910 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:00.913 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.910 Current task (0.01 s) finished successfully
+2023-02-13 22:18:00.919 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.918 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:00.920 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.919 Current task (0.01 s) finished successfully
+2023-02-13 22:18:00.925 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.924 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:00.927 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.925 Current task (0.01 s) finished successfully
+2023-02-13 22:18:00.934 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.933 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:00.935 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.933 Current task (0.01 s) finished successfully
+2023-02-13 22:18:00.941 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.940 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:00.943 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.940 Current task (0.01 s) finished successfully
+2023-02-13 22:18:00.949 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.949 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:00.951 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.950 Current task (0.01 s) finished successfully
+2023-02-13 22:18:00.957 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.956 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:00.958 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.957 Current task (0.01 s) finished successfully
+2023-02-13 22:18:00.966 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.964 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:00.969 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.964 Current task (0.01 s) finished successfully
+2023-02-13 22:18:00.973 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.972 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:00.976 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.973 Current task (0.01 s) finished successfully
+2023-02-13 22:18:00.982 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.981 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:00.984 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.982 Current task (0.01 s) finished successfully
+2023-02-13 22:18:00.991 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.989 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:00.993 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.990 Current task (0.01 s) finished successfully
+2023-02-13 22:18:00.998 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.997 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:01.001 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:00.998 Current task (0.01 s) finished successfully
+2023-02-13 22:18:01.007 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:01.006 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:01.009 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:01.007 Current task (0.01 s) finished successfully
+2023-02-13 22:18:01.015 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:01.014 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:01.017 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:01.014 Current task (0.01 s) finished successfully
+2023-02-13 22:18:01.023 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:01.022 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:01.025 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:01.023 Current task (0.01 s) finished successfully
+2023-02-13 22:18:01.031 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:01.029 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:01.033 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:01.031 Current task (0.01 s) finished successfully
+2023-02-13 22:18:01.040 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:01.038 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:01.041 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:01.039 Current task (0.01 s) finished successfully
+2023-02-13 22:18:01.047 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:01.046 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:01.049 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:01.046 Current task (0.01 s) finished successfully
+2023-02-13 22:18:01.055 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:01.053 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:01.057 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:01.054 Current task (0.01 s) finished successfully
+2023-02-13 22:18:01.063 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:01.063 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:01.066 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:01.063 Current task (0.01 s) finished successfully
+2023-02-13 22:18:01.072 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:01.070 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:01.074 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:01.071 Current task (0.01 s) finished successfully
+2023-02-13 22:18:01.079 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:01.078 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:01.082 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:01.079 Current task (0.01 s) finished successfully
+2023-02-13 22:18:01.088 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:01.087 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:01.090 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:01.088 Current task (0.01 s) finished successfully
+2023-02-13 22:18:01.095 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:01.094 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:01.098 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:01.095 Current task (0.01 s) finished successfully
+2023-02-13 22:18:01.105 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:01.104 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:01.107 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:01.104 Current task (0.01 s) finished successfully
+2023-02-13 22:18:01.112 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:01.111 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:01.115 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:01.111 Current task (0.01 s) finished successfully
+2023-02-13 22:18:01.121 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:01.120 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:01.123 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:01.121 Current task (0.01 s) finished successfully
+2023-02-13 22:18:01.128 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:01.127 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:01.131 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:01.128 Current task (0.01 s) finished successfully
+2023-02-13 22:18:01.137 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:01.136 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:01.139 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:01.137 Current task (0.01 s) finished successfully
+2023-02-13 22:18:01.144 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:01.143 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:01.147 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:01.144 Current task (0.01 s) finished successfully
+2023-02-13 22:18:01.153 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:01.153 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:01.155 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:01.153 Current task (0.01 s) finished successfully
+2023-02-13 22:18:01.161 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:01.159 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:01.163 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:01.160 Current task (0.01 s) finished successfully
+2023-02-13 22:18:01.169 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:01.168 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:01.171 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:01.168 Current task (0.01 s) finished successfully
+2023-02-13 22:18:01.176 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:01.176 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:01.179 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:01.176 Current task (0.01 s) finished successfully
+2023-02-13 22:18:01.185 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:01.184 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:01.187 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:01.184 Current task (0.01 s) finished successfully
+2023-02-13 22:18:01.193 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:01.192 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:01.195 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:01.192 Current task (0.01 s) finished successfully
+2023-02-13 22:18:01.201 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:01.200 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:01.203 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:01.201 Current task (0.01 s) finished successfully
+2023-02-13 22:18:01.209 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:01.208 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:01.211 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:01.209 Current task (0.01 s) finished successfully
+2023-02-13 22:18:01.216 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:01.215 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:01.217 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:01.215 Current task (0.01 s) finished successfully
+2023-02-13 22:18:01.223 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:01.222 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:01.225 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:01.223 Current task (0.01 s) finished successfully
+2023-02-13 22:18:01.230 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:01.230 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:01.232 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:01.231 Current task (0.01 s) finished successfully
+2023-02-13 22:18:01.237 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:01.236 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:01.239 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:01.237 Current task (0.01 s) finished successfully
+2023-02-13 22:18:01.244 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:01.243 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:01.246 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:01.244 Current task (0.01 s) finished successfully
+2023-02-13 22:18:01.254 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:01.251 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:01.256 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:01.253 Current task (0.01 s) finished successfully
+2023-02-13 22:18:01.262 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:01.260 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:01.264 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:01.261 Current task (0.01 s) finished successfully
+2023-02-13 22:18:01.270 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:01.269 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:01.272 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:01.270 Current task (0.01 s) finished successfully
+2023-02-13 22:18:01.277 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:01.276 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:01.279 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:01.277 Current task (0.01 s) finished successfully
+2023-02-13 22:18:01.283 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:01.283 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:01.285 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:01.283 Current task (0.01 s) finished successfully
+2023-02-13 22:18:01.290 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:01.289 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:01.291 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:01.290 Current task (0.01 s) finished successfully
+2023-02-13 22:18:01.297 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:01.295 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:01.299 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:01.296 Current task (0.01 s) finished successfully
+2023-02-13 22:18:01.307 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:01.305 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:01.309 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:01.306 Current task (0.01 s) finished successfully
+2023-02-13 22:18:01.315 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:01.313 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:01.317 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:01.315 Current task (0.01 s) finished successfully
+2023-02-13 22:18:01.322 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:01.321 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:01.324 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:01.322 Current task (0.01 s) finished successfully
+2023-02-13 22:18:01.329 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:01.328 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:01.330 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:01.328 Current task (0.01 s) finished successfully
+2023-02-13 22:18:01.336 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:01.335 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:01.338 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:01.336 Current task (0.01 s) finished successfully
+2023-02-13 22:18:01.344 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:01.342 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:01.347 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:01.344 Current task (0.01 s) finished successfully
+2023-02-13 22:18:01.352 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:01.351 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:01.354 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:01.353 Current task (0.01 s) finished successfully
+2023-02-13 22:18:01.360 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:01.359 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:01.362 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:01.360 Current task (0.01 s) finished successfully
+2023-02-13 22:18:01.367 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:01.367 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:01.370 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:01.368 Current task (0.01 s) finished successfully
+2023-02-13 22:18:01.375 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:01.375 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:01.377 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:01.375 Current task (0.01 s) finished successfully
+2023-02-13 22:18:01.383 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:01.382 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:01.385 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:01.383 Current task (0.01 s) finished successfully
+2023-02-13 22:18:01.390 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:01.390 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:01.392 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:01.391 Current task (0.01 s) finished successfully
+2023-02-13 22:18:01.399 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:01.397 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:01.401 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:01.398 Current task (0.01 s) finished successfully
+2023-02-13 22:18:01.405 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:01.405 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:01.408 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:01.407 Current task (0.01 s) finished successfully
+2023-02-13 22:18:01.415 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:01.413 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:01.417 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:01.415 Current task (0.01 s) finished successfully
+2023-02-13 22:18:01.425 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:01.423 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:01.427 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:01.424 Current task (0.01 s) finished successfully
+2023-02-13 22:18:01.433 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:01.431 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:01.435 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:01.432 Current task (0.01 s) finished successfully
+2023-02-13 22:18:01.440 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:01.439 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:01.442 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:01.440 Current task (0.01 s) finished successfully
+2023-02-13 22:18:01.448 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:01.447 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:01.450 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:01.448 Current task (0.01 s) finished successfully
+2023-02-13 22:18:01.457 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:01.456 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:01.460 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:01.457 Current task (0.01 s) finished successfully
+2023-02-13 22:18:01.466 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:01.466 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:01.469 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:01.467 Current task (0.01 s) finished successfully
+2023-02-13 22:18:01.476 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:01.475 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:01.479 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:01.476 Current task (0.01 s) finished successfully
+2023-02-13 22:18:01.486 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:01.485 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:01.488 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:01.486 Current task (0.01 s) finished successfully
+2023-02-13 22:18:01.494 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:01.492 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:01.496 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:01.494 Current task (0.01 s) finished successfully
+2023-02-13 22:18:01.503 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:01.501 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:01.506 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:01.502 Current task (0.01 s) finished successfully
+2023-02-13 22:18:01.512 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:01.511 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:01.514 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:01.512 Current task (0.01 s) finished successfully
+2023-02-13 22:18:01.522 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:01.520 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:01.525 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:01.521 Current task (0.01 s) finished successfully
+2023-02-13 22:18:01.532 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:01.530 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:01.534 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:01.531 Current task (0.01 s) finished successfully
+2023-02-13 22:18:01.541 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:01.540 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:01.544 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:01.540 Current task (0.01 s) finished successfully
+2023-02-13 22:18:01.552 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:01.550 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:01.555 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:01.551 Current task (0.01 s) finished successfully
+2023-02-13 22:18:01.562 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:01.561 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:01.563 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:01.561 Current task (0.01 s) finished successfully
+2023-02-13 22:18:01.570 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:01.569 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:01.572 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:01.570 Current task (0.01 s) finished successfully
+2023-02-13 22:18:01.579 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:01.578 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:01.581 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:01.579 Current task (0.01 s) finished successfully
+2023-02-13 22:18:01.589 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:01.587 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:01.592 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:01.588 Current task (0.01 s) finished successfully
+2023-02-13 22:18:01.598 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:01.597 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:01.601 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:01.598 Current task (0.01 s) finished successfully
+2023-02-13 22:18:01.606 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:01.606 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:01.609 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:01.607 Current task (0.01 s) finished successfully
+2023-02-13 22:18:01.617 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:01.615 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:01.619 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:01.616 Current task (0.01 s) finished successfully
+2023-02-13 22:18:01.626 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:01.625 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:01.629 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:01.626 Current task (0.01 s) finished successfully
+2023-02-13 22:18:01.634 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:01.634 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:01.637 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:01.634 Current task (0.01 s) finished successfully
+2023-02-13 22:18:01.642 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:01.642 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:01.644 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:01.642 Current task (0.01 s) finished successfully
+2023-02-13 22:18:01.651 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:01.650 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:01.653 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:01.650 Current task (0.01 s) finished successfully
+2023-02-13 22:18:01.659 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:01.657 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:01.661 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:01.658 Current task (0.01 s) finished successfully
+2023-02-13 22:18:01.666 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:01.666 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:01.669 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:01.667 Current task (0.01 s) finished successfully
+2023-02-13 22:18:01.675 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:01.674 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:01.677 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:01.675 Current task (0.01 s) finished successfully
+2023-02-13 22:18:01.683 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:01.682 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:01.686 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:01.683 Current task (0.01 s) finished successfully
+2023-02-13 22:18:01.692 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:01.691 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:01.694 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:01.692 Current task (0.01 s) finished successfully
+2023-02-13 22:18:01.700 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:01.699 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:01.702 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:01.700 Current task (0.01 s) finished successfully
+2023-02-13 22:18:01.707 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:01.707 Waiting until the current task has finished (0.01 s)
+2023-02-13 22:18:01.710 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:01.707 Current task (0.01 s) finished successfully
+2023-02-13 22:18:01.719 23724 ManagedWorker-6*PE.Run() DEBUG:
+                        Recording: Finishing recording at: 5.0200000000000005
+                        Package "C:\TuringInfo\1_TraceTronic\0_Workspace\10_ET_Workspace 2022.2\22_fmu_fmi-master\TEST-GUIDE\Packages\ACC\ACC_activate_with_brake.pkg"#30
+2023-02-13 22:18:01.722 23724 ManagedWorker-6*PE.Run() INFO:
+                        1. Recording for Recording group for Plant model stopped
+                        Package "C:\TuringInfo\1_TraceTronic\0_Workspace\10_ET_Workspace 2022.2\22_fmu_fmi-master\TEST-GUIDE\Packages\ACC\ACC_activate_with_brake.pkg"#30
+2023-02-13 22:18:01.735 23724 ManagedWorker-6*PE.Run() DEBUG:
+                        TestEngine: Stop ports...
+2023-02-13 22:18:01.740 23724 ToolLibs DEBUG:
+                        FmiLib: Simulation: ToolLib time: 22:18:01.739 Simulation is stopped
+2023-02-13 22:18:02.178 23724 ManagedWorker-6*PE.Run() INFO:
+                        Test case "ACC_activate_with_brake" completed
+2023-02-13 22:18:02.290 23724 ManagedWorker-6*PE.Run() INFO:
+                        Start analysis job "Job_1" ("C:\TuringInfo\1_TraceTronic\0_Workspace\10_ET_Workspace 2022.2\22_fmu_fmi-master\TEST-GUIDE\Packages\ACC\ACC_activate_with_brake.pkg" -> "Trace analysis 1")
+2023-02-13 22:18:02.312 23724 ManagedWorker-6*PE.Run() DEBUG:
+                        Performing episode ...
+2023-02-13 22:18:02.314 23724 ManagedWorker-6*PE.Run() DEBUG:
+                        
+2023-02-13 22:18:02.325 23724 ManagedWorker-6*PE.Run() DEBUG:
+                        Episode completed
+2023-02-13 22:18:02.326 23724 ManagedWorker-6*PE.Run() DEBUG:
+                        
+2023-02-13 22:18:03.063 23724 ManagedWorker-6*PE.Run() INFO:
+                        Test case "ACC_approach" started
+2023-02-13 22:18:03.211 23724 ManagedWorker-6*PE.Run() DEBUG:
+                        Save executed successfully in C:\Users\Jerry\AppData\Local\Temp\ECU-TEST 2023.1\Stimulation\tmp_upumizx.sti
+2023-02-13 22:18:03.212 23724 ManagedWorker-6*PE.Run() DEBUG:
+                        
+2023-02-13 22:18:03.258 23724 ManagedWorker-6*PE.Run() DEBUG:
+                        TestEngine: Start ports...
+2023-02-13 22:18:03.261 23724 ToolLibs DEBUG:
+                        FmiLib: Simulation: ToolLib time: 22:18:03.261 FMU is initialized
+2023-02-13 22:18:03.265 23724 ToolLibs DEBUG:
+                        FmiLib: Simulation: ToolLib time: 22:18:03.265 Simulation is started
+2023-02-13 22:18:03.270 23724 ToolLibs DEBUG:
+                        FmiLib: FmuData.StartSimulation: ToolLib time: 22:18:03.269 Initializing stepwise simulation
+2023-02-13 22:18:03.271 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.Start: ToolLib time: 22:18:03.269 Starting simulation
+2023-02-13 22:18:03.273 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.Start: ToolLib time: 22:18:03.270 Simulation in state ready
+2023-02-13 22:18:03.277 23724 ManagedWorker-6*PE.Run() INFO:
+                        init SteppedSimulationClock
+2023-02-13 22:18:03.279 23724 ManagedWorker-6*PE.Run() INFO:
+                        Model time mode with stepwise simulation activated, port used as time source: MDL01
+2023-02-13 22:18:03.289 23724 ManagedWorker-6*PE.Run() DEBUG:
+                        Recording: Starting recording at: 0
+                        Package "C:\TuringInfo\1_TraceTronic\0_Workspace\10_ET_Workspace 2022.2\22_fmu_fmi-master\TEST-GUIDE\Packages\ACC\ACC_approach.pkg"#3
+2023-02-13 22:18:03.294 23724 ToolLibs DEBUG:
+                        FmiLib: Recording is saved in 'C:\Users\Jerry\AppData\Local\Temp\ECU-TEST 2022.2\ToolLibTemp\FMI\Recordings\FMI_2023-02-13-221803_20.mf4: ToolLib time: 22:18:03.293
+2023-02-13 22:18:03.298 23724 ManagedWorker-6*PE.Run() INFO:
+                        1. Recording for Recording group for Plant model started
+                        Package "C:\TuringInfo\1_TraceTronic\0_Workspace\10_ET_Workspace 2022.2\22_fmu_fmi-master\TEST-GUIDE\Packages\ACC\ACC_approach.pkg"#3
+2023-02-13 22:18:03.326 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:03.325 Waiting until the current task has finished (1 s)
+2023-02-13 22:18:03.328 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl._EnsureRunning: ToolLib time: 22:18:03.325 Transition to RUNNING
+2023-02-13 22:18:03.330 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl._EnsureRunning: ToolLib time: 22:18:03.325 Simulation in state ready
+2023-02-13 22:18:03.332 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SteppedSimulation._Interrupt: ToolLib time: 22:18:03.325 Entering simulation loop for the first time
+2023-02-13 22:18:03.355 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:03.354 Current task (1 s) finished successfully
+2023-02-13 22:18:03.523 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:03.522 Waiting until the current task has finished (51.0 s)
+2023-02-13 22:18:07.385 23724 ToolLibs DEBUG:
+                        FmiLib: FMU SimulationControl.StepSimulation: ToolLib time: 22:18:07.384 Current task (51.0 s) finished successfully
+2023-02-13 22:18:07.391 23724 ManagedWorker-6*PE.Run() DEBUG:
+                        Recording: Finishing recording at: 52.0
+                        Package "C:\TuringInfo\1_TraceTronic\0_Workspace\10_ET_Workspace 2022.2\22_fmu_fmi-master\TEST-GUIDE\Packages\ACC\ACC_approach.pkg"#20
+2023-02-13 22:18:07.396 23724 ManagedWorker-6*PE.Run() INFO:
+                        1. Recording for Recording group for Plant model stopped
+                        Package "C:\TuringInfo\1_TraceTronic\0_Workspace\10_ET_Workspace 2022.2\22_fmu_fmi-master\TEST-GUIDE\Packages\ACC\ACC_approach.pkg"#20
+2023-02-13 22:18:07.423 23724 ManagedWorker-6*PE.Run() DEBUG:
+                        TestEngine: Stop ports...
+2023-02-13 22:18:07.441 23724 ToolLibs DEBUG:
+                        FmiLib: Simulation: ToolLib time: 22:18:07.426 Simulation is stopped
+2023-02-13 22:18:08.394 23724 ManagedWorker-6*PE.Run() WARNING:
+                        The following variables could not be saved for trace analysis because they are not serializable: ConstantSegment, DataFileSegment, ExponentialSegment, IdleSegment, NoiseSegment, PulseSegment, RampSegment, RampSlopeSegment, SawSegment, SignalReferenceSegment, SignalValueSegment, SineSegment
+2023-02-13 22:18:08.408 23724 ManagedWorker-6*PE.Run() INFO:
+                        Test case "ACC_approach" completed
+2023-02-13 22:18:08.535 23724 ManagedWorker-6*PE.Run() INFO:
+                        Start analysis job "Job_1" ("C:\TuringInfo\1_TraceTronic\0_Workspace\10_ET_Workspace 2022.2\22_fmu_fmi-master\TEST-GUIDE\Packages\ACC\ACC_approach.pkg" -> "Trace analysis 1")
+2023-02-13 22:18:08.567 23724 ManagedWorker-6*PE.Run() DEBUG:
+                        Performing episode ...
+2023-02-13 22:18:08.568 23724 ManagedWorker-6*PE.Run() DEBUG:
+                        
+2023-02-13 22:18:08.670 23724 ManagedWorker-6*PE.Run() DEBUG:
+                        Episode completed
+2023-02-13 22:18:08.671 23724 ManagedWorker-6*PE.Run() DEBUG:
+                        
+2023-02-13 22:18:10.464 23724 ManagedWorker-6 INFO:
+                        Finalizing report 'ACC_TestSuite.trf'...

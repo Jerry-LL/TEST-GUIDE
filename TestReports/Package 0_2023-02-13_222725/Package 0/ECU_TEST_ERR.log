@@ -1,0 +1,48 @@
+
+
+= 13.02.2023 22:27:46 (UTC +8:00) === ECU-TEST 2023.1.0.131192+68f455d94176-FeatureSet 131192+68f455d94176 (2022/12/13 15:00:54) (64bit) ===
+Python 3.9.13 (tags/v3.9.13:6de2ca5, May 17 2022, 16:36:42) [MSC v.1929 64 bit (AMD64)]
+
+License: ECU-TEST
+         - License options:
+             + Diagnostics add-on
+             + Trace Analysis
+         - valid up to version: 2023.4
+         - valid until: 31-dec-2023
+         - licensed for: TURING
+         - Server: Jerry
+
+
+2023-02-13 22:27:46.704 23724 ManagedWorker-5*PE.Run() DEBUG_EXC_PRINT:
+                        Traceback (most recent call last):
+                          File "tts\testExecution\engine\TestEngine.py", line 969, in ExecuteTestStep
+                          File "tts\testExecution\testSteps\controlflow\wait\TsWaitExec.py", line 90, in Run
+                          File "tts\core\package\engine\PackageEngine.py", line 539, in Wait
+                          File "tts\core\package\engine\ExecutionModeManager.py", line 250, in Wait
+                          File "tts\core\package\engine\Clock.py", line 137, in Wait
+                          File "tts\tooling\tool\FMI\FmiTimeSource.py", line 70, in StepSimulation
+                          File "tts\core\toolingFramework\interface\AbstractAdapter.py", line 919, in <lambda>
+                          File "tts\core\toolingFramework\toollibLoader\ToolLibLoaderTwisted.py", line 138, in SendCommand
+                          File "tts\core\toolingFramework\toollibLoader\ToolLibLoaderTwisted.py", line 60, in BlockingCallFromThreadWithTimeout
+                          File ".\Lib\site-packages\twisted\python\failure.py", line 504, in raiseException
+                          File "tts\core\toolingFramework\toollibLoader\ToolLibLoaderTwisted.py", line 79, in WaitForToolAbort
+                        RuntimeError: Tool call aborted.
+2023-02-13 22:27:49.724 23724 ManagedWorker-5*PE.Run() ERROR:
+                        Traceback (most recent call last):
+                          File "tts\core\toolingFramework\toolAccess\LockProxy.py", line 55, in __call__
+                          File "tts\tooling\tool\FMI\FmiModelPort.py", line 272, in Stop
+                          File "tts\tooling\tool\FMI\FmiModelPort.py", line 361, in _StopSimulation
+                          File "tts\core\toolingFramework\interface\AbstractAdapter.py", line 919, in <lambda>
+                          File "tts\core\toolingFramework\toollibLoader\ToolLibLoaderTwisted.py", line 138, in SendCommand
+                          File "tts\core\toolingFramework\toollibLoader\ToolLibLoaderTwisted.py", line 60, in BlockingCallFromThreadWithTimeout
+                          File ".\Lib\site-packages\twisted\python\failure.py", line 504, in raiseException
+                          File "tts\core\toolingFramework\toollibLoader\ToolLibLoaderTwisted.py", line 79, in WaitForToolAbort
+                        RuntimeError: Tool call aborted.
+                        
+                        The above exception was the direct cause of the following exception:
+                        
+                        Traceback (most recent call last):
+                          File "tts\testExecution\engine\TestEngine.py", line 433, in StopPorts
+                          File "tts\core\toolingFramework\toolAccess\LockProxy.py", line 74, in __call__
+                          File "tts\core\toolingFramework\toolAccess\LockProxy.py", line 94, in ReportToolError
+                        tts.core.toolingFramework.toolAccess.Exceptions.ToolError: Port MDL01 (@local): PortStop() failed: Tool call aborted.

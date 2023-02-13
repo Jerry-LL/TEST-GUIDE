@@ -9,13 +9,13 @@
 	</RECENT-TBC-FILES>
 	<LAST-TBC-SAVED xsi:type="boolean">True</LAST-TBC-SAVED>
 	<RECENT-PROJECTS-PACKAGES>
-		<ELEMENT xsi:type="string">Packages\SimulateMultipleModelsParallel.pkg</ELEMENT>
 		<ELEMENT xsi:type="string">Packages\Projects\ACC_TestSuite.prj</ELEMENT>
+		<ELEMENT xsi:type="string">Packages\Projects\ACC_ComponentTests.prj</ELEMENT>
+		<ELEMENT xsi:type="string">Packages\SimulateMultipleModelsParallel.pkg</ELEMENT>
 		<ELEMENT xsi:type="string">Packages\Projects\MultipleModelsParallel.prj</ELEMENT>
 		<ELEMENT xsi:type="string">Packages\Projects\TimeBase_Comparison.prj</ELEMENT>
 		<ELEMENT xsi:type="string">Packages\Projects\SimpleFMU.prj</ELEMENT>
 		<ELEMENT xsi:type="string">Packages\SmokeTest.prj</ELEMENT>
-		<ELEMENT xsi:type="string">Packages\Projects\ACC_ComponentTests.prj</ELEMENT>
 		<ELEMENT xsi:type="string">Packages\Projects\ChangeConfiguration\ChangeConfigurationACC.prj</ELEMENT>
 		<ELEMENT xsi:type="string">Packages\ACC\ACC_activate.pkg</ELEMENT>
 		<ELEMENT xsi:type="string">TestReports\ACC_TestSuite_2022-03-30_201734\ACC_TestSuite.trf</ELEMENT>
